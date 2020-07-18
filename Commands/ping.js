@@ -16,6 +16,19 @@ module.exports = {
                 timestamp: new Date()
             }});
         }
+        else if (message.author.id === '280578071055302657')
+        {
+            message.channel.send({embed: {
+                color: 0,
+                author:
+                {
+                    name: message.author.username,
+                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                },
+                title: "Lol p\nong",
+                timestampd: new Date()
+            }})
+        }
         else
         {
             message.channel.send({embed: {
