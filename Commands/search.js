@@ -1982,7 +1982,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**uigoku2**: INT UR Goku (Ultra nstinct -Sign-)\n" +
-                                "**muigoku1**: INT UR Goku (Ultra Instinct)" +
+                                "**muigoku1**: INT UR Goku (Ultra Instinct)\n" +
                                 "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
                     }
                 ]
