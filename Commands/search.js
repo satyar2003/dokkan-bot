@@ -1981,7 +1981,31 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
+                        value:  "**uigoku2**: INT UR Goku (Ultra nstinct -Sign-)\n" +
+                                "**muigoku1**: INT UR Goku (Ultra Instinct)" +
+                                "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
+                    }
+                ]
+            }});
+        }
+        else if (args[0] === 'ssjkkgoku' || args[0] === 'sskkgoku')
+        {
+            message.channel.send({embed: {
+                color: 0,
+                author:
+                {
+                    name: message.author.username,
+                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                },
+                title: "Searching...",
+                thumbnail:
+                {
+                    url: "https://media.discordapp.net/attachments/712036120191434793/733889650212470894/450.png"
+                },
+                fields: [
+                    {
+                        name: "** **",
+                        value:  "**ssjkkgoku1**: PHY UR Super Saiyan Goku (Angel) (Super Kaioken)"
                     }
                 ]
             }});
