@@ -106,6 +106,10 @@ module.exports = {
                                 "**ssjgoku1z**: PHY UR Super Saiyan Goku from *The Return of Cooler* with EZA"
                     },
                     {
+                        name: "Super Saiyan Goku (Angel) (Super Kaioken)",
+                        value: "**ssjkkgoku1**: PHY UR Super Saiyan Goku (Angel) (Super Kaioken)"
+                    },
+                    {
                         name: "Super Saiyan 2 Goku (Angel)",
                         value: "**ssj2goku1z**: AGL UR Super Saiyan 2 Goku (Angel) with EZA"
                     },
@@ -131,7 +135,12 @@ module.exports = {
                     },
                     {
                         name: "Goku (Ultra Instinct -Sign-)",
-                        value: "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
+                        value:  "**uigoku2**: INT UR Goku (Ultra nstinct -Sign-)\n" +
+                                "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
+                    },
+                    {
+                        name: "Goku (Ultra Instinct)",
+                        value: "**muigoku1**: INT UR Goku (Ultra Instinct)"
                     },
                     {
                         name: "Super Saiyan 4 Goku",
