@@ -26,7 +26,7 @@ module.exports = {
                     icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
                 },
                 title: "Lol p\nong",
-                timestampd: new Date()
+                timestamp: new Date()
             }})
         }
         else
