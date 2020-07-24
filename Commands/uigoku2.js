@@ -15,7 +15,7 @@ module.exports = {
            '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power) (Ki +3)',
            '[The First Awakened](https://dbz-dokkanbattle.fandom.com/wiki/The_First_Awakened) (ATK +25%)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATk +15%)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['Goku (Ultra Instinct -Sign-)'],
     execute(message, args) {
@@ -25,15 +25,15 @@ module.exports = {
         const {plural} = require('./uigoku2.js')
         const {aliases} = require('./uigoku2.js')
         var color = 7028604;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Trandismensional Instinct\nGoku (Ultra Instinct -Sign-)";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Transdimensional_Instinct_Goku_(Ultra_Instinct_-Sign-)";
+        var desc = "Super INT UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/736352820671938640/card_1013540_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/736352895368429628/340.png";
+        var leader = "\"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)\" Category Ki +3 and HP, ATK & DEF +150%; or <:int:729468835819946026> Type Ki +3 and HP, ATK & DEF +50%";
+        var superatk = "[Unpolished Instinct](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_New_UR_INT_Ultra_Instinct_Goku_(Super_Attack)): Raises ATK[1] and causes immense damage to enemy";
+        var passive = "Secret Sensation: ATK & DEF +100%; Awaken when HP is 50% or below";
+        var stats = "HP: 12,335 (55%)/15,335 (100%)\nATK: 13,654 (55%)/16,654 (100%)\nDEF: 7,890 (55%)/10,890 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -44,10 +44,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 3,108,633 (unsupported)/3,613,250 (supported)\nDefense: 95,832 (unsupported)/108,354 (supported) \nLinking Partner: [STR UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Divine_Power_Within_Super_Saiyan_God_Goku) \nTeam: [Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)/[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods) \nBuild: 6 Additional/15 Critical";
+        var blp = "[STR UR Super Saiyan God SS Goku (Kaioken)](https://dbz-dokkanbattle.fandom.com/wiki/Final_Super_Power_Super_Saiyan_God_SS_Goku_(Kaioken)) - 5 links shared\n[AGL UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Flaring_Battle_Impulse_Super_Saiyan_God_Goku) - 4 links shared\n[STR UR Super Saiyan God Goku] - 4 links shared";
+        var deets = "► 12 Ki Multiplier is 150%\n► [PHY SSR Goku (Ultra Instinct -Sign-)](https://dbz-dokkanbattle.fandom.com/wiki/New_Form_on_the_Horizon_Goku_(Ultra_Instinct_-Sign-)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var footnotes = "[1]: Raises ATK by 30% for 99 turns";
         if (status === 'incomplete')
         {
             var person = aliases[aliases.length - 1]
@@ -190,7 +190,11 @@ module.exports = {
                             value: superatk
                         }
                     ],
-                    timestamp: new Date()
+                    timestamp: new Date(),
+                    footer:
+                    {
+                        text: footnotes
+                    }
                 }});
             }
             else if (args[0] === 'passive')
