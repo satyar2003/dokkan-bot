@@ -14,8 +14,8 @@ module.exports = {
            '[Godly Power](https://dbz-dokkanbattle.fandom.com/wiki/Godly_Power) (ATK +15%)',
            '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power) (Ki +3)',
            '[The First Awakened](https://dbz-dokkanbattle.fandom.com/wiki/The_First_Awakened) (ATK +25%)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATk +15%)'],
-    status: 'complete',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    status: 'incomplete',
     plural: 'false',
     aliases: ['Goku (Ultra Instinct -Sign-)'],
     execute(message, args) {
@@ -45,7 +45,7 @@ module.exports = {
                 cats += categories[i] + "\n";
             }
         var apt = "APT: 3,108,633 (unsupported)/3,613,250 (supported)\nDefense: 95,832 (unsupported)/108,354 (supported) \nLinking Partner: [STR UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Divine_Power_Within_Super_Saiyan_God_Goku) \nTeam: [Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)/[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods) \nBuild: 6 Additional/15 Critical";
-        var blp = "[STR UR Super Saiyan God SS Goku (Kaioken)](https://dbz-dokkanbattle.fandom.com/wiki/Final_Super_Power_Super_Saiyan_God_SS_Goku_(Kaioken)) - 5 links shared\n[AGL UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Flaring_Battle_Impulse_Super_Saiyan_God_Goku) - 4 links shared\n[STR UR Super Saiyan God Goku] - 4 links shared";
+        var blp = "[STR UR Super Saiyan God SS Goku (Kaioken)](https://dbz-dokkanbattle.fandom.com/wiki/Final_Super_Power_Super_Saiyan_God_SS_Goku_(Kaioken)) - 5 links shared\n[AGL UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Flaring_Battle_Impulse_Super_Saiyan_God_Goku) - 4 links shared\n[STR UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Divine_Power_Within_Super_Saiyan_God_Goku) - 4 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► [PHY SSR Goku (Ultra Instinct -Sign-)](https://dbz-dokkanbattle.fandom.com/wiki/New_Form_on_the_Horizon_Goku_(Ultra_Instinct_-Sign-)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
         var footnotes = "[1]: Raises ATK by 30% for 99 turns";
         if (status === 'incomplete')
