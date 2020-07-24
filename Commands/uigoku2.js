@@ -15,7 +15,7 @@ module.exports = {
            '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power) (Ki +3)',
            '[The First Awakened](https://dbz-dokkanbattle.fandom.com/wiki/The_First_Awakened) (ATK +25%)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'complete',
+    status: 'incomplete',
     plural: 'false',
     aliases: ['Goku (Ultra Instinct -Sign-)'],
     execute(message, args) {
