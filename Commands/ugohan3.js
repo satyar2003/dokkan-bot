@@ -140,6 +140,7 @@ module.exports = {
                         text: footnotes
                     }
                 }});
+                break;
             }
             else
             {
