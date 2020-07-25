@@ -78,7 +78,7 @@ module.exports = {
         {
             var length = args.length;
             var sub = args[0];
-            switch (sub)
+            switch (true)
             {
                 case length == 0:
                     message.channel.send({embed: {
