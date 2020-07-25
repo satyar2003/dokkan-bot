@@ -144,6 +144,7 @@ module.exports = {
                         }
                     }});
                     break;
+                    
                 case sub === "leader":
                     message.channel.send({embed: {
                         color: color,
@@ -168,6 +169,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "super":
                     message.channel.send({embed: {
                         color: color,
@@ -196,6 +198,7 @@ module.exports = {
                         }
                     }});
                     break;
+
                 case sub === "passive":
                     message.channel.send({embed: {
                         color: color,
@@ -220,6 +223,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "stats":
                     message.channel.send({embed: {
                         color: color,
@@ -244,6 +248,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "links":
                     message.channel.send({embed: {
                         color: color,
@@ -268,6 +273,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "categories":
                     message.channel.send({embed: {
                         color: color,
@@ -292,6 +298,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "apt":
                     message.channel.send({embed: {
                         color: color,
@@ -316,6 +323,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "partners":
                     message.channel.send({embed: {
                         color: color,
@@ -340,6 +348,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "details":
                     message.channel.send({embed: {
                         color: color,
@@ -364,6 +373,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 case sub === "art":
                     message.channel.send({embed: {
                         color: color,
@@ -386,6 +396,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
+
                 default:
                     message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
                     break;
