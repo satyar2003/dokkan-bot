@@ -1,3 +1,5 @@
+const { DiscordAPIError } = require('discord.js')
+
 module.exports = {
     name: 'ugohan3',
     description: 'INT UR Ultimate Gohan without EZA',
@@ -375,26 +377,16 @@ module.exports = {
                     break;
 
                 case sub === "art":
-                    message.channel.send({embed: {
-                        color: color,
-                        author:
-                        {
-                            name: message.author.name,
-                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                        },
-                        title: name,
-                        url: url,
-                        description: desc,
-                        thumbnail:
-                        {
-                            url: circle
-                        },
-                        image:
-                        {
-                            url: character
-                        },
-                        timestamp: new Date()
-                    }});
+                    const art = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setAuthor(message.author.username, message.author.displayAvatarURL({format: "png", dynamic: "true"}))
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .setImage(character)
+                        .setTimestamp()
+                    message.channel.send(art)
                     break;
 
                 default:
