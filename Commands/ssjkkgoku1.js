@@ -14,7 +14,7 @@ module.exports = {
            '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
            '[Otherworld Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Otherworld_Warriors_(Link_Skill)) (ATK +20%)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'complete',
+    status: 'incomplete',
     plural: 'false',
     aliases: ['sskkgoku1', 'Super Saiyan Goku (Angel) (Super Kaioken)'],
     execute(message, args) {
@@ -43,7 +43,7 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 1,921,390 (unsupported)/2,157,549 (supported)\nDefense: 33,084 (unsupported)/36,943 (supported) \nLinking Partner: [AGL UR Super Saiyan God SS Goku (https://dbz-dokkanbattle.fandom.com/wiki/Next-Level_Strike_Super_Saiyan_God_SS_Goku)] \nTeam: [Siblings' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)/[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family) \nBuild: 11 Additional/15 Critical";
+        var apt = "APT: 1,921,390 (unsupported)/2,157,549 (supported)\nDefense: 33,084 (unsupported)/36,943 (supported) \nLinking Partner: [AGL UR Super Saiyan God SS Goku](https://dbz-dokkanbattle.fandom.com/wiki/Next-Level_Strike_Super_Saiyan_God_SS_Goku)] \nTeam: [Siblings' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)/[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family) \nBuild: 11 Additional/15 Critical";
         var blp = "[AGL UR Super Saiyan God SS Goku](https://dbz-dokkanbattle.fandom.com/wiki/Next-Level_Strike_Super_Saiyan_God_SS_Goku) - 6 links shared\n[AGL UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Flaring_Battle_Impulse_Super_Saiyan_God_Goku) - 5 links shared\n[TEQ UR Super Saiyan 4 Gogeta](https://dbz-dokkanbattle.fandom.com/wiki/Peerless_Gleam_Super_Saiyan_4_Gogeta) - 5 links shared";
         var deets = "► 12 Ki Multiplier is 140%";
         var footnotes = "";
