@@ -166,6 +166,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "super":
                     message.channel.send({embed: {
                         color: color,
@@ -193,6 +194,7 @@ module.exports = {
                             text: footnotes
                         }
                     }});
+                    break;
                 case "passive":
                     message.channel.send({embed: {
                         color: color,
@@ -216,6 +218,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "stats":
                     message.channel.send({embed: {
                         color: color,
@@ -239,6 +242,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "links":
                     message.channel.send({embed: {
                         color: color,
@@ -262,6 +266,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "categories":
                     message.channel.send({embed: {
                         color: color,
@@ -285,6 +290,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "apt":
                     message.channel.send({embed: {
                         color: color,
@@ -308,6 +314,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "partners":
                     message.channel.send({embed: {
                         color: color,
@@ -331,6 +338,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "details":
                     message.channel.send({embed: {
                         color: color,
@@ -354,6 +362,7 @@ module.exports = {
                         ],
                         timestamp: new Date()
                     }});
+                    break;
                 case "art":
                     message.channel.send({embed: {
                         color: color,
@@ -375,6 +384,7 @@ module.exports = {
                         },
                         timestamp: new Date()
                     }});
+                    break;
                 default:
                     message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
             }
