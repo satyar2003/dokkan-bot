@@ -387,6 +387,7 @@ module.exports = {
                     break;
                 default:
                     message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
+                    break;
             }
         }
     }
