@@ -1,39 +1,27 @@
 module.exports = {
-    name: 'muigoku1',
-    description: 'INT UR Goku (Ultra Instinct)',
-    categories: ['[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)',
-                '[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)',
-                '[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
-                '[Representatives of Universe 7](https://dbz-dokkanbattle.fandom.com/wiki/Representatives_of_Universe_7)',
-                '[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost)',
-                '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
-                '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha_(Category)'],
-    link: ['[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha) (ATK +2500 when Super Attack is launched)',
-            '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-            '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
-            '[Godly Power](https://dbz-dokkanbattle.fandom.com/wiki/Godly_Power) (ATK +15%)',
-            '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power) (Ki +3)',
-            '[The First Awakened](https://dbz-dokkanbattle.fandom.com/wiki/The_First_Awakened) (ATK +25%)',
-            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'complete',
+    name: 'ugohan3',
+    description: 'INT UR Ultimate Gohan without EZA',
+    categories: ['', ''],
+    link: ['', ''],
+    status: 'incomplete',
     plural: 'false',
-    aliases: ['Goku (Ultra Instinct)'],
+    aliases: ['Ultimate Gohan'],
     execute(message, args) {
-        const {link} = require('./muigoku1.js')
-        const {categories} = require('./muigoku1.js')
-        const {status} = require('./muigoku1.js')
-        const {plural} = require('./muigoku1.js')
-        const {aliases} = require('./muigoku1.js')
+        const {link} = require('./ugohan3.js')
+        const {categories} = require('./ugohan3.js')
+        const {status} = require('./ugohan3.js')
+        const {plural} = require('./ugohan3.js')
+        const {aliases} = require('./ugohan3.js')
         var color = 7028604;
-        var name = "Transdimensional Instinct\nGoku (Ultra Instinct)";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Transdimensional_Instinct_Goku_(Ultra_Instinct_-Sign-)#Goku%20(Ultra%20Instinct)";
-        var desc = "Super INT UR";
-        var circle = "https://media.discordapp.net/attachments/712036120191434793/736366834441257011/card_4013550_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/736366854477578240/340.png";
-        var leader = "\"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)\" Category Ki +3 and HP, ATK & DEF +150%; or <:int:729468835819946026> Type Ki +3 and HP, ATK & DEF +50%";
-        var superatk = "[Supreme Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_Superdimensional_Instincts_Goku_(Ultra_Instinct)_(Super_Attack)): Raises ATK[1] and causes immense damage to enemy";
-        var passive = "Accelerating Battle Spirit: Ki +3 and ATK +150%; great chance[2] to evade enemy's attack (including Super Attack); disables enemy's guard";
-        var stats = "HP: 12,335 (55%)/15,335 (100%)\nATK: 13,654 (55%)/16,654 (100%)\nDEF: 7,890 (55%)/10,890 (100%)";
+        var name = "";
+        var url = "";
+        var desc = "";
+        var circle = "";
+        var character = "";
+        var leader = "";
+        var superatk = "";
+        var passive = "";
+        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -44,10 +32,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 3,108,633 (unsupported)/3,613,250 (supported)\nDefense: 95,832 (unsupported)/108,354 (supported) \nLinking Partner: [STR UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Divine_Power_Within_Super_Saiyan_God_Goku) \nTeam: [Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)/[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods) \nBuild: 6 Additional/15 Critical";
-        var blp = "[STR UR Super Saiyan God SS Goku (Kaioken)](https://dbz-dokkanbattle.fandom.com/wiki/Final_Super_Power_Super_Saiyan_God_SS_Goku_(Kaioken)) - 5 links shared\n[AGL UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Flaring_Battle_Impulse_Super_Saiyan_God_Goku) - 4 links shared\n[STR UR Super Saiyan God Goku](https://dbz-dokkanbattle.fandom.com/wiki/Divine_Power_Within_Super_Saiyan_God_Goku) - 4 links shared";
-        var deets = "► 12 Ki Multiplier is 150%\n► He has a 0% uptime in his transformed state";
-        var footnotes = "[1]: Raises ATK by 30% for 99 turns\n[2]: 70% chance to evade enemy's attack";
+        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
+        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
+        var deets = "-";
+        var footnotes = "[1]: ";
         if (status === 'incomplete')
         {
             var person = aliases[aliases.length - 1]
@@ -190,11 +178,7 @@ module.exports = {
                             value: superatk
                         }
                     ],
-                    timestamp: new Date(),
-                    footer:
-                    {
-                        text: "[1]: Raises ATK by 30% for 99 turns"
-                    }
+                    timestamp: new Date()
                 }});
             }
             else if (args[0] === 'passive')
@@ -219,11 +203,7 @@ module.exports = {
                             value: passive
                         }
                     ],
-                    timestamp: new Date(),
-                    footer:
-                    {
-                        text: "[2]: 70% chance to evade enemy's attack"
-                    }
+                    timestamp: new Date()
                 }});
             }
             else if (args[0] === 'stats')

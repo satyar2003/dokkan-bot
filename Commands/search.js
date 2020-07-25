@@ -38,7 +38,8 @@ module.exports = {
                     },
                     {
                         name: "Ultimate Gohan",
-                        value:  "**ugohan2**: STR UR Ultimate Gohan\n" +
+                        value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                                "**ugohan2**: STR UR Ultimate Gohan\n" +
                                 "**ugohan1z**: PHY UR Ultimate Gohan with EZA"
                     }
                 ],
@@ -1009,7 +1010,8 @@ module.exports = {
                     },
                     {
                         name: "Frieza (Full Power)",
-                        value: "**fpfrieza1z**: PHY UR Frieza (Full Power) with EZA"
+                        value:  "**fpfrieza1**: PHY UR Frieza (Full Power) without EZA\n" +
+                                "**fpfrieza1z**: PHY UR Frieza (Full Power) with EZA"
                     },  
                     {
                         name: "Golden Frieza",
@@ -1054,6 +1056,7 @@ module.exports = {
                     {
                         name: "Legendary Super Saiyan Broly",
                         value:  "**lssjbroly1**: TEQ LR Legendary Super Saiyan Broly after transformation\n" +
+                                "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
                                 "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
                     }
@@ -1958,7 +1961,8 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**ugohan2**: STR UR Ultimate Gohan\n" +
+                        value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                                "**ugohan2**: STR UR Ultimate Gohan\n" +
                                 "**ugohan1z**: PHY UR Ultimate Gohan with EZA"
                     }
                 ]
@@ -2309,6 +2313,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**lssjbroly1**: TEQ LR Legendary Super Saiyan Broly after transformation\n" +
+                                "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
                                 "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
                     }
@@ -2498,7 +2503,8 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**fpfrieza1z**: PHY UR Frieza (Full Power) with EZA"
+                        value:  "**fpfrieza1**: PHY UR Frieza (Full Power) without EZA\n" +
+                                "**fpfrieza1z**: PHY UR Frieza (Full Power) with EZA"
                     }
                 ],
                 timestamp: new Date()

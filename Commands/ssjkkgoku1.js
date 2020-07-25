@@ -14,7 +14,7 @@ module.exports = {
            '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
            '[Otherworld Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Otherworld_Warriors_(Link_Skill)) (ATK +20%)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['sskkgoku1', 'Super Saiyan Goku (Angel) (Super Kaioken)'],
     execute(message, args) {
