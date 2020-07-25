@@ -76,73 +76,74 @@ module.exports = {
         }
         else
         {
+            if(!args.length)
+            {
+                message.channel.send({embed: {
+                    color: color,
+                    author:
+                    {
+                        name: message.author.username,
+                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                    },
+                    title: name,
+                    url: url,
+                    description: desc,
+                    thumbnail:
+                    {
+                        url: circle
+                    },
+                    fields: [
+                        {
+                            name: "Leader Skill",
+                            value: leader
+                        },
+                        {
+                            name: "Super Attack",
+                            value: superatk
+                        },
+                        {
+                            name: "Passive Skill",
+                            value: passive
+                        },
+                        {
+                            name: "Stats",
+                            value: stats
+                        },
+                        {
+                            name: "Links",
+                            value: links
+                        },
+                        {
+                            name: "Categories",
+                            value: cats
+                        },
+                        {
+                            name: "Attack Per Turn",
+                            value: apt
+                        },
+                        {
+                            name: "Best Linking Partners",
+                            value: blp
+                        },
+                        {
+                            name: "Details",
+                            value: deets
+                        }
+                    ],
+                    image:
+                    {
+                        url: character
+                    },
+                    timestamp: new Date(),
+                    footer:
+                    {
+                        text: footnotes
+                    }
+                }});
+            }
             var sub = args[0];
             switch (sub)
             {
-                case "":
-                    message.channel.send({embed: {
-                        color: color,
-                        author:
-                        {
-                            name: message.author.username,
-                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                        },
-                        title: name,
-                        url: url,
-                        description: desc,
-                        thumbnail:
-                        {
-                            url: circle
-                        },
-                        fields: [
-                            {
-                                name: "Leader Skill",
-                                value: leader
-                            },
-                            {
-                                name: "Super Attack",
-                                value: superatk
-                            },
-                            {
-                                name: "Passive Skill",
-                                value: passive
-                            },
-                            {
-                                name: "Stats",
-                                value: stats
-                            },
-                            {
-                                name: "Links",
-                                value: links
-                            },
-                            {
-                                name: "Categories",
-                                value: cats
-                            },
-                            {
-                                name: "Attack Per Turn",
-                                value: apt
-                            },
-                            {
-                                name: "Best Linking Partners",
-                                value: blp
-                            },
-                            {
-                                name: "Details",
-                                value: deets
-                            }
-                        ],
-                        image:
-                        {
-                            url: character
-                        },
-                        timestamp: new Date(),
-                        footer:
-                        {
-                            text: footnotes
-                        }
-                    }});
-                    break;
                 case "leader":
                     message.channel.send({embed: {
                         color: color,
