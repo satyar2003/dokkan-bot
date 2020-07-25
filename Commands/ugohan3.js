@@ -1,9 +1,19 @@
 module.exports = {
     name: 'ugohan3',
     description: 'INT UR Ultimate Gohan without EZA',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)',
+                 '[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
+                 '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
+                 '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
+                 '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
+                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)'],
+    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race) (ATK +700)',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
+           '[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter) (ATK +10%, Enemy DEF -10%)',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
+           '[Power Bestowed by God](https://dbz-dokkanbattle.fandom.com/wiki/Power_Bestowed_by_God) (ATK +2500 when Super Attack is launched)',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    status: 'complete',
     plural: 'false',
     aliases: ['Ultimate Gohan'],
     execute(message, args) {
@@ -13,15 +23,15 @@ module.exports = {
         const {plural} = require('./ugohan3.js')
         const {aliases} = require('./ugohan3.js')
         var color = 7028604;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Ultimate Power Surge\nUltimate Gohan";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Ultimate_Power_Surge_Ultimate_Gohan#Before%20Z-Awakening";
+        var desc = "Super INT UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/736438776141709342/card_1006700_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/736438753631010816/latest.png?width=459&height=612";
+        var leader = "<:int:729468835819946026> Type Ki +3, ATK +3000";
+        var superatk = "Burst Rush: Greatly raises ATK[1] and causes supreme damage to enemy";
+        var passive = "Victor's Fortitude: Ki +5, ATK +10000 when Ki is 7 or more";
+        var stats = "HP: 12,106 (55%)/16,306 (100%)\nATK: 11,278 (55%)/15,478 (100%)\nDEF: 7,508 (55%)/11,708 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -32,10 +42,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 906,703 (unsupported)/1,499,664 (supported)\nDefense: 51,515 (unsupported)/83,282 (supported) \nLinking Partner: [INT UR Gohan (Kid)](https://dbz-dokkanbattle.fandom.com/wiki/Roar_of_Rage_Gohan_(Kid)) \nTeam: [Siblings' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)/[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family) \nBuild: 6 Additional/15 Critical";
+        var blp = "[TEQ UR Vegito](https://dbz-dokkanbattle.fandom.com/wiki/True_Value_of_the_Potara_Vegito) - 4 links shared\n[STR UR Goku](https://dbz-dokkanbattle.fandom.com/wiki/Pinnacle_of_Fury_Goku) - 4 links shared\n[STR UR Gotenks](https://dbz-dokkanbattle.fandom.com/wiki/Victory_at_Hand_Gotenks) - 4 links shared";
+        var deets = "► 12 Ki Multiplier is 140%\n► [AGL SR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Renewed_Determination_Ultimate_Gohan) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Ultimate_Power_Surge_Ultimate_Gohan)** event";
+        var footnotes = "[1]: Raises ATK by 50% for 99 turns";
         if (status === 'incomplete')
         {
             var person = aliases[aliases.length - 1]
@@ -178,7 +188,11 @@ module.exports = {
                             value: superatk
                         }
                     ],
-                    timestamp: new Date()
+                    timestamp: new Date(),
+                    footer:
+                    {
+                        text: footnotes
+                    }
                 }});
             }
             else if (args[0] === 'passive')
