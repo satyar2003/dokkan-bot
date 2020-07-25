@@ -78,7 +78,7 @@ module.exports = {
         {
             var length = args.length;
             var sub = args[0];
-            switch (length, sub)
+            switch (true)
             {
                 case length == 0:
                     message.channel.send({embed: {
@@ -144,7 +144,7 @@ module.exports = {
                         }
                     }});
                     break;
-                case "leader":
+                case sub === "leader":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -168,7 +168,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "super":
+                case sub === "super":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -196,7 +196,7 @@ module.exports = {
                         }
                     }});
                     break;
-                case "passive":
+                case sub === "passive":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -220,7 +220,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "stats":
+                case sub === "stats":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -244,7 +244,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "links":
+                case sub === "links":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -268,7 +268,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "categories":
+                case sub === "categories":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -292,7 +292,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "apt":
+                case sub === "apt":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -316,7 +316,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "partners":
+                case sub === "partners":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -340,7 +340,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "details":
+                case sub === "details":
                     message.channel.send({embed: {
                         color: color,
                         author:
@@ -364,7 +364,7 @@ module.exports = {
                         timestamp: new Date()
                     }});
                     break;
-                case "art":
+                case sub === "art":
                     message.channel.send({embed: {
                         color: color,
                         author:
