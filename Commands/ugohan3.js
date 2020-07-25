@@ -76,323 +76,319 @@ module.exports = {
         }
         else
         {
-            if(!args.length)
+            var length = args.length;
+            var sub = args[0];
+            switch (sub)
             {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.username,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
+                case length == 0:
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
                         {
-                            name: "Leader Skill",
-                            value: leader
+                            name: message.author.username,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
                         },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
                         {
-                            name: "Super Attack",
-                            value: superatk
+                            url: circle
                         },
-                        {
-                            name: "Passive Skill",
-                            value: passive
-                        },
-                        {
-                            name: "Stats",
-                            value: stats
-                        },
-                        {
-                            name: "Links",
-                            value: links
-                        },
-                        {
-                            name: "Categories",
-                            value: cats
-                        },
-                        {
-                            name: "Attack Per Turn",
-                            value: apt
-                        },
-                        {
-                            name: "Best Linking Partners",
-                            value: blp
-                        },
-                        {
-                            name: "Details",
-                            value: deets
-                        }
-                    ],
-                    image:
-                    {
-                        url: character
-                    },
-                    timestamp: new Date(),
-                    footer:
-                    {
-                        text: footnotes
-                    }
-                }});
-                break;
-            }
-            else
-            {
-                var sub = args[0];
-                switch (sub)
-                {
-                    case "leader":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                                name: "Leader Skill",
+                                value: leader
                             },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
                             {
-                                url: circle
+                                name: "Super Attack",
+                                value: superatk
                             },
-                            fields: [
-                                {
-                                    name: "Leader Skill",
-                                    value: leader
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "super":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                                name: "Passive Skill",
+                                value: passive
                             },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
                             {
-                                url: circle
+                                name: "Stats",
+                                value: stats
                             },
-                            fields: [
-                                {
-                                    name: "Super Attack",
-                                    value: superatk
-                                }
-                            ],
-                            timestamp: new Date(),
-                            footer:
                             {
-                                text: footnotes
+                                name: "Links",
+                                value: links
+                            },
+                            {
+                                name: "Categories",
+                                value: cats
+                            },
+                            {
+                                name: "Attack Per Turn",
+                                value: apt
+                            },
+                            {
+                                name: "Best Linking Partners",
+                                value: blp
+                            },
+                            {
+                                name: "Details",
+                                value: deets
                             }
-                        }});
-                        break;
-                    case "passive":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                        ],
+                        image:
+                        {
+                            url: character
+                        },
+                        timestamp: new Date(),
+                        footer:
+                        {
+                            text: footnotes
+                        }
+                    }});
+                    break;
+                case "leader":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
+                                name: "Leader Skill",
+                                value: leader
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "super":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Passive Skill",
-                                    value: passive
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "stats":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                                name: "Super Attack",
+                                value: superatk
+                            }
+                        ],
+                        timestamp: new Date(),
+                        footer:
+                        {
+                            text: footnotes
+                        }
+                    }});
+                    break;
+                case "passive":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
+                                name: "Passive Skill",
+                                value: passive
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "stats":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Stats",
-                                    value: stats
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "links":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                                name: "Stats",
+                                value: stats
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "links":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
+                                name: "Links",
+                                value: links
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "categories":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Links",
-                                    value: links
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "categories":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                                name: "Categories",
+                                value: cats
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "apt":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
+                                name: "Attack Per Turn",
+                                value: apt
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "partners":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Categories",
-                                    value: cats
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "apt":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
+                                name: "Best Linking Partners",
+                                value: blp
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "details":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        fields: [
                             {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
-                            {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Attack Per Turn",
-                                    value: apt
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "partners":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
-                            {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
-                            {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Best Linking Partners",
-                                    value: blp
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "details":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
-                            {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
-                            {
-                                url: circle
-                            },
-                            fields: [
-                                {
-                                    name: "Details",
-                                    value: deets
-                                }
-                            ],
-                            timestamp: new Date()
-                        }});
-                        break;
-                    case "art":
-                        message.channel.send({embed: {
-                            color: color,
-                            author:
-                            {
-                                name: message.author.name,
-                                icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                            },
-                            title: name,
-                            url: url,
-                            description: desc,
-                            thumbnail:
-                            {
-                                url: circle
-                            },
-                            image:
-                            {
-                                url: character
-                            },
-                            timestamp: new Date()
-                        }});
-                        break;
-                    default:
-                        message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
-                        break;
-                }
+                                name: "Details",
+                                value: deets
+                            }
+                        ],
+                        timestamp: new Date()
+                    }});
+                    break;
+                case "art":
+                    message.channel.send({embed: {
+                        color: color,
+                        author:
+                        {
+                            name: message.author.name,
+                            icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
+                        },
+                        title: name,
+                        url: url,
+                        description: desc,
+                        thumbnail:
+                        {
+                            url: circle
+                        },
+                        image:
+                        {
+                            url: character
+                        },
+                        timestamp: new Date()
+                    }});
+                    break;
+                default:
+                    message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
+                    break;
             }
         }
     }
