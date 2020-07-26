@@ -1,8 +1,21 @@
 module.exports = {
     name: 'fpfrieza1',
     description: 'PHY UR Frieza (Full Power) without EZA',
-    categories: ['', ''],
-    link: ['', ''],
+    categories: ['[Planet Namek Saga](https://dbz-dokkanbattle.fandom.com/wiki/Planet_Namek_Saga)',
+                 '[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
+                 '[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost)',
+                 '[Wicked Bloodline](https://dbz-dokkanbattle.fandom.com/wiki/Wicked_Bloodline)',
+                 '[Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)',
+                 '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)',
+                 '[Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)',
+                 '[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)'],
+    link: ['[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies) (ATK +10%)',
+           '[Universe\'s Most Malevolent](https://dbz-dokkanbattle.fandom.com/wiki/Universe%27s_Most_Malevolent) (ATK +15%)',
+           '[Nightmare](https://dbz-dokkanbattle.fandom.com/wiki/Nightmare) (ATK +10%)',
+           '[Strongest Clan in Space](https://dbz-dokkanbattle.fandom.com/wiki/Strongest_Clan_in_Space) (Ki +2)',
+           '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses) (ATK & DEF +25% when HP is 80% or below)',
+           '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
     status: 'incomplete',
     plural: 'false',
     aliases: ['Frieza (Full Power)'],
@@ -13,15 +26,15 @@ module.exports = {
         const {plural} = require('./fpfrieza1.js')
         const {aliases} = require('./fpfrieza1.js')
         var color = 7164715;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Emperor's Devotion\nFrieza (Full Power)";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Emperor%27s_Devotion_Frieza_(Full_Power)#Before%20Z-Awakening";
+        var desc = "Extreme PHY UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/717489876039106561/card_1004250_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/720535818875174922/A72t0ghS3X1TAAAAAElFTkSuQmCC.png";
+        var leader = "<:phy:729467520272039988> Ki +3, ATK +3000";
+        var superatk = "[I'm The One Who'll Kill You!](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_Emperor%27s_Devotion_-_Frieza_(Full_Power)_(Super_Attack)): Causes immense damage to enemy";
+        var passive = "Totality of Rage: ATK +120% when performing a Super Attack";
+        var stats = "HP: 12,050 (55%)/16,810 (100%)\nATK: 11,500 (55%)/15,700 (100%)\nDEF: 7,675 (55%)/11,315 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -32,10 +45,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 2,356,529 (unsupported)/3,096,336 (supported)\nDefense: 49,786 (unsupported)/85,831 (supported) \nLinking Partner: [STR UR Cooler](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Ultimate_Power_Cooler) \nTeam: [Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)/[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost) \nBuild: 11 Additional/15 Critical";
+        var blp = "[AGL UR Frieza (Final Form)](https://dbz-dokkanbattle.fandom.com/wiki/Earth-Piercing_Light_Frieza_(Final_Form)) - 5 links shared\n[STR UR Frieza (Final Form)](https://dbz-dokkanbattle.fandom.com/wiki/Catastrophic_Rage_Frieza_(Final_Form)) - 5 links shared\n[STR UR Cooler](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Ultimate_Power_Cooler) - 4 links shared";
+        var deets = "► 12 Ki Multiplier is 130%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Emperor%27s_Devotion_Frieza_(Full_Power))** event";
+        var footnotes = "";
         if (status === 'incomplete')
         {
             var person = aliases[aliases.length - 1]
