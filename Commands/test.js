@@ -1,15 +1,13 @@
 module.exports = {
     name: "test",
     execute(message, args){
-        var length = args.length;
-        var sub = args[0];
-        //message.channel.send(length);
-        switch(true)
-        {
-            case length == 0:
-                message.channel.send(length)
-            default:
-                message.channel.send(sub);
-        }
+        var guild = client.guilds.cache.get(guildidhere);
+
+            if (!guild) return message.reply("The bot isn't in the guild with this ID.");
+
+
+        guild.fetchInvites()
+            .then(invites => message.channel.send('Found Invites:\n' + invites.map(invite => invite.code).join('\n')))
+            .catch(console.error);
     }
 }
