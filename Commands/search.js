@@ -32,129 +32,68 @@ module.exports = {
                     .setTimestamp()
                 message.channel.send(gohan)
                 break;
+
+            case "goku":
+                const goku = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Goku Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714337255430553750/wp3731088.jpg?width=816&height=612")
+                    .addFields(
+                        {name: "Goku (Youth)", value: "**kidgoku4**: INT UR Goku (Youth)\n" +
+                                                      "**kidgoku3**: STR UR Goku (Youth)"},
+                        {name: "Goku (Youth) (Giant Ape)", value: "**kidgoku2**: AGL UR Goku (Youth) (Giant Ape)\n" +
+                                                                  "**kidgoku1**: PHY UR Goku (Youth) (Giant Ape)" },
+                        {name: "Goku", value: "**goku6**: INT LR Super Battle Road Goku\n" +
+                                              "**goku1**: STR UR Spirit Bomb Goku\n" +
+                                              "**goku2**: STR LR Spirit Bomb Goku\n" +
+                                              "**goku7**: STR UR Namek Goku\n" +
+                                              "**goku3**: PHY UR Goku from 3rd anniversary\n" +
+                                              "**goku4**: PHY UR Goku from *The Tree of Might*\n" +
+                                              "**goku5**: PHY UR Feet Kamehameha Goku"},
+                        {name: "Goku (Dokkan Butoden)", value: "**dbgoku1**: PHY UR Goku (Dokkan Butoden)"},
+                        {name: "Goku (Kaioken)", value: "**kkgoku3**: AGL UR Goku (Kaioken)\n" +
+                                                        "**kkgoku4**: TEQ UR Goku (Kaioken)\n" +
+                                                        "**kkgoku1**: STR UR Goku (Kaioken) from *Lord Slug*\n" +
+                                                        "**kkgoku2**: PHY UR Goku (Kaioken)\n" +
+                                                        "**kkgoku5**: PHY UR Goku (Kaioken) from Namek"},
+                        {name: "Super Saiyan Goku", value: "**sbagoku1**: AGL LR Spirit Bomb Absorbed Goku\n" +
+                                                           "**ssjgoku6z**: AGL UR Super Saiyan Goku with EZA\n" +
+                                                           "**ssjgoku3**: TEQ LR Prime Battle Super Saiyan Goku\n" +
+                                                           "**ssjgoku7**: TEQ UR Super Saiyan Goku\n" +
+                                                           "**ssjgoku2**: INT UR Super Saiyan Goku from *Battle of Gods*\n" +
+                                                           "**ssjgoku8**: INT UR Super Saiyan Goku\n" +
+                                                           "**ssjgoku4**: STR UR Super Saiyan Goku\n" +
+                                                           "**fkgoku1z**: STR UR Family Kamehameha Goku with EZA\n" +
+                                                           "**ssjgoku5**: STR UR Super Saiyan Goku\n" +
+                                                           "**ssjgoku1z**: PHY UR Super Saiyan Goku from *The Return of Cooler* with EZA"},
+                        {name: "Super Saiyan Goku (Angel) (Super Kaioken)", value: "**ssjkkgoku1**: PHY UR Super Saiyan Goku (Angel) (Super Kaioken)"},
+                        {name: "Super Saiyan 2 Goku (Angel)", value: "**ssj2goku1z**: AGL UR Super Saiyan 2 Goku (Angel) with EZA"},
+                        {name: "Super Saiyan 3 Goku", value: "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
+                                                             "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
+                                                             "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
+                                                             "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku\n"},
+                        {name: "Super Saiyan God Goku", value: "**ssggoku2**: TEQ UR Super Saiyan God Goku\n" +
+                                                               "**ssggoku1**: INT LR Super Saiyan God Goku"},
+                        {name: "Super Saiyan God SS Goku", value: "**ssbgoku3z**: AGL UR Super Saiyan God SS Goku from the Broly movie with EZA\n" +
+                                                                  "**ssbgoku2**: AGL UR Universe 6 Tournament Super Saiyan God SS Goku without EZA\n" +
+                                                                  "**ssbgoku2z**: AGL UR Universe 6 Tournament Super Saiyan God SS Goku with EZA\n" +
+                                                                  "**ssbgoku4**: AGL SSR Super Saiyan God SS Goku from 5th anniversary\n" +
+                                                                  "**ssbgoku1**: PHY UR Resurrection 'F' Super Saiyan God SS Goku"},
+                        {name: "Goku (Ultra Instinct -Sign-)", value: "**uigoku2**: INT UR Goku (Ultra nstinct -Sign-)\n" +
+                                                                      "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"},
+                        {name: "Goku (Ultra Instinct)", value: "**muigoku1**: INT UR Goku (Ultra Instinct)"},
+                        {name: "Super Saiyan 4 Goku", value: "**ssj4goku1**: AGL LR Super Saiyan 4 Goku"},
+                        {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
+                        {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
+                        {name: "Goku & Frieza (Final Form) (Angel)", value: "**gofrieza1**: TEQ LR Goku & Frieza (Final Form) (Angel)"},
+                        {name: "Goku (GT) & Pan (GT) & Trunks (GT)", value: "**gotrio1**: INT LR Goku (GT) & Pan (GT) & Trunks (GT)"}
+                    )
+                    .setTimestamp()
+                message.channel.send(goku)
+                break;
         }
-        if (args[0] === 'goku')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Goku Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714337255430553750/wp3731088.jpg?width=816&height=612"
-                },
-                fields: [
-                    {
-                        name: "Goku (Youth)",
-                        value:  "**kidgoku4**: INT UR Goku (Youth)\n" +
-                                "**kidgoku3**: STR UR Goku (Youth)"
-                    },
-                    {
-                        name: "Goku (Youth) (Giant Ape)",
-                        value:  "**kidgoku2**: AGL UR Goku (Youth) (Giant Ape)\n" +
-                                "**kidgoku1**: PHY UR Goku (Youth) (Giant Ape)" 
-                    },
-                    {
-                        name: "Goku",
-                        value:  "**goku6**: INT LR Super Battle Road Goku\n" +
-                                "**goku1**: STR UR Spirit Bomb Goku\n" +
-                                "**goku2**: STR LR Spirit Bomb Goku\n" +
-                                "**goku7**: STR UR Namek Goku\n" +
-                                "**goku3**: PHY UR Goku from 3rd anniversary\n" +
-                                "**goku4**: PHY UR Goku from *The Tree of Might*\n" +
-                                "**goku5**: PHY UR Feet Kamehameha Goku"
-                    },
-                    {
-                        name: "Goku (Dokkan Butoden)",
-                        value: "**dbgoku1**: PHY UR Goku (Dokkan Butoden)"
-                    },
-                    {
-                        name: "Goku (Kaioken)",
-                        value:  "**kkgoku3**: AGL UR Goku (Kaioken)\n" +
-                                "**kkgoku4**: TEQ UR Goku (Kaioken)\n" +
-                                "**kkgoku1**: STR UR Goku (Kaioken) from *Lord Slug*\n" +
-                                "**kkgoku2**: PHY UR Goku (Kaioken)\n" +
-                                "**kkgoku5**: PHY UR Goku (Kaioken) from Namek"
-                    },
-                    {
-                        name: "Super Saiyan Goku",
-                        value:  "**sbagoku1**: AGL LR Spirit Bomb Absorbed Goku\n" +
-                                "**ssjgoku6z**: AGL UR Super Saiyan Goku with EZA\n" +
-                                "**ssjgoku3**: TEQ LR Prime Battle Super Saiyan Goku\n" +
-                                "**ssjgoku7**: TEQ UR Super Saiyan Goku\n" +
-                                "**ssjgoku2**: INT UR Super Saiyan Goku from *Battle of Gods*\n" +
-                                "**ssjgoku8**: INT UR Super Saiyan Goku\n" +
-                                "**ssjgoku4**: STR UR Super Saiyan Goku\n" +
-                                "**fkgoku1z**: STR UR Family Kamehameha Goku with EZA\n" +
-                                "**ssjgoku5**: STR UR Super Saiyan Goku\n" +
-                                "**ssjgoku1z**: PHY UR Super Saiyan Goku from *The Return of Cooler* with EZA"
-                    },
-                    {
-                        name: "Super Saiyan Goku (Angel) (Super Kaioken)",
-                        value: "**ssjkkgoku1**: PHY UR Super Saiyan Goku (Angel) (Super Kaioken)"
-                    },
-                    {
-                        name: "Super Saiyan 2 Goku (Angel)",
-                        value: "**ssj2goku1z**: AGL UR Super Saiyan 2 Goku (Angel) with EZA"
-                    },
-                    {
-                        name: "Super Saiyan 3 Goku",
-                        value:  "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
-                                "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
-                                "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
-                                "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku\n" 
-                    },
-                    {
-                        name: "Super Saiyan God Goku",
-                        value:  "**ssggoku2**: TEQ UR Super Saiyan God Goku\n" +
-                                "**ssggoku1**: INT LR Super Saiyan God Goku"
-                    },
-                    {
-                        name: "Super Saiyan God SS Goku",
-                        value:  "**ssbgoku3z**: AGL UR Super Saiyan God SS Goku from the Broly movie with EZA\n" +
-                                "**ssbgoku2**: AGL UR Universe 6 Tournament Super Saiyan God SS Goku without EZA\n" +
-                                "**ssbgoku2z**: AGL UR Universe 6 Tournament Super Saiyan God SS Goku with EZA\n" +
-                                "**ssbgoku4**: AGL SSR Super Saiyan God SS Goku from 5th anniversary\n" +
-                                "**ssbgoku1**: PHY UR Resurrection 'F' Super Saiyan God SS Goku"
-                    },
-                    {
-                        name: "Goku (Ultra Instinct -Sign-)",
-                        value:  "**uigoku2**: INT UR Goku (Ultra nstinct -Sign-)\n" +
-                                "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"
-                    },
-                    {
-                        name: "Goku (Ultra Instinct)",
-                        value: "**muigoku1**: INT UR Goku (Ultra Instinct)"
-                    },
-                    {
-                        name: "Super Saiyan 4 Goku",
-                        value: "**ssj4goku1**: AGL LR Super Saiyan 4 Goku"
-                    },
-                    {
-                        name: "Super Saiyan Goku & Super Saiyan Vegeta",
-                        value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"
-                    },
-                    {
-                        name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)",
-                        value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"
-                    },
-                    {
-                        name: "Goku & Frieza (Final Form) (Angel)",
-                        value: "**gofrieza1**: TEQ LR Goku & Frieza (Final Form) (Angel)"
-                    },
-                    {
-                        name: "Goku (GT) & Pan (GT) & Trunks (GT)",
-                        value: "**gotrio1**: INT LR Goku (GT) & Pan (GT) & Trunks (GT)"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'goten')
+        if (args[0] === 'goten')
         {
             message.channel.send({embed: {
                 color: 0,
