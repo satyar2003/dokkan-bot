@@ -31,6 +31,7 @@ module.exports = {
                                                        "**fzamasu2**: AGL UR Fusion Zamasu (Mutated) after active skill"},
                         {name: "Goku Black (Super Saiyan Rosé) & Zamasu", value: "**rosemasu1**: TEQ LR Goku Black (Super Saiyan Rosé) & Zamasu"}
                     )
+                    .setTimestamp()
                 message.channel.send(black)
                 break;
 
@@ -47,6 +48,7 @@ module.exports = {
                                                    "**kbuu1z**: PHY UR Buu (Kid) with EZA"},
                         {name: "Mr. Buu", value: "**mrbuu1**: TEQ UR Mr. Buu"}
                     )
+                    .setTimestamp()
                 message.channel.send(buu)
                 break;
 
@@ -77,11 +79,11 @@ module.exports = {
                     .setTitle("Gohan Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714336855792812052/Gohan_forms.jpg?width=911&height=613")
                     .addFields(
-                        {name: "Super Saiyan Gohan (Youth)", value: "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)\n" +
-                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
+                        {name: "Super Saiyan Gohan (Youth)", value: "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)"},
                         {name: "Super Saiyan 2 Gohan (Youth)", value: "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
                                                                       "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"},
-                        {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA"},
+                        {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA\n" +
+                                                                   "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
                         {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                                         "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
                                                         "**ugohan2**: STR UR Ultimate Gohan\n" +
@@ -163,18 +165,33 @@ module.exports = {
                 message.channel.send(goten)
                 break;
 
-            /*case charSearch == "vegeta":
+            case charSearch == "vegeta":
                 const vegeta = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339553145782273/vegeta_forms.jpg?width=351&height=612")
                     .setTitle("Vegeta Commands")
                     .addFields(
-                        {name: "Vegeta", value: "*nandv2**: AGL LR Vegeta after exchange"}
+                        {name: "Vegeta", value: "*nandv2**: AGL LR Vegeta after exchange"},
+                        {name: "Super Saiyan Vegeta", value: "**ssjvegeta1**: INT LR Prime Battle Super Saiyan Vegeta"},
+                        {name: "Super Saiyan 2 Vegeta", value: "**ssj2vegeta2**: TEQ UR Super Saiyan 2 Vegeta before transformation"},
+                        {name: "Majin Vegeta", value: "**mvegeta2**: AGL LR Majin Vegeta\n" +
+                                                      "**mvegeta1**: TEQ UR Majin Vegeta after transformation"},
+                        {name: "Super Saiyan 3 Vegeta", value: "**ssj3vegeta2**: STR UR Super Saiyan 3 Vegeta without EZA\n" +
+                                                               "**ssj3vegeta2z**: STR UR Super Saiyan 3 Vegeta with EZA\n" +
+                                                               "**ssj3vegeta1**: PHY UR Super Saiyan 3 Vegeta (Xeno)"},
+                        {name: "Super Saiyan God Vegeta", value: "**ssgvegeta1**: STR UR Super Saiyan God Vegeta from the Broly movie"},
+                        {name: "Super Saiyan God SS Vegeta", value: "**ssbvegeta2z**: TEQ UR Super Saiyan God SS Vegeta from the Broly movie with EZA\n" +
+                                                                    "**ssbvegeta1**: TEQ UR Resurrection 'F' Super Saiyan God SS Vegeta"},
+                        {name: "Super Saiyan 4 Vegeta", value: "**ssj4vegeta1**: STR LR Super Saiyan 4 Vegeta"},
+                        {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
+                        {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
+                        {name: "Super Saiyan 2 Vegeta & Bulma", value: "**ssj2vegeta1**: STR UR Super Saiyan 2 Vegeta & Bulma"},
+                        {name: "Nappa/Vegeta", value: "**nandv1**: AGL LR Nappa/Vegeta before exchange"}
                     )
                     .setTimestamp()
                 message.channel.send(vegeta)
-                break;*/
+                break;
 
             case charSearch == "vegito":
             case charSearch == "bejito":
