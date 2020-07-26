@@ -1,10 +1,10 @@
 const Discord = require('discord.js')
-const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
 
 module.exports = {
     name: 'search',
     description: 'A search function for units',
     execute(message, args) {
+        var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         var charSearch = args[0]
         switch (charSearch)
         {
