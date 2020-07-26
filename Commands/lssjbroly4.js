@@ -15,7 +15,7 @@ module.exports = {
            '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
            '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker) (ATK +20% when HP is 50% or below)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'complete',
+    status: 'incomplete',
     plural: 'false',
     aliases: ['lssbroly4', 'Legendary Super Saiyan Broly'],
     execute(message, args) {
@@ -172,6 +172,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Categories", cats)
                         .setTimestamp()
                     message.channel.send(category)
@@ -183,6 +184,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Attack Per Turn", apt)
                         .setTimestamp()
                     message.channel.send(attackPerTurn)
@@ -194,6 +196,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Attack Per Turn", apt)
                         .setTimestamp()
                     message.channel.send(bestLinkingPartners)
@@ -205,6 +208,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Details", deets)
                         .setTimestamp()
                     message.channel.send(unitDetails)
@@ -216,6 +220,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .setImage(character)
                         .setTimestamp()
                     message.channel.send(cardArt)
