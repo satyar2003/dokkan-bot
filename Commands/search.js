@@ -172,7 +172,7 @@ module.exports = {
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339553145782273/vegeta_forms.jpg?width=351&height=612")
                     .setTitle("Vegeta Commands")
                     .addFields(
-                        {name: "Vegeta", value: "*nandv2**: AGL LR Vegeta after exchange"},
+                        {name: "Vegeta", value: "**nandv2**: AGL LR Vegeta after exchange"},
                         {name: "Super Saiyan Vegeta", value: "**ssjvegeta1**: INT LR Prime Battle Super Saiyan Vegeta"},
                         {name: "Super Saiyan 2 Vegeta", value: "**ssj2vegeta2**: TEQ UR Super Saiyan 2 Vegeta before transformation"},
                         {name: "Majin Vegeta", value: "**mvegeta2**: AGL LR Majin Vegeta\n" +
