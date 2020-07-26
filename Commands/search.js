@@ -7,7 +7,7 @@ module.exports = {
         var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         var charSearch = args[0]
         var length = args.length
-        switch (true, charSearch)
+        switch (true)
         {
             case length == 0:
                 message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
