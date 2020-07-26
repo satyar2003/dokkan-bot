@@ -34,7 +34,7 @@ module.exports = {
         var leader = "<:phy:729467520272039988> Type Ki +3 and HP, ATK & DEF +70%";
         var superatk = "[I'm the One Who'll Kill You!](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_Emperor%27s_Devotion_-_Frieza_(Full_Power)_(Super_Attack)): Causes immense damage to enemy and raises DEF by 30% for 3 turns";
         var passive = "Totality of Rage: ATK +120% when performing a Super Attack; Ki +3 and DEF +30% as the 1st attacker in a turn";
-        var stats = "HP: 12,050 (55%)/16,810 (100%)\nATK: 11,500 (55%)/15,700 (100%)\nDEF: 7,675 (55%)/11,315 (100%)";
+        var stats = "HP: 14,728 (55%)/19,488 (100%)\nATK: 13,406 (55%)/17,606 (100%)\nDEF: 8,530 (55%)/12,170 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
