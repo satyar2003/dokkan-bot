@@ -5,12 +5,69 @@ module.exports = {
     description: 'A search function for units',
     execute(message, args) {
         var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        var charSearch = args[0]
+        var charSearch = args[0].toLowerCase()
         var length = args.length
         switch (true)
         {
             case length == 0:
                 message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
+                break;
+
+            case charSearch == "black":
+                const black = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Goku Black/Zamasu Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714338154416570408/goku_black.png?width=408&height=612")
+                    .addFields(
+                        {name: "Zamasu", value: "**zamasu1**: AGL UR Zamasu before transformation"},
+                        {name: "Zamasu (Goku)", value: "**zamasug1**: STR LR Zamasu (Goku) without EZA"},
+                        {name: "Goku Black", value: "**gb2**: INT UR Goku Black\n" +
+                                                    "**gb1**: PHY UR Goku Black without EZA\n" + 
+                                                    "**gb1z**: PHY UR Goku Black with EZA"},
+                        {name: "Goku Black (Super Saiyan Rosé)", value: "**rose1z**: AGL UR Goku Black (Super Saiyan Rosé) with EZA\n" +
+                                                                        "**rose2**: STR UR Goku Black (Super Saiyan Rosé)"},
+                        {name: "Fusion Zamasu", value: "**fzamasu1**: AGL UR Fusion Zamasu after transformation\n" +
+                                                       "**fzamasu2**: AGL UR Fusion Zamasu (Mutated) after active skill"},
+                        {name: "Goku Black (Super Saiyan Rosé) & Zamasu", value: "**rosemasu1**: TEQ LR Goku Black (Super Saiyan Rosé) & Zamasu"}
+                    )
+                message.channel.send(black)
+                break;
+
+            case charSearch == "buu":
+                const buu = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Buu Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339616618184744/majin_buu.jpg")
+                    .addFields(
+                        {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
+                                                                    "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
+                        {name: "Buu (Kid)", value: "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
+                                                   "**kbuu1z**: PHY UR Buu (Kid) with EZA"},
+                        {name: "Mr. Buu", value: "**mrbuu1**: TEQ UR Mr. Buu"}
+                    )
+                message.channel.send(buu)
+                break;
+
+            case charSearch == "cell":
+                const cell = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Cell Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714338442418323466/cell_forms.jpg?width=429&height=612")
+                    .addFields(
+                        {name: "Cell (1st Form)", value: "**impcell1**: TEQ LR Cell (1st Form)"},
+                        {name: "Perfect Cell", value: "**pcell1**: TEQ UR Perfect Cell without EZA\n" +
+                                                      "**pcell1z**: TEQ UR Perfect Cell with EZA\n" +
+                                                      "**pcell2z**: INT UR Perfect Cell with EZA\n" +
+                                                      "**pcell3z**: STR UR Perfect Cell with EZA\n" +
+                                                      "**pcell4**: INT LR Cell (Perfect Form) before transformation\n" +
+                                                      "**pcell5**: INT LR Perfect Cell after transformation\n"},
+                        {name: "Cell (Perfect Form) & Cell Jr.", value: "**pcell6**: PHY LR Cell (Perfect Form) & Cell Jr."}
+                    )
+                    .setTimestamp()
+                message.channel.send(cell)
                 break;
 
             case charSearch == "gohan":
@@ -45,12 +102,12 @@ module.exports = {
                                                       "**kidgoku3**: STR UR Goku (Youth)"},
                         {name: "Goku (Youth) (Giant Ape)", value: "**kidgoku2**: AGL UR Goku (Youth) (Giant Ape)\n" +
                                                                   "**kidgoku1**: PHY UR Goku (Youth) (Giant Ape)" },
-                        {name: "Goku", value: "**goku6**: INT LR Super Battle Road Goku\n\n" +
-                                              "**goku1**: STR UR Spirit Bomb Goku\n\n" +
-                                              "**goku2**: STR LR Spirit Bomb Goku\n\n" +
-                                              "**goku7**: STR UR Namek Goku\n\n" +
-                                              "**goku3**: PHY UR Goku from 3rd anniversary\n\n" +
-                                              "**goku4**: PHY UR Goku from *The Tree of Might*\n\n" +
+                        {name: "Goku", value: "**goku6**: INT LR Super Battle Road Goku\n" +
+                                              "**goku1**: STR UR Spirit Bomb Goku\n" +
+                                              "**goku2**: STR LR Spirit Bomb Goku\n" +
+                                              "**goku7**: STR UR Namek Goku\n" +
+                                              "**goku3**: PHY UR Goku from 3rd anniversary\n" +
+                                              "**goku4**: PHY UR Goku from *The Tree of Might*\n" +
                                               "**goku5**: PHY UR Feet Kamehameha Goku"},
                         {name: "Goku (Dokkan Butoden)", value: "**dbgoku1**: PHY UR Goku (Dokkan Butoden)"},
                         {name: "Goku (Kaioken)", value: "**kkgoku3**: AGL UR Goku (Kaioken)\n" +
@@ -93,256 +150,54 @@ module.exports = {
                     .setTimestamp()
                 message.channel.send(goku)
                 break;
+
+            case charSearch == "goten":
+                const goten = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714337816452137040/GotenNV.png?width=843&height=612")
+                    .addFields(
+                        {name: "Super Saiyan Goten", value: "**fkgoten1z**: STR UR Family Kamehameha Goten with EZA"}
+                    )
+                    .setTimestamp()
+                message.channel.send(goten)
+                break;
+
+            /*case charSearch == "vegeta":
+                const vegeta = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339553145782273/vegeta_forms.jpg?width=351&height=612")
+                    .setTitle("Vegeta Commands")
+                    .addFields(
+                        {name: "Vegeta", value: "*nandv2**: AGL LR Vegeta after exchange"}
+                    )
+                    .setTimestamp()
+                message.channel.send(vegeta)
+                break;*/
+
+            case charSearch == "vegito":
+            case charSearch == "bejito":
+                const vegito = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339669621342240/vegito.png?width=438&height=613")
+                    .addFields(
+                        {name: "Vegito", value: "**vegito1**: TEQ LR Vegito"},
+                        {name: "Super Vegito", value: "**sv1**: AGL UR Super Vegito without EZA\n" +
+                                                      "**sv1z**: AGL UR Super Vegito with EZA\n" +
+                                                      "**sv3**: INT LR Super Vegito\n" +
+                                                      "**sv2**: PHY UR Super Vegito"},
+                        {name: "Super Saiyan God SS Vegito", value: "**vb2**: TEQ UR Super Saiyan God SS Vegito\n" +
+                                                                    "**vb3**: TEQ LR Super Saiyan God SS Vegito\n" +
+                                                                    "**vb1**: PHY UR Super Saiyan God SS Vegito without EZA\n" +
+                                                                    "**vb1z**: PHY UR Super Saiyan God SS Vegito with EZA"}
+                    )
+                    .setTimestamp()
+                message.channel.send(vegito)
+                break;
         }
-        if (args[0] === 'goten')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Goten Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714337816452137040/GotenNV.png?width=843&height=612"
-                },
-                fields: [
-                    {
-                        name: "Super Saiyan Goten",
-                        value: "**fkgoten1z**: STR UR Family Kamehameha Goten with EZA"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'black')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Goku Black/Zamasu Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714338154416570408/goku_black.png?width=408&height=612"
-                },
-                fields: [
-                    {
-                        name: "Zamasu",
-                        value: "**zamasu1**: AGL UR Zamasu before transformation"
-                    },
-                    {
-                        name: "Zamasu (Goku)",
-                        value: "**zamasug1**: STR LR Zamasu (Goku) without EZA"
-                    },
-                    {
-                        name: "Goku Black",
-                        value:  "**gb2**: INT UR Goku Black\n" +
-                                "**gb1**: PHY UR Goku Black without EZA\n" + 
-                                "**gb1z**: PHY UR Goku Black with EZA"
-                    },
-                    {
-                        name: "Goku Black (Super Saiyan Rosé)",
-                        value:  "**rose1z**: AGL UR Goku Black (Super Saiyan Rosé) with EZA\n" +
-                                "**rose2**: STR UR Goku Black (Super Saiyan Rosé)"
-                    },
-                    {
-                        name: "Fusion Zamasu",
-                        value:  "**fzamasu1**: AGL UR Fusion Zamasu after transformation\n" +
-                                "**fzamasu2**: AGL UR Fusion Zamasu (Mutated) after active skill"
-                    },
-                    {
-                        name: "Goku Black (Super Saiyan Rosé) & Zamasu",
-                        value: "**rosemasu1**: TEQ LR Goku Black (Super Saiyan Rosé) & Zamasu"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'cell')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Cell Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714338442418323466/cell_forms.jpg?width=429&height=612"
-                },
-                fields: [
-                    {
-                        name: "Cell (1st Form)",
-                        value: "**impcell1**: TEQ LR Cell (1st Form)"
-                    },
-                    {
-                        name: "Perfect Cell",
-                        value:  "**pcell1**: TEQ UR Perfect Cell without EZA\n" + 
-                                "**pcell1z**: TEQ UR Perfect Cell with EZA\n" +
-                                "**pcell2z**: INT UR Perfect Cell with EZA\n" +
-                                "**pcell3z**: STR UR Perfect Cell with EZA\n" +
-                                "**pcell4**: INT LR Cell (Perfect Form) before transformation\n" +
-                                "**pcell5**: INT LR Perfect Cell after transformation"
-                    },
-                    {
-                        name: "Cell (Perfect Form) & Cell Jr.",
-                        value: "**pcell6**: PHY LR Cell (Perfect Form) & Cell Jr."
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'bejito' || args[0] === 'vegito')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Vegito Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714339669621342240/vegito.png?width=438&height=613"
-                },
-                fields: [
-                    {
-                        name: "Vegito",
-                        value: "**vegito1**: TEQ LR Vegito"
-                    },
-                    {
-                        name: "Super Vegito",
-                        value:  "**sv1**: AGL UR Super Vegito without EZA\n" + 
-                                "**sv1z**: AGL UR Super Vegito with EZA\n" +
-                                "**sv3**: INT LR Super Vegito\n" +
-                                "**sv2**: PHY UR Super Vegito"
-                    },
-                    {
-                        name: "Super Saiyan God SS Vegito",
-                        value:  "**vb2**: TEQ UR Super Saiyan God SS Vegito\n" +
-                                "**vb3**: TEQ LR Super Saiyan God SS Vegito\n" +
-                                "**vb1**: PHY UR Super Saiyan God SS Vegito without EZA\n" + 
-                                "**vb1z**: PHY UR Super Saiyan God SS Vegito with EZA\n" 
-                                
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'buu')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Buu Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714339616618184744/majin_buu.jpg"
-                },
-                fields: [
-                    {
-                        name: "Majin Buu (Ultimate Gohan)",
-                        value:  "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
-                                "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"
-                    },
-                    {
-                        name: "Buu (Kid)",
-                        value:  "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
-                                "**kbuu1z**: PHY UR Buu (Kid) with EZA"
-                    },
-                    {
-                        name: "Mr. Buu",
-                        value: "**mrbuu1**: TEQ UR Mr. Buu"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'vegeta')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Vegeta Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714339553145782273/vegeta_forms.jpg?width=351&height=612"
-                },
-                fields: [
-                    {
-                        name: "Vegeta",
-                        value: "**nandv2**: AGL LR Vegeta after exchange"
-                    },
-                    {
-                        name: "Super Saiyan Vegeta",
-                        value: "**ssjvegeta1**: INT LR Prime Battle Super Saiyan Vegeta"
-                    },
-                    {
-                        name: "Super Saiyan 2 Vegeta",
-                        value: "**ssj2vegeta2**: TEQ UR Super Saiyan 2 Vegeta before transformation"
-                    },
-                    {
-                        name: "Majin Vegeta",
-                        value:  "**mvegeta2**: AGL LR Majin Vegeta\n" +
-                                "**mvegeta1**: TEQ UR Majin Vegeta after transformation"
-                    },
-                    {
-                        name: "Super Saiyan 3 Vegeta",
-                        value:  "**ssj3vegeta2**: STR UR Super Saiyan 3 Vegeta without EZA\n" + 
-                                "**ssj3vegeta2z**: STR UR Super Saiyan 3 Vegeta with EZA\n" +
-                                "**ssj3vegeta1**: PHY UR Super Saiyan 3 Vegeta (Xeno)"
-                    },
-                    {
-                        name: "Super Saiyan God Vegeta",
-                        value:  "**ssgvegeta1**: STR UR Super Saiyan God Vegeta from the Broly movie"
-                    },
-                    {
-                        name: "Super Saiyan God SS Vegeta",
-                        value:  "**ssbvegeta2z**: TEQ UR Super Saiyan God SS Vegeta from the Broly movie with EZA\n" +
-                                "**ssbvegeta1**: TEQ UR Resurrection 'F' Super Saiyan God SS Vegeta"
-                    },
-                    {
-                        name: "Super Saiyan 4 Vegeta",
-                        value: "**ssj4vegeta1**: STR LR Super Saiyan 4 Vegeta"
-                    },
-                    {
-                        name: "Super Saiyan Goku & Super Saiyan Vegeta",
-                        value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"
-                    },
-                    {
-                        name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)",
-                        value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"
-                    },
-                    {
-                        name: "Super Saiyan 2 Vegeta & Bulma",
-                        value: "**ssj2vegeta1**: STR UR Super Saiyan 2 Vegeta & Bulma"
-                    },
-                    {
-                        name: "Nappa/Vegeta",
-                        value: "**nandv1**: AGL LR Nappa/Vegeta before exchange"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'cooler')
+        if (args[0] === 'cooler')
         {
             message.channel.send({embed: {
                 color: 0,
