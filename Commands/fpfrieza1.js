@@ -16,7 +16,7 @@ module.exports = {
            '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses) (ATK & DEF +25% when HP is 80% or below)',
            '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'complete',
+    status: 'incomplete',
     plural: 'false',
     aliases: ['Frieza (Full Power)'],
     execute(message, args) {
