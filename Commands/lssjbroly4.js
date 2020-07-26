@@ -15,7 +15,7 @@ module.exports = {
            '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
            '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker) (ATK +20% when HP is 50% or below)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATk +15%)'],
-    status: 'complete',
+    status: 'incomplete',
     plural: 'false',
     aliases: ['lssbroly4', 'Legendary Super Saiyan Broly'],
     execute(message, args) {
@@ -101,7 +101,7 @@ module.exports = {
                             {name: "Details", value: deets}
                         )
                         .setImage(character)
-                        .setFooter(footer)
+                        .setFooter(footnotes)
                         .setTimestamp()
                     message.channel.send(fullCard)
                     break;
