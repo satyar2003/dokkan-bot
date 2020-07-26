@@ -13,7 +13,7 @@ module.exports = {
                 message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
                 break;
 
-            case "gohan":
+            case charSearch == "gohan":
                 const gohan = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -34,7 +34,7 @@ module.exports = {
                 message.channel.send(gohan)
                 break;
 
-            case "goku":
+            case charSearch == "goku":
                 const goku = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
