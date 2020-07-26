@@ -1,52 +1,39 @@
+const Discord = require('discord.js')
+const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
+
 module.exports = {
     name: 'search',
     description: 'A search function for units',
     execute(message, args) {
-        if (!args.length)
+        var charSearch = args[0]
+        switch (charSearch)
         {
-            message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
+            default:
+                message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
+                break;
+
+            case "gohan":
+                const gohan = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Gohan Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714336855792812052/Gohan_forms.jpg?width=911&height=613")
+                    .addFields(
+                        {name: "Super Saiyan Gohan (Youth)", value: "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)\n" +
+                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
+                        {name: "Super Saiyan 2 Gohan (Youth)", value: "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
+                                                                      "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"},
+                        {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA"},
+                        {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                                                        "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
+                                                        "**ugohan2**: STR UR Ultimate Gohan\n" +
+                                                        "**ugohan1z**: PHY UR Ultimate Gohan with EZA"}
+                    )
+                    .setTimestamp()
+                message.channel.send(gohan)
+                break;
         }
-        else if (args[0] === 'gohan')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Gohan Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714336855792812052/Gohan_forms.jpg?width=911&height=613"
-                },
-                fields: [
-                    {
-                        name: "Super Saiyan Gohan (Youth)",
-                        value:  "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)\n" +
-                                "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"
-                    },
-                    {
-                        name: "Super Saiyan 2 Gohan (Youth)",
-                        value:  "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
-                                "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"
-                                
-                    },
-                    {
-                        name: "Super Saiyan Gohan (Teen)",
-                        value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA"
-                    },
-                    {
-                        name: "Ultimate Gohan",
-                        value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
-                                "**ugohan2**: STR UR Ultimate Gohan\n" +
-                                "**ugohan1z**: PHY UR Ultimate Gohan with EZA"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'goku')
+        if (args[0] === 'goku')
         {
             message.channel.send({embed: {
                 color: 0,
@@ -208,6 +195,10 @@ module.exports = {
                     {
                         name: "Zamasu",
                         value: "**zamasu1**: AGL UR Zamasu before transformation"
+                    },
+                    {
+                        name: "Zamasu (Goku)",
+                        value: "**zamasug1**: STR LR Zamasu (Goku)"
                     },
                     {
                         name: "Goku Black",
@@ -1057,6 +1048,7 @@ module.exports = {
                         name: "Legendary Super Saiyan Broly",
                         value:  "**lssjbroly1**: TEQ LR Legendary Super Saiyan Broly after transformation\n" +
                                 "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
+                                "**lssjbroly4z**: STR UR Legendary Super Saiyan Broly with EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
                                 "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
                     }
@@ -1962,6 +1954,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                                "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
                                 "**ugohan2**: STR UR Ultimate Gohan\n" +
                                 "**ugohan1z**: PHY UR Ultimate Gohan with EZA"
                     }
@@ -2314,6 +2307,7 @@ module.exports = {
                         name: "** **",
                         value:  "**lssjbroly1**: TEQ LR Legendary Super Saiyan Broly after transformation\n" +
                                 "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
+                                "**lssjbroly4z**: STR UR Legendary Super Saiyan Broly with EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
                                 "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
                     }
