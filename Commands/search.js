@@ -137,7 +137,7 @@ module.exports = {
                     },
                     {
                         name: "Zamasu (Goku)",
-                        value: "**zamasug1**: STR LR Zamasu (Goku)"
+                        value: "**zamasug1**: STR LR Zamasu (Goku) without EZA"
                     },
                     {
                         name: "Goku Black",
