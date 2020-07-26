@@ -14,7 +14,7 @@ module.exports = {
            '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan) (ATK +10%)',
            '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
            '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker) (ATK +20% when HP is 50% or below)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATk +15%)'],
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
     status: 'complete',
     plural: 'false',
     aliases: ['lssbroly4', 'Legendary Super Saiyan Broly'],
@@ -46,7 +46,7 @@ module.exports = {
             }
         var apt = "APT: 981,976 (unsupported)/1,187,169 (supported)\nDefense: 0 (unsupported)/0 (supported) \nLinking Partner: [TEQ LR Super Saiyan Broly](https://dbz-dokkanbattle.fandom.com/wiki/Nightmarish_Impact_Super_Saiyan_Broly) \nTeam: [Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)/[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods) \nBuild: 6 Additional/20 Critical";
         var blp = "[TEQ LR Super Saiyan Broly](https://dbz-dokkanbattle.fandom.com/wiki/Nightmarish_Impact_Super_Saiyan_Broly) - 5 links shared\n[PHY UR Super Saiyan 3 Broly](https://dbz-dokkanbattle.fandom.com/wiki/Recurring_Nightmare_Super_Saiyan_3_Broly) - 5 links shared\n[TEQ UR Super Saiyan 3 Broly](https://dbz-dokkanbattle.fandom.com/wiki/Mythic_Evolution_Super_Saiyan_3_Broly) - 4 links shared";
-        var deets = "► 12 Ki Multiplier is 140%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the)** event";
+        var deets = "► 12 Ki Multiplier is 140%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Super_Warrior_of_Destruction_Legendary_Super_Saiyan_Broly)** event";
         var footnotes = "";
         if (status === 'incomplete')
         {
@@ -160,6 +160,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Links", links)
                         .setTimestamp()
                     message.channel.send(linkSkill)
