@@ -44,12 +44,12 @@ module.exports = {
                                                       "**kidgoku3**: STR UR Goku (Youth)"},
                         {name: "Goku (Youth) (Giant Ape)", value: "**kidgoku2**: AGL UR Goku (Youth) (Giant Ape)\n" +
                                                                   "**kidgoku1**: PHY UR Goku (Youth) (Giant Ape)" },
-                        {name: "Goku", value: "**goku6**: INT LR Super Battle Road Goku\n" +
-                                              "**goku1**: STR UR Spirit Bomb Goku\n" +
-                                              "**goku2**: STR LR Spirit Bomb Goku\n" +
-                                              "**goku7**: STR UR Namek Goku\n" +
-                                              "**goku3**: PHY UR Goku from 3rd anniversary\n" +
-                                              "**goku4**: PHY UR Goku from *The Tree of Might*\n" +
+                        {name: "Goku", value: "**goku6**: INT LR Super Battle Road Goku\n\n" +
+                                              "**goku1**: STR UR Spirit Bomb Goku\n\n" +
+                                              "**goku2**: STR LR Spirit Bomb Goku\n\n" +
+                                              "**goku7**: STR UR Namek Goku\n\n" +
+                                              "**goku3**: PHY UR Goku from 3rd anniversary\n\n" +
+                                              "**goku4**: PHY UR Goku from *The Tree of Might*\n\n" +
                                               "**goku5**: PHY UR Feet Kamehameha Goku"},
                         {name: "Goku (Dokkan Butoden)", value: "**dbgoku1**: PHY UR Goku (Dokkan Butoden)"},
                         {name: "Goku (Kaioken)", value: "**kkgoku3**: AGL UR Goku (Kaioken)\n" +
