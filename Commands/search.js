@@ -829,7 +829,8 @@ module.exports = {
                                 "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
                                 "**lssjbroly4z**: STR UR Legendary Super Saiyan Broly with EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
-                                "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
+                                "**lssjbroly2**: PHY UR Legendary Super Saiyan Broly without EZA\n" +
+                                "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly with EZA"
                     }
                 ],
                 timestamp: new Date()
@@ -1029,7 +1030,9 @@ module.exports = {
                 fields: [
                     {
                         name: "Omega Shenron",
-                        value: "**omega1**: PHY UR Omega Shenron"
+                        value:  "**omega2**: STR UR Omega Shenron without EZA\n" +
+                                "**omega2z**: STR UR Omega Sheronr with EZA\n" +
+                                "**omega1**: PHY UR Omega Shenron"
                     }
                 ]
             }});
@@ -2088,7 +2091,8 @@ module.exports = {
                                 "**lssjbroly4**: STR UR Legendary Super Saiyan Broly without EZA\n" +
                                 "**lssjbroly4z**: STR UR Legendary Super Saiyan Broly with EZA\n" +
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
-                                "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly Z"
+                                "**lssjbroly2**: PHY UR Legendary Super Saiyan Broly without EZA\n" +
+                                "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly with EZA"
                     }
                 ],
                 timestamp: new Date()

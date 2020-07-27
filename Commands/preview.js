@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "INT UR Ultimate Gohan Z\nSTR UR Legendary Super Saiyan Broly Z\nSTR LR Zamasu (Goku)",
+                    name: "STR UR Omega Shenron\nSTR UR Omega Shenron Z\nPHY UR Legendary Super Saiyan Broly",
                     value:  "** **"
                 }
             ],
