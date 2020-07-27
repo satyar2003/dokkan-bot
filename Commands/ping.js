@@ -1,46 +1,40 @@
+const { Discord } = require("discord.js");
+
 module.exports = {
     name: 'ping',
     description: 'Ping!',
     cooldown: 5,
     execute(message, args) {
-        if (message.author.id === '401156002860498946')
+        var userID = message.author.id
+        var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
+        switch (userID)
         {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Ghay Ping.",
-                timestamp: new Date()
-            }});
-        }
-        else if (message.author.id === '280578071055302657')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Lol p\nong",
-                timestamp: new Date()
-            }})
-        }
-        else
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Pong  :ping_pong:",
-                timestamp: new Date()
-            }});
+            default:
+                const msg = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Pong  :ping_pong:")
+                    .setTimestamp()
+                message.channel.send(msg)
+                break;
+
+            case "401156002860498946":
+                const msg = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.name, pfp)
+                    .setTitle("Ghay Ping.")
+                    .setTimestamp()
+                message.channel.send(msg)
+                break;
+
+            case "280578071055302657":
+                const msg = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Lol p\nong")
+                    .setTimestamp()
+                message.channel.send(msg)
+                break;
         }
     }
-};
+}
