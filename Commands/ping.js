@@ -10,30 +10,30 @@ module.exports = {
         switch (userID)
         {
             default:
-                const pong = new Discord.MessageEmbed()
+                const urmom = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
-                    .setTitle("Pong  :ping_pong:")
+                    .setTitle("urmom  :ping_urmom:")
                     .setTimestamp()
-                message.channel.send(pong)
+                message.channel.send(urmom)
                 break;
 
             case "401156002860498946":
-                const pong = new Discord.MessageEmbed()
+                const urmom = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.name, pfp)
                     .setTitle("Ghay Ping.")
                     .setTimestamp()
-                message.channel.send(pong)
+                message.channel.send(urmom)
                 break;
 
             case "280578071055302657":
-                const pong = new Discord.MessageEmbed()
+                const urmom = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
                     .setTitle("Lol p\nong")
                     .setTimestamp()
-                message.channel.send(pong)
+                message.channel.send(urmom)
                 break;
         }
     }
