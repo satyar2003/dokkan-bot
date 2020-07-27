@@ -15,7 +15,7 @@ module.exports = {
            '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
            '[Power Bestowed by God](https://dbz-dokkanbattle.fandom.com/wiki/Power_Bestowed_by_God) (ATK +2500 when Super Attack is launched)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['Ultimate Gohan Z'],
     execute(message, args) {
