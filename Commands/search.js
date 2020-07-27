@@ -72,6 +72,40 @@ module.exports = {
                 message.channel.send(cell)
                 break;
 
+            case charSearch == "cooler":
+                const cooler = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Cooler Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339485088874506/cooler.png")
+                    .addFields(
+                        {name: "Cooler", value: "**cooler2z**: AGL UR Cooler with EZA\n" +
+                                                "**cooler1**: STR UR Cooler before transformation"},
+                        {name: "Cooler (Final Form)", value: "**ffcooler1**: TEQ UR Cooler (Final Form)\n" +
+                                                             "**ffcooler2**: STR UR Cooler (Final Form)"}
+                    )
+                    .setTimestamp()
+                message.channel.send(cooler)
+                break;
+
+            case charSearch == "gogeta":
+                const gogeta = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Gogeta Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714341204996915200/gogeta.jpg?width=370&height=573")
+                    .addFields(
+                        {name: "Super Gogeta", value: "**sgogeta1**: STR UR Super Gogeta without EZA\n" +
+                                                      "**sgogeta1z**: STR UR Super Gogeta with EZA\n" +
+                                                      "**sgogeta2**: PHY LR Super Gogeta after transformation"},
+                        {name: "Gogeta", value: "**gogeta1**: STR LR Gogeta"},
+                        {name: "Super Saiyan Gogeta", value: "**ssjgogeta1**: AGL UR Super Saiyan Gogeta"},
+                        {name: "Super Saiyan God SS Gogeta", value: "**ssbgogeta1**: AGL UR Super Saiyan God SS Gogeta\n" +
+                                                                    "**ssbgogeta2**: STR LR Super Saiyan God SS Gogeta"}
+                    )
+                message.channel.send(gogeta)
+                break;
+
             case charSearch == "gohan":
                 const gohan = new Discord.MessageEmbed()
                     .setColor(0)
@@ -214,74 +248,7 @@ module.exports = {
                 message.channel.send(vegito)
                 break;
         }
-        if (args[0] === 'cooler')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Cooler Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714339485088874506/cooler.png"
-                },
-                fields: [
-                    {
-                        name: "Cooler",
-                        value:  "**cooler2z**: AGL UR Cooler with EZA\n" +
-                                "**cooler1**: STR UR Cooler before transformation" 
-                    },
-                    {
-                        name: "Cooler (Final Form)",
-                        value:  "**ffcooler1**: TEQ UR Cooler (Final Form)\n" +
-                                "**ffcooler2**: STR UR Cooler (Final Form)"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'gogeta')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Gogeta Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714341204996915200/gogeta.jpg?width=370&height=573"
-                },
-                fields: [
-                    {
-                        name: "Super Gogeta",
-                        value:  "**sgogeta1**: STR UR Super Gogeta without EZA\n" + 
-                                "**sgogeta1z**: STR UR Super Gogeta with EZA\n" +
-                                "**sgogeta2**: PHY LR Super Gogeta"
-                    },
-                    {
-                        name: "Gogeta",
-                        value: "**gogeta1**: STR LR Gogeta"
-                    },  
-                    {
-                        name: "Super Saiyan Gogeta",
-                        value: "**ssjgogeta1**: AGL UR Super Saiyan Gogeta"
-                    },
-                    {
-                        name: "Super Saiyan God SS Gogeta",
-                        value:  "**ssbgogeta1**: AGL UR Super Saiyan God SS Gogeta\n" +
-                                "**ssbgogeta2**: STR LR Super Saiyan God SS Gogeta"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'sgogeta')
+        if (args[0] === 'sgogeta')
         {
             message.channel.send({embed: {
                 color: 0,
