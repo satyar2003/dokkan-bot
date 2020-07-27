@@ -125,8 +125,13 @@ client.on('message', message => {
     } 
     catch (error) 
     {
-	    console.error(error);
-	    message.reply('there was an error trying to execute that command!');
+        console.error(error);
+        const err = new Discord.MessageEmbed()
+            .setColor("0xFF0000")
+            .setTitle("Uh oh! Looks like there was an error!")
+            .setDescription("You can contact Nobody#0244 for more information.")
+            .setTimestamp()
+	    message.channel.send(err);
     }
 });
 
