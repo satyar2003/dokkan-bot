@@ -21,7 +21,7 @@ module.exports = {
             case "401156002860498946":
                 const steven = new Discord.MessageEmbed()
                     .setColor(0)
-                    .setAuthor(message.author.name, pfp)
+                    .setAuthor(message.author.username, pfp)
                     .setTitle("Ghay Ping.")
                     .setTimestamp()
                 message.channel.send(steven)
