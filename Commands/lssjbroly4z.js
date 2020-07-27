@@ -56,7 +56,7 @@ module.exports = {
                 const preview = new Discord.MessageEmbed()
                     .setColor(color)
                     .setAuthor(message.author.username, pfp)
-                    .setTitle(`${person} is coming soon.`)
+                    .setTitle(`${person} are coming soon.`)
                 message.channel.send(preview)
             }
         }
