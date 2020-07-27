@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'lssjbroly4',
+    name: 'lssjbroly4z',
     description: 'STR UR Legendary Super Saiyan Broly with EZA',
     categories: ['', ''],
     link: ['', ''],
