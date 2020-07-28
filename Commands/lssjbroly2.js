@@ -16,7 +16,7 @@ module.exports = {
            '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker) (ATK +20% when HP is 50% or below)',
            '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['lssbroly2', 'Legendary Super Saiyan Broly'],
     execute(message, args) {

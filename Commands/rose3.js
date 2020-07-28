@@ -7,7 +7,7 @@ module.exports = {
     link: ['', ''],
     status: 'incomplete',
     plural: 'false',
-    aliases: ['INT LR Goku Black (Super Saiyan Rosé)'],
+    aliases: ['Goku Black (Super Saiyan Rosé)'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./rose3.js')
