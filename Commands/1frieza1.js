@@ -96,6 +96,7 @@ module.exports = {
                             {name: "Best Linking Partners", value: blp},
                             {name: "Details", value: deets}
                         )
+                        .setImage(character)
                         .setFooter(footnotes)
                         .setTimestamp()
                     message.channel.send(fullCard)
