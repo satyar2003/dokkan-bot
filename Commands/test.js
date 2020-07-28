@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports = {
     name: "test",
     execute(message, args){
-        var x = args[0].toLowerCase()
+        var x = args[0]
         message.reply(x)
 
         /*switch (x)
