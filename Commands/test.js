@@ -4,6 +4,10 @@ module.exports = {
     name: "test",
     execute(message, args){
         var x = args[0]
+        if (x === null)
+        {
+            message.reply("yee")
+        }
         message.reply(x)
 
         /*switch (x)
