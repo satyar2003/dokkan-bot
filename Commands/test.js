@@ -3,7 +3,6 @@ const Discord = require("discord.js")
 module.exports = {
     name: "test",
     execute(message, args){
-        message.reply("hi")
 
         switch (args[0].toLowerCase())
         {
@@ -13,6 +12,10 @@ module.exports = {
             
             case "not":
                 message.reply("gay")
+                break;
+
+            default:
+                message.reply("hi")
                 break;
         }
     }
