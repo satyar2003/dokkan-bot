@@ -1,3 +1,5 @@
+const Discord = require('discord.js')
+
 module.exports = {
     name: 'agf1',
     description: 'INT UR Golden Frieza (Angel)',
@@ -30,7 +32,7 @@ module.exports = {
         var desc = "Extreme INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/726904550149193768/card_1012030_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/726904593526685877/340.png";
-        var leader = "\"[Resurrected Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Resurrected_Warriors)\" Category Ki +3, HP +130% and ATK & DEF +170%; or <:int:729468835819946026> Type Ki +3 and HP, ATK & DEF +50%";
+        var leader = "\"[Resurrected Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Resurrected_Warriors)\" Category Ki +3, HP +130% and ATK & DEF +170%; or [<:int:729468835819946026>](https://dbz-dokkanbattle.fandom.com/wiki/Category:INT) Type Ki +3 and HP, ATK & DEF +50%";
         var superatk = "[Great Death Beam](https://dbz-dokkanbattle.fandom.com/wiki/File:(Super_Attack)_Golden_Frieza_(Angel)_-_True_Radiance_of_the_Emperor): Causes immense damage to enemy and greatly lowers DEF[1]";
         var passive = "Proof of True Evil: ATK +150% and DEF +50%; Super Class allies' and enemies' ATK -15%";
         var stats = "HP: 13,020 (55%)/16,020 (100%)\nATK: 12,208 (55%)/15,208 (100%)\nDEF: 8,605 (55%)/11,605 (100%)";
@@ -78,326 +80,167 @@ module.exports = {
         }
         else
         {
-            if (!args.length)
+            var sub = args[0]
+
+            switch (sub)
             {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.username,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Leader Skill",
-                            value: leader
-                        },
-                        {
-                            name: "Super Attack",
-                            value: superatk
-                        },
-                        {
-                            name: "Passive Skill",
-                            value: passive
-                        },
-                        {
-                            name: "Stats",
-                            value: stats
-                        },
-                        {
-                            name: "Links",
-                            value: links
-                        },
-                        {
-                            name: "Categories",
-                            value: cats
-                        },
-                        {
-                            name: "Attack Per Turn",
-                            value: apt
-                        },
-                        {
-                            name: "Best Linking Partners",
-                            value: blp
-                        },
-                        {
-                            name: "Details",
-                            value: deets
-                        }
-                    ],
-                    image:
-                    {
-                        url: character
-                    },
-                    timestamp: new Date(),
-                    footer:
-                    {
-                        text: footnotes
-                    }
-                }});
-            }
-            else if (args[0] === 'leader')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Leader Skill",
-                            value: leader
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'super')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Super Attack",
-                            value: superatk
-                        }
-                    ],
-                    timestamp: new Date(),
-                    footer:
-                    {
-                        text: footnotes
-                    }
-                }});
-            }
-            else if (args[0] === 'passive')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Passive Skill",
-                            value: passive
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'stats')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Stats",
-                            value: stats
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'links')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Links",
-                            value: links
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'categories')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Categories",
-                            value: cats
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'apt')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Attack Per Turn",
-                            value: apt
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'partners')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Best Linking Partners",
-                            value: blp
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'details')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    fields: [
-                        {
-                            name: "Details",
-                            value: deets
-                        }
-                    ],
-                    timestamp: new Date()
-                }});
-            }
-            else if (args[0] === 'art')
-            {
-                message.channel.send({embed: {
-                    color: color,
-                    author:
-                    {
-                        name: message.author.name,
-                        icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                    },
-                    title: name,
-                    url: url,
-                    description: desc,
-                    thumbnail:
-                    {
-                        url: circle
-                    },
-                    image:
-                    {
-                        url: character
-                    },
-                    timestamp: new Date()
-                }});
-            }
-            else
-            {
-                message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
+                case underfined:
+                    const fullCard = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addFields(
+                            {name: "Leader Skill", value: leader},
+                            {name: "Super Attack", value: superatk},
+                            {name: "Passive Skill", value: passive},
+                            {name: "Stats", value: stats},
+                            {name: "Links", value: links},
+                            {name: "Categories", value: cats},
+                            {name: "Attack Per Turn", value: apt},
+                            {name: "Best Linking Partners", value: blp},
+                            {name: "Details", value: deets}
+                        )
+                        .setImage(character)
+                        .setFooter(footnotes)
+                        .setTimestamp()
+                    message.channel.send(fullCard)
+                    break;
+
+                case "leader":
+                    const leaderSkill = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Leader Skill", leader)
+                        .setTimestamp()
+                    message.channel.send(leaderSkill)
+                    break;
+
+                case "super":
+                    const superAttack = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Super Attack", superatk)
+                        .setTimestamp()
+                    message.channel.send(superAttack)
+                    break;
+
+                case "passive":
+                    const passiveSkill = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Passive Skill", passive)
+                        .setTimestamp()
+                    message.channel.send(passiveSkill)
+                    break;
+
+                case "stats":
+                    const unitStats = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Stats", stats)
+                        .setTimestamp()
+                    message.channel.send(unitStats)
+                    break;
+
+                case "links":
+                    const linkSkill = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Links", links)
+                        .setTimestamp()
+                    message.channel.send(linkSkill)
+                    break;
+
+                case "categories":
+                    const category = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Categories", cats)
+                        .setTimestamp()
+                    message.channel.send(category)
+                    break;
+
+                case "apt":
+                    const attackPerTurn = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Attack Per Turn", apt)
+                        .setTimestamp()
+                    message.channel.send(attackPerTurn)
+                    break;
+
+                case "partners":
+                    const bestLinkingPartners = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Best Linking Partners", blp)
+                        .setTimestamp()
+                    message.channel.send(bestLinkingPartners)
+                    break;
+
+                case "details":
+                    const unitDetails = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addField("Details", deets)
+                        .setTimestamp()
+                    message.channel.send(unitDetails)
+                    break;
+
+                case "art":
+                    const cardArt = new Discord.MessageEmbed()
+                        .setColor(color)
+                        .setAuthor(message.author.username, pfp)
+                        .setTitle(name)
+                        .setURL(url)
+                        .setDescription(desc)
+                        .setThumbnail(circle)
+                        .addImage(character)
+                        .setTimestamp()
+                    message.channel.send(cardArt)
+                    break;
+
+                default:
+                    message.channel.send(`${message.author} that is not a valid sub-command. You can use \`d!help\` to find out all possible sub-commands.`)
             }
         }
     }
