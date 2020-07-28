@@ -4,7 +4,7 @@ module.exports = {
     name: "test",
     execute(message, args){
         var x = args[0]
-        if (x === null)
+        if (x === undefined)
         {
             message.reply("yee")
         }
