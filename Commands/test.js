@@ -8,7 +8,7 @@ module.exports = {
         {
             message.reply("yee")
         }
-        message.reply(x)
+        console.log(x)
 
         /*switch (x)
         {
