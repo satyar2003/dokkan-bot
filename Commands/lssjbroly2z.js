@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Extreme PHY UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/718198867124027472/card_1007460_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720701819407564830/340.png";
-        var leader = "<:phy:729467520272039988> Type Ki +4 and HP, ATK & DEF +100%";
+        var leader = "[<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Type Ki +4 and HP, ATK & DEF +100%";
         var superatk = "Omega Blaster: Raises ATK & DEF[1] and causes supreme damage to enemy";
         var passive = "No Mercy: Ki +4 and ATK & DEF +80% when Ki is 8 or more; launches an additional Super Attack when attacking; chance of performing a critical hit +2% with each attack performed (up to 40%)";
         var stats = "HP: 13,188 (55%)/16,588 (100%)\nATK: 12,024 (55%)/15,024 (100%)\nDEF: 5,560 (55%)/8,160 (100%)";
@@ -43,7 +43,7 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 3,958,277 (unsupported)/5,634,776 (supported)\nDefense: 105,194 (unsupported)/128,571 (supported) \nLinking Partner: [AGL UR Turles](https://dbz-dokkanbattle.fandom.com/wiki/Explosive_Evolution_Turles) \nTeam: [Movie Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Bosses) \nBuild: 11 Additional/15 Critical";
+        var apt = "APT: 3,958,277 (unsupported)/5,634,776 (supported)\nDefense: 105,194 (unsupported)/128,571 (supported) \nLinking Partner: [AGL UR Turles](https://dbz-dokkanbattle.fandom.com/wiki/Explosive_Evolution_Turles) \nTeam: [Movie Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Bosses)/[Extreme Class](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_Class) \nBuild: 11 Additional/15 Critical";
         var blp = "[TEQ LR Super Saiyan Broly](https://dbz-dokkanbattle.fandom.com/wiki/Nightmarish_Impact_Super_Saiyan_Broly) - 6 links shared\n[AGL UR Broly (Wrathful)](https://dbz-dokkanbattle.fandom.com/wiki/Unusual_Evolution_Broly_(Wrathful)) - 5 links shared\n[PHY UR Super Saiyan Broly](https://dbz-dokkanbattle.fandom.com/wiki/Endless_Evolution_of_the_Warrior_Race_Super_Saiyan_Broly) - 5 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Eternal_Horror_Legendary_Super_Saiyan_Broly)** event";
         var footnotes = "[1]: Raises ATK & DEF by 20% for 99 turns";
