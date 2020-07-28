@@ -3,9 +3,17 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'omega2',
     description: 'STR UR Omega Shenron without EZA',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Shadow Dragon Saga](https://dbz-dokkanbattle.fandom.com/wiki/Shadow_Dragon_Saga)',
+                 '[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
+                 '[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)'],
+    link: ['[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown) (ATK +10%)',
+           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith) (Ki +2)',
+           '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses) (ATK & DEF +25% when HP is 80% or below)',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
+           '[GT](https://dbz-dokkanbattle.fandom.com/wiki/GT) (Ki +2)',
+           '[Shadow Dragons](https://dbz-dokkanbattle.fandom.com/wiki/Shadow_Dragons) (ATK +15%)',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    status: 'complete',
     plural: 'false',
     aliases: ['Omega Shenron'],
     execute(message, args) {
@@ -16,15 +24,15 @@ module.exports = {
         const {plural} = require('./omega2.js')
         const {aliases} = require('./omega2.js')
         var color = 8990259;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Hopeless Minus Energy\nOmega Shenron";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Hopeless_Minus_Energy_Omega_Shenron";
+        var desc = "Extreme STR UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/737766687155421305/card_1008710_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/737766707552190544/340.png";
+        var leader = "[<:str:729468929293942894>](https://dbz-dokkanbattle.fandom.com/wiki/Category:STR) Type Ki +3, HP, ATK and DEF +70%";
+        var superatk = "[Minus Energy Power Ball](https://dbz-dokkanbattle.fandom.com/wiki/File:Dokkan_Battle_Omega_Shenron_Super_Attack_(Minus_Energy_Power_Ball)): Causes immense damage to enemy and greatly lowers DEF[1]";
+        var passive = "Evil Domination: ATK +80%; all enemies' ATK -30%";
+        var stats = "HP: 11,520 (55%)/14,520 (100%)\nATK: 10,803 (55%)/14,203 (100%)\nDEF: 9,011 (55%)/11,611 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -35,10 +43,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 1,789,014 (unsupported)/2,020,924 (supported)\nDefense: 41,799 (unsupported)/41,799 (supported) \nLinking Partner: [PHY UR Syn Shenron](https://dbz-dokkanbattle.fandom.com/wiki/Agent_of_Destruction_Syn_Shenron) \nTeam: [Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)/[Extreme AGL](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_AGL) \nBuild: 6 Additional/20 Critical";
+        var blp = "[PHY UR Syn Shenron](https://dbz-dokkanbattle.fandom.com/wiki/Agent_of_Destruction_Syn_Shenron) - 6 links shared\n[INT UR Super Janemba](https://dbz-dokkanbattle.fandom.com/wiki/Netherworld_Demon_Super_Janemba) - 5 links shared\n[STR UR Super Janemba](https://dbz-dokkanbattle.fandom.com/wiki/Evil_Incursion_Super_Janemba) - 5 links shared";
+        var deets = "► 12 Ki Multiplier is 150%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Hopeless_Minus_Energy_Omega_Shenron)** event";
+        var footnotes = "[1]: Lowers enemy's DEF by 50% for 3 turns";
 
         if (status === 'incomplete')
         {
@@ -114,6 +122,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
+                        .setFooter(footnotes)
                     message.channel.send(superAttack)
                     break;
 

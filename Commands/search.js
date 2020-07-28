@@ -26,6 +26,7 @@ module.exports = {
                                                     "**gb1**: PHY UR Goku Black without EZA\n" + 
                                                     "**gb1z**: PHY UR Goku Black with EZA"},
                         {name: "Goku Black (Super Saiyan Rosé)", value: "**rose1z**: AGL UR Goku Black (Super Saiyan Rosé) with EZA\n" +
+                                                                        "**rose3**: INT LR Goku Black (Super Saiyan Rosé)\n" +
                                                                         "**rose2**: STR UR Goku Black (Super Saiyan Rosé)"},
                         {name: "Fusion Zamasu", value: "**fzamasu1**: AGL UR Fusion Zamasu after transformation\n" +
                                                        "**fzamasu2**: AGL UR Fusion Zamasu (Mutated) after active skill"},
@@ -218,6 +219,7 @@ module.exports = {
                         {name: "Super Saiyan God SS Vegeta", value: "**ssbvegeta2z**: TEQ UR Super Saiyan God SS Vegeta from the Broly movie with EZA\n" +
                                                                     "**ssbvegeta1**: TEQ UR Resurrection 'F' Super Saiyan God SS Vegeta"},
                         {name: "Super Saiyan 4 Vegeta", value: "**ssj4vegeta1**: STR LR Super Saiyan 4 Vegeta"},
+                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA"},
                         {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
                         {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
                         {name: "Super Saiyan 2 Vegeta & Bulma", value: "**ssj2vegeta1**: STR UR Super Saiyan 2 Vegeta & Bulma"},
@@ -225,6 +227,18 @@ module.exports = {
                     )
                     .setTimestamp()
                 message.channel.send(vegeta)
+                break;
+
+            case charSearch == "raditz":
+                const raditz = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/737786043419328643/340.png")
+                    .addFields(
+                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA"}
+                    )
+                    .setTimestamp()
+                message.channel.send(raditz)
                 break;
 
             case charSearch == "vegito":
@@ -819,6 +833,10 @@ module.exports = {
                     url: "https://media.discordapp.net/attachments/712036120191434793/714970458512031744/double_broly.jpg"
                 },
                 fields: [
+                    {
+                        name: "Broly (Kid)",
+                        value: "**kidbroly1**: INT UR Broly (Kid) without EZA"
+                    },
                     {
                         name: "Super Saiyan Broly",
                         value:  "**ssjbroly1**: TEQ LR Super Saiyan Broly before transformation"
@@ -2187,6 +2205,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**rose1z**: AGL UR Goku Black (Super Saiyan Rosé) with EZA\n" +
+                                "**rose3**: INT LR Goku Black (Super Saiyan Rosé)\n" +
                                 "**rose2**: STR UR Goku Black (Super Saiyan Rosé)"
                     }
                 ],
