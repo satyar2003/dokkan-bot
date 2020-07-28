@@ -37,7 +37,7 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 527,497 (unsupported)/727,243 (supported)\nDefense: 33,685 (unsupported)/35,212 (supported) \nLinking Partner: [INT UR Pandel] \nTeam: [Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion) \nBuild: 11 Additional/15 Critical";
+        var apt = "APT: 527,497 (unsupported)/727,243 (supported)\nDefense: 33,685 (unsupported)/35,212 (supported) \nLinking Partner: [INT UR Pandel](https://dbz-dokkanbattle.fandom.com/wiki/Energetic_Fighter_Pandel) \nTeam: [Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion) \nBuild: 11 Additional/15 Critical";
         var blp = "[AGL SSR Chiaotzu](https://dbz-dokkanbattle.fandom.com/wiki/Master_Martial_Artist_Chiaotzu) - 3 links shared\n[TEQ SR Chiatozu](https://dbz-dokkanbattle.fandom.com/wiki/Power_at_the_Eleventh_Hour_Chiaotzu) - 3 links shared\n[TEQ R Chiaotzu](https://dbz-dokkanbattle.fandom.com/wiki/Daring_Interception_Chiaotzu) - 3 links shared";
         var deets = "► 12 Ki Multiplier is 130%";
         var footnotes = "";
