@@ -19,6 +19,7 @@ module.exports = {
     plural: 'true',
     aliases: ['Androids #17 & #18/Android #16'],
     execute(message, args) {
+        const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         var color = 7164715;
         var name = "The Androids' Journey\nAndroids #17 & #18/Android #16";
         var url = "https://dbz-dokkanbattle.fandom.com/wiki/The_Androids%27_Journey_Androids_17_%26_18/Android_16#Androids%20#17%20&%20#18";

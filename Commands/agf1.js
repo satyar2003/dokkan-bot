@@ -21,6 +21,7 @@ module.exports = {
     plural: 'false',
     aliases: ['Golden Frieza (Angel)'],
     execute(message, args) {
+        const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./agf1.js')
         const {categories} = require('./agf1.js')
         const {status} = require('./agf1.js')
@@ -84,7 +85,7 @@ module.exports = {
 
             switch (sub)
             {
-                case underfined:
+                case undefined:
                     const fullCard = new Discord.MessageEmbed()
                         .setColor(color)
                         .setAuthor(message.author.username, pfp)
