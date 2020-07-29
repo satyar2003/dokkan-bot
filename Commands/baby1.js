@@ -92,6 +92,7 @@ module.exports = {
                         .setAuthor(message.author.username, pfp)
                         .setTitle(name)
                         .setURL(url)
+                        .setThumbnail(circle)
                         .setDescription(desc)
                         .addFields(
                             {name: "Leader Skill", value: leader},
@@ -196,6 +197,7 @@ module.exports = {
                         .setTitle(name)
                         .setURL(url)
                         .setDescription(desc)
+                        .setThumbnail(circle)
                         .addField("Attack Per Turn", apt)
                         .setTimestamp()
                     message.channel.send(attackPerTurn)
