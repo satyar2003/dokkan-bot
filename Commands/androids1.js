@@ -81,7 +81,7 @@ module.exports = {
                             {name: "Active Skill", value: active},
                             {name: "Stats", value: stats},
                             {name: "Links", value: links},
-                            {name: "Categories", value: cat},
+                            {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
                             {name: "Details", value: deets}
