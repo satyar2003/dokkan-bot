@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "AGL UR Vegeta (Kid) & Raditz (Kid)\nINT UR Broly (Kid)\n INT LR Goku Black (Super Saiyan Rosé)",
+                    name: "AGL UR Vegeta (Kid) & Raditz (Kid) Z\nINT UR Broly (Kid) Z\nSTR LR Zamasu (Goku) Z",
                     value:  "** **"
                 }
             ],

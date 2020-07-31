@@ -21,7 +21,8 @@ module.exports = {
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714338154416570408/goku_black.png?width=408&height=612")
                     .addFields(
                         {name: "Zamasu", value: "**zamasu1**: AGL UR Zamasu before transformation"},
-                        {name: "Zamasu (Goku)", value: "**zamasug1**: STR LR Zamasu (Goku) without EZA"},
+                        {name: "Zamasu (Goku)", value: "**zamasug1**: STR LR Zamasu (Goku) without EZA\n" +
+                                                       "**zamasug1z**: STR LR Zamasu (Goku) with EZA"},
                         {name: "Goku Black", value: "**gb2**: INT UR Goku Black\n" +
                                                     "**gb1**: PHY UR Goku Black without EZA\n" + 
                                                     "**gb1z**: PHY UR Goku Black with EZA"},
@@ -219,7 +220,8 @@ module.exports = {
                         {name: "Super Saiyan God SS Vegeta", value: "**ssbvegeta2z**: TEQ UR Super Saiyan God SS Vegeta from the Broly movie with EZA\n" +
                                                                     "**ssbvegeta1**: TEQ UR Resurrection 'F' Super Saiyan God SS Vegeta"},
                         {name: "Super Saiyan 4 Vegeta", value: "**ssj4vegeta1**: STR LR Super Saiyan 4 Vegeta"},
-                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA"},
+                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA\n" +
+                                                                     "**vandr1z**: AGL UR Vegeta (Kid) & Raditz (Kid) with EZA"},
                         {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
                         {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
                         {name: "Super Saiyan 2 Vegeta & Bulma", value: "**ssj2vegeta1**: STR UR Super Saiyan 2 Vegeta & Bulma"},
@@ -235,7 +237,8 @@ module.exports = {
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/737786043419328643/340.png")
                     .addFields(
-                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA"}
+                        {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA\n" +
+                                                                     "**vandr1z**: AGL UR Vegeta (Kid) & Raditz (Kid) with EZA"}
                     )
                     .setTimestamp()
                 message.channel.send(raditz)
@@ -835,7 +838,8 @@ module.exports = {
                 fields: [
                     {
                         name: "Broly (Kid)",
-                        value: "**kidbroly1**: INT UR Broly (Kid) without EZA"
+                        value: "**kidbroly1**: INT UR Broly (Kid) without EZA\n" +
+                               "**kidbroly1z**: INT UR Broly (Kid) with EZA"
                     },
                     {
                         name: "Super Saiyan Broly",
