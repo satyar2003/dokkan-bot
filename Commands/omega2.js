@@ -199,7 +199,7 @@ module.exports = {
 			            .setAuthor(message.author.username, pfp)
                         .setDescription(desc)
                         .setThumbnail(circle)
-                        .addField("Attack Per Turn", apt)
+                        .addField("Best Linking Partners", blp)
                         .setTimestamp()
                     message.channel.send(bestLinkingPartners)
                     break;
