@@ -7,7 +7,7 @@ module.exports = {
     link: ['', ''],
     status: 'incomplete',
     plural: 'false',
-    aliases: ['Broly (Kid)'],
+    aliases: ['Broly (Kid) Z'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./kidbroly1z.js')

@@ -7,7 +7,7 @@ module.exports = {
     link: ['', ''],
     status: 'incomplete',
     plural: 'false',
-    aliases: ['Zamasu (Goku)'],
+    aliases: ['Zamasu (Goku) Z'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./zamasug1z.js')

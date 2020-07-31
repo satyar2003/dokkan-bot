@@ -7,7 +7,7 @@ module.exports = {
     link: ['', ''],
     status: 'incomplete',
     plural: 'true',
-    aliases: ['Vegeta (Kid) & Raditz (Kid)'],
+    aliases: ['Vegeta (Kid) & Raditz (Kid) Z'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./vandr1z.js')
