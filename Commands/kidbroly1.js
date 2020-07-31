@@ -12,7 +12,7 @@ module.exports = {
            '[Tough as Nails](https://dbz-dokkanbattle.fandom.com/wiki/Tough_as_Nails) (DEF +1500)',
            '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
            '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['Broly (Kid)'],
     execute(message, args) {

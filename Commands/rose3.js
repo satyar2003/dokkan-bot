@@ -17,7 +17,7 @@ module.exports = {
            '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses) (ATK & DEF +25% when HP is 80% or below)',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)',
            '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power) (ATK +5000 when Super Attack is launched)'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['Goku Black (Super Saiyan Rosé)'],
     execute(message, args) {
