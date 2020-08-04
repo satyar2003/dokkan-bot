@@ -18,6 +18,7 @@ module.exports = {
     plural: 'false',
     aliases: ['Super Baby 1'],
     execute(message, args) {
+        //const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         const {link} = require('./baby2.js')
         const {categories} = require('./baby2.js')
         const {status} = require('./baby2.js')

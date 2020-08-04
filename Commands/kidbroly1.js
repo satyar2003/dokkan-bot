@@ -29,7 +29,7 @@ module.exports = {
         var circle = "https://media.discordapp.net/attachments/712036120191434793/738583571266142248/card_1018930_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/738583598277329012/latest.png?width=459&height=612";
         var leader = "\"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" Category Ki +2 and HP, ATK & DEF +50%";
-        var superatk = "Wild Bite: Causes supreme damage with a medium chance of stunning the enemy[1]";
+        var superatk = "[Wild Bite](https://youtu.be/XNVBRWWxlPY?t=81): Causes supreme damage with a medium chance of stunning the enemy[1]";
         var passive = "Attack-Evasion Training: ATK & DEF +60%; medium chance[2] of evading enemy's attack (including Super Attack)";
         var stats = "HP: 7,748 (55%)/9,878 (100%)\nATK: 8,575 (55%)/10,975 (100%)\nDEF: 4,367 (55%)/6,767 (100%)";
         var links = "";

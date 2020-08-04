@@ -3,9 +3,16 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'kidbroly1z',
     description: 'INT UR Broly (Kid) with EZA',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
+                 '[Youth](https://dbz-dokkanbattle.fandom.com/wiki/Youth)'],
+    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race) (ATK +700)',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
+           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents) (ATK +10%)',
+           '[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies) (ATK +10%)',
+           '[Tough as Nails](https://dbz-dokkanbattle.fandom.com/wiki/Tough_as_Nails) (DEF +1500)',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    status: 'complete',
     plural: 'false',
     aliases: ['Broly (Kid) Z'],
     execute(message, args) {
@@ -16,15 +23,15 @@ module.exports = {
         const {plural} = require('./kidbroly1z.js')
         const {aliases} = require('./kidbroly1z.js')
         var color = 7028604;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "First Friend\nBroly (Kid) Z";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/First_Friend_Broly_(Kid)#Extreme%20Z-Awakened";
+        var desc = "Extreme INT UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/738583571266142248/card_1018930_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/738583598277329012/latest.png?width=459&height=612";
+        var leader = "\"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" Category Ki +3 and HP, ATK & DEF +77%; or <:int:729468835819946026> Type Ki +3 and HP, ATK & DEF +50%";
+        var superatk = "[Wild Bite](https://youtu.be/XNVBRWWxlPY?t=81): Raises ATK & DEF[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
+        var passive = "Attack-Evasion Training: ATK & DEF +70% and disables enemy's guard; medium chance[3] of evading enemy's attack (including Super Attack); deliver the final blow to recover 20% HP at the end of turn";
+        var stats = "HP: 9,461 (55%)/11,861 (100%)\nATK: 10,928 (55%)/13,328 (100%)\nDEF: 5,300 (55%)/7,700 (100%)";
         var links = "";
             for (var i = 0; i < link.length; i++)
             {
@@ -35,10 +42,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 1,364,260 (unsupported)/1,470,515 (supported)\nDefense: 62,194 (unsupported)/62,194 (supported) \nLinking Partner: [PHY UR Super Saiyan Broly](https://dbz-dokkanbattle.fandom.com/wiki/Endless_Evolution_of_the_Warrior_Race_Super_Saiyan_Broly) \nTeam: [Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans) \nBuild: 5 Additional/15 Critical";
+        var blp = "[INT UR Gohan (Kid)](https://dbz-dokkanbattle.fandom.com/wiki/Roar_of_Rage_Gohan_(Kid)) - 5 links shared\n[STR UR Cumber](https://dbz-dokkanbattle.fandom.com/wiki/Unleashed_Saiyan_Cumber) - 5 links shared\n[PHY UR Shugesh](https://dbz-dokkanbattle.fandom.com/wiki/Ruffian%27s_Strike_Shugesh) - 5 links shared";
+        var deets = "► 12 Ki Multiplier is 140%\n► Super Attack can be launched at 9 Ki starting from SA Lv.10\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Area](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Area:_Saiyan_Trio_Led_by_Fate)** event";
+        var footnotes = "[1]: Raises ATK & DEF by 20% for 99 turns\n[2]: 30% chance to stun the enemy for 2 turns\n[3]: 25% chance to evade enemy's attack";
 
         if (status === 'incomplete')
         {
@@ -115,6 +122,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
+                        .setFooter("[1]: Raises ATK & DEF by 20% for 99 turns\n[2]: 30% chance to stun the enemy for 2 turns")
                     message.channel.send(superAttack)
                     break;
 
@@ -128,6 +136,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Passive Skill", passive)
                         .setTimestamp()
+                        .setFooter("[3]: 25% chance to evade enemy's attack")
                     message.channel.send(passiveSkill)
                     break;
 
@@ -191,7 +200,7 @@ module.exports = {
 			            .setAuthor(message.author.username, pfp)
                         .setDescription(desc)
                         .setThumbnail(circle)
-                        .addField("Attack Per Turn", apt)
+                        .addField("Best Linking Partners", blp)
                         .setTimestamp()
                     message.channel.send(bestLinkingPartners)
                     break;
