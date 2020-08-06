@@ -96,7 +96,7 @@ module.exports = {
                             {name: "Passive Skill", value: passive},
                             {name:"Stats", value: stats},
                             {name: "Links", value: links},
-                            {name: "Links", value: links2},
+                            {name: "Links cont.", value: links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -156,7 +156,7 @@ module.exports = {
                         .setURL(url)
                         .setDescription(desc)
                         .setThumbnail(circle)
-                        .addField("Stats:", stats)
+                        .addField("Stats", stats)
                         .setTimestamp()
                     message.channel.send(unitStats)
                     break;
@@ -170,7 +170,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .setDescription(desc)
                         .addField("Links", links)
-                        .addField("Links", links2)
+                        .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
