@@ -5,7 +5,7 @@ module.exports = {
                  '[Earthlings](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings)'],
     link: ['[Z Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Z_Fighters) (ATK +15%)',
            '[Turtle School](https://dbz-dokkanbattle.fandom.com/wiki/Turtle_School) (ATK +500, DEF +500)',
-           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage) (Ki +1)\n ­ ­ ­ ­ ­Level 1: Ki +1\ ­ ­ ­ ­ ­nKi +1 and ATK +10%',
+           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage) (Ki +1)\n ­ ­ ­ ­ ­Level 1: Ki +1\n ­ ­ ­ ­ ­Ki +1 and ATK +10%',
            '[High Compatability](https://dbz-dokkanbattle.fandom.com/wiki/High_Compatibility)\n ­ ­ ­ ­ ­Level 1: Ki +1\n ­ ­ ­ ­ ­Level 10: Ki +2 and ATK & DEF +10%',
            '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support) (ATK +10%, attacked enemy\'s DEF -15%)',
            '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)',
