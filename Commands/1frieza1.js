@@ -96,7 +96,7 @@ module.exports = {
                             {name: "Passive Skill", value: passive},
                             {name:"Stats", value: stats},
                             {name: "Links", value: links},
-                            {name: "Links cont.", value: links2},
+                            {name: "Links", value: links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -170,7 +170,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .setDescription(desc)
                         .addField("Links", links)
-                        .addField("Links cont.", links2)
+                        .addField("Links", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
