@@ -95,7 +95,8 @@ module.exports = {
                             {name: "Super Attack", value: superatk},
                             {name: "Passive Skill", value: passive},
                             {name:"Stats", value: stats},
-                            {name: "Links", value: links + links2},
+                            {name: "Links", value: links},
+                            {name: "Links cont.", value: links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -168,7 +169,8 @@ module.exports = {
                         .setURL(url)
                         .setThumbnail(circle)
                         .setDescription(desc)
-                        .addField("Links", links + links2)
+                        .addField("Links", links)
+                        .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
