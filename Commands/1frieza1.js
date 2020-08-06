@@ -37,9 +37,14 @@ module.exports = {
         var passive = "End of Everything: Causes mega-colossal damage to enemy and lowers ATK & DEF[1]";
         var stats = "HP: 16,400 (55%)/19,400 (100%)\nATK: 18,280 (55%)/21,680 (100%)\nDEF: 9,450 (55%)/12,050 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
                 links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
+            {
+                links2 += link[i] + "\n";
             }
         var cats = "";
             for (var i = 0; i < categories.length; i++)
@@ -90,7 +95,7 @@ module.exports = {
                             {name: "Super Attack", value: superatk},
                             {name: "Passive Skill", value: passive},
                             {name:"Stats", value: stats},
-                            {name: "Links", value: links},
+                            {name: "Links", value: links + links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -163,7 +168,7 @@ module.exports = {
                         .setURL(url)
                         .setThumbnail(circle)
                         .setDescription(desc)
-                        .addField("Links", links)
+                        .addField("Links", links + links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
