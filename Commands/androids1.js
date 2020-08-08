@@ -40,7 +40,7 @@ module.exports = {
         var links2 = "";
             for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
-                links += link[i] + "\n";
+                links2 += link[i] + "\n";
             }
         const {categories} = require('./androids1.js')
         var cats = "";
@@ -174,7 +174,6 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
-.addField("Links cont.", links2)
                         .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)

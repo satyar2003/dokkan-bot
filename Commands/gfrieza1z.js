@@ -40,7 +40,7 @@ module.exports = {
         var links2 = "";
             for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
-                links += link[i] + "\n";
+                links2 += link[i] + "\n";
             }
         const {categories} = require('./gfrieza1z.js')
         var cats = "";
