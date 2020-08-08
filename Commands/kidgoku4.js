@@ -11,7 +11,8 @@ module.exports = {
                  '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha_(Category))',
                  '[Bond of Master and Disciple](https://dbz-dokkanbattle.fandom.com/wiki/Bond_of_Master_and_Disciple)',
                  '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
-                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)'],
+                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)',
+                 '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
     link: ['[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha) (ATK +2500 when Super Attack is launched)',
            '[Guidance of the Dragon Balls](https://dbz-dokkanbattle.fandom.com/wiki/Guidance_of_the_Dragon_Balls) (ATK +20%)',
            '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family) (DEF +15%)',
@@ -45,9 +46,14 @@ module.exports = {
                 links += link[i] + "\n";
             }
         var cats = "";
-            for (var i = 0; i < categories.length; i++)
+            for (var i = 0; i < Math.ceil(categories.length/2); i++)
             {
                 cats += categories[i] + "\n";
+            }
+        var cats2 = "";
+            for (var i = Math.ceil(categories.length/2); i < categories.length; i++)
+            {
+                cats2 += categories[i] + "\n";
             }
         var apt = "APT: 2,954,363 (unsupported)/3,266,443 (supported)\nDefense: 121,841 (unsupported)/136,623 (supported) \nLinking Partner: [AGL SSR Grandpa Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Masked_Master_Grandpa_Gohan) \nTeam: [DB Saga](https://dbz-dokkanbattle.fandom.com/wiki/DB_Saga)/[Youth](https://dbz-dokkanbattle.fandom.com/wiki/Youth) \nBuild: 6 Additional/15 Critical";
         var blp = "[AGL SSR Grandpa Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Masked_Master_Grandpa_Gohan) - 5 links shared\n[AGL UR Goku (Youth) (Giant Ape)](https://dbz-dokkanbattle.fandom.com/wiki/Full-On_Strike_Goku_(Youth)_(Giant_Ape)) - 4 links shared\n[PHY UR Goku (Youth) (Giant Ape)](https://dbz-dokkanbattle.fandom.com/wiki/Outcome_of_Hardship_Goku_(Youth)_(Giant_Ape)) - 4 links shared";
@@ -127,6 +133,10 @@ module.exports = {
                         {
                             name: "Categories",
                             value: cats
+                        },
+                        {
+                            name: "Categories cont.",
+                            value: cats2
                         },
                         {
                             name: "Attack Per Turn",
@@ -326,6 +336,10 @@ module.exports = {
                         {
                             name: "Categories",
                             value: cats
+                        },
+                        {
+                            name: "Categories",
+                            value: cats2
                         }
                     ],
                     timestamp: new Date()
