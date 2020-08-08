@@ -13,13 +13,13 @@ module.exports = {
                  '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
                  '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)',
                  '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
-    link: ['[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha) (ATK +2500 when Super Attack is launched)',
-           '[Guidance of the Dragon Balls](https://dbz-dokkanbattle.fandom.com/wiki/Guidance_of_the_Dragon_Balls) (ATK +20%)',
-           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family) (DEF +15%)',
-           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents) (ATK +10%)',
-           '[The Incredible Adventure](https://dbz-dokkanbattle.fandom.com/wiki/The_Incredible_Adventure) (Ki +2)',
-           '[Turtle School](https://dbz-dokkanbattle.fandom.com/wiki/Turtle_School) (ATK +500, DEF +500)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    link: ['[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha)\n ­ ­ ­ ­ Level 1: ATK +5% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +10% when Super Attack is launched',
+           '[Guidance of the Dragon Balls](https://dbz-dokkanbattle.fandom.com/wiki/Guidance_of_the_Dragon_Balls)\n ­ ­ ­ ­ Level 1: ATK +20%\n ­ ­ ­ ­ Level 10: ATK +20% and chance to perform a critical hit +7%',
+           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20%',
+           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[The Incredible Adventure](https://dbz-dokkanbattle.fandom.com/wiki/The_Incredible_Adventure)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF 7%',
+           '[Turtle School](https://dbz-dokkanbattle.fandom.com/wiki/Turtle_School)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +20%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Goku (Youth)'],
@@ -41,7 +41,12 @@ module.exports = {
         var active = "[Take This!](https://youtu.be/93VPPZKj6II?t=30): Causes ultimate damage to enemy; can be activated when HP is 59% or less (once only)"
         var stats = "HP: 12,630 (55%)/15,630 (100%)\nATK: 12,884 (55%)/15,884 (100%)\nDEF: 7,955 (55%)/10,955 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -311,6 +316,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

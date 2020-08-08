@@ -6,12 +6,12 @@ module.exports = {
                  '[Super Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyans)',
                  '[Otherworld Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Otherworld_Warriors)',
                  '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
-    link: ['[Golden Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Golden_Warrior) (Ki +1, enemy DEF -2000)',
-           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan) (ATK +10%)',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-           '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash) (Ki +3)',
-           '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter) (Ki +2)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    link: ['[Golden Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Golden_Warrior)\n ­ ­ ­ ­ Level 1: Enemy DEF -5% and Ki +1\n ­ ­ ­ ­ Level 10: Enemy DEF -10% and Ki +1',
+           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK 7%',
+           '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Super Gogeta Z'],
@@ -32,7 +32,12 @@ module.exports = {
         var passive = "Overwhelming Strike: ATK & DEF +77%; ATK +7% per <:rbw:729467948690964480> Ki Sphere obtained; attacks effective against all Types";
         var stats = "HP: 13,550 (55%)/17,750 (100%)\nATK: 13,000 (55%)/17,760 (100%)\nDEF: 6,925 (55%)/10,565 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -111,6 +116,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -264,6 +273,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

@@ -5,13 +5,13 @@ module.exports = {
                  '[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
                  '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
                  '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
-    link: ['[Z Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Z_Fighters) (ATK +15%)',
-           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family) (DEF +15%)',
-           '[Experienced Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Experienced_Fighters) (ATK +10%)',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-           '[Supreme Power](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Power) (Activate Penetration, ATK & DEF +1000)',
-           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
-           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power) (ATK +5000 when Super Attack is launched)'],
+    link: ['[Z Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Z_Fighters)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20%',
+           '[Experienced Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Experienced_Fighters)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Supreme Power](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Power)\n ­ ­ ­ ­ Level 1: Activate "Penetration" and ATK & DEF +5%\n ­ ­ ­ ­ Level 10: Activate "Penetration" and ATK & DEF +10%',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched'],
     status: 'complete',
     plural: 'false',
     aliases: ['Goku'],
@@ -32,7 +32,12 @@ module.exports = {
         var passive = "Moved to Tears: ATK +77%; plus an additional ATK & DEF +7% and recovers 7777 HP per Ki Sphere obtained";
         var stats = "HP: 15,872 (55%)/18,872 (100%)\nATK: 14,548 (55%)/17,948 (100%)\nDEF: 9,429 (55%)/12,029 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -111,6 +116,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -260,6 +269,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

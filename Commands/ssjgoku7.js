@@ -8,11 +8,11 @@ module.exports = {
                  '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha_(Category))',
                  '[Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)',
                  '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
-    link: ['[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan) (ATK +10%)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)',
-           '[Golden Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Golden_Warrior) (Ki +1, enemy DEF -2000)',
-           '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha) (ATK +2500 when Super Attack is launched)'],
+    link: ['[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Golden Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Golden_Warrior)\n ­ ­ ­ ­ Level 1: Enemy DEF -5% and Ki +1\n ­ ­ ­ ­ Level 10: Enemy DEF -10% and Ki +1',
+           '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha)\n ­ ­ ­ ­ Level 1: ATK +5% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +10% when Super Attack is launched'],
     status: 'complete',
     plural: 'false',
     aliases: ['ssgoku7', 'Super Saiyan Goku'],
@@ -33,7 +33,12 @@ module.exports = {
         var passive = "Super Warrior's Race: All allies' ATK & DEF +25% when HP is 30% or above";
         var stats = "HP: 10,400 (55%)/13,000 (100%)\nATK: 9,342 (55%)/12,742 (100%)\nDEF: 6,748 (55%)/9,748 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -112,6 +117,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -261,6 +270,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

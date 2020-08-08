@@ -7,11 +7,11 @@ module.exports = {
                  '[Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)',
                  '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
     link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force) (ATK 25%)',
-           '[Gentleman](https://dbz-dokkanbattle.fandom.com/wiki/Gentleman) (Ki +2)',
-           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect) (ATK +500)',
-           '[Loyalty](https://dbz-dokkanbattle.fandom.com/wiki/Loyalty) (Ki +1)',
-           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose) (Ki +2)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+           '[Gentleman](https://dbz-dokkanbattle.fandom.com/wiki/Gentleman)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 & DEF +10%',
+           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Loyalty](https://dbz-dokkanbattle.fandom.com/wiki/Loyalty)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and damage received -5%',
+           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK +7%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Captain Ginyu'],
@@ -32,7 +32,12 @@ module.exports = {
         var passive = "Model Fighter: Ki +3 and ATK & DEF +70% when facing only 1 enemy; damage received -50% when facing 2 or more enemies";
         var stats = "HP: 8,803 (55%)/11,203 (100%)\nATK: 8,737 (55%)/11,137 (100%)\nDEF: 5,451 (55%)/7,851 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -111,6 +116,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -264,6 +273,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

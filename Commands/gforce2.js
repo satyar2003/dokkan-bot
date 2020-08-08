@@ -7,13 +7,13 @@ module.exports = {
                  '[Joined Forces](https://dbz-dokkanbattle.fandom.com/wiki/Joined_Forces)',
                  '[Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)',
                  '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
-    link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force) (ATK +25%)',
-           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose) (Ki +2)',
-           '[Gentleman](https://dbz-dokkanbattle.fandom.com/wiki/Gentleman) (Ki +2)',
-           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect) (ATK +500)',
-           '[Loyalty](https://dbz-dokkanbattle.fandom.com/wiki/Loyalty) (Ki +1)',
-           '[More than Meets the Eye](https://dbz-dokkanbattle.fandom.com/wiki/More_Than_Meets_the_Eye) (ATK +300)',
-           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power) (ATK +5000 when Super Attack is launched)'],
+    link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force)\n ­ ­ ­ ­ Level 1: ATK +25%\n ­ ­ ­ ­ Level 10: ATK +25% and damage received -5%',
+           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK +7%',
+           '[Gentleman](https://dbz-dokkanbattle.fandom.com/wiki/Gentleman)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 & DEF +10%',
+           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Loyalty](https://dbz-dokkanbattle.fandom.com/wiki/Loyalty)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and damage received -5%',
+           '[More Than Meets the Eye](https://dbz-dokkanbattle.fandom.com/wiki/More_Than_Meets_the_Eye)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK & DEF +10%',
+           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched'],
     status: 'complete',
     plural: 'false',
     aliases: ['Ginyu (Goku) (Ginyu Force)'],
@@ -34,7 +34,12 @@ module.exports = {
         var passive = "Malevolent Magnificence: Extreme Class allies' ATK & DEF +30%; \"[Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/Ginyu_Force)\" Category allies' ATK & DEF +20% in addition";
         var stats = "HP: 13,766 (55%)/16,366 (100%)\nATK: 14,224 (55%)/17,624 (100%)\nDEF: 10,887 (55%)/13,887 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -113,6 +118,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -266,6 +275,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

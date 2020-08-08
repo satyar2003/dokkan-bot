@@ -5,13 +5,13 @@ module.exports = {
     description: 'INT UR Broly (Kid) without EZA',
     categories: ['[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
                  '[Youth](https://dbz-dokkanbattle.fandom.com/wiki/Youth)'],
-    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race) (ATK +700)',
-           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
-           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents) (ATK +10%)',
-           '[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies) (ATK +10%)',
-           '[Tough as Nails](https://dbz-dokkanbattle.fandom.com/wiki/Tough_as_Nails) (DEF +1500)',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Tough as Nails](https://dbz-dokkanbattle.fandom.com/wiki/Tough_as_Nails)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20% and damage received -5%',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Broly (Kid)'],
@@ -33,7 +33,12 @@ module.exports = {
         var passive = "Attack-Evasion Training: ATK & DEF +60%; medium chance[2] of evading enemy's attack (including Super Attack)";
         var stats = "HP: 7,748 (55%)/9,878 (100%)\nATK: 8,575 (55%)/10,975 (100%)\nDEF: 4,367 (55%)/6,767 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -88,6 +93,7 @@ module.exports = {
                                 {name: "Passive Skill", value: passive},
                                 {name: "Stats", value: stats},
                                 {name: "Links", value: links},
+                                {name: "Links cont.", value: links},
                                 {name: "Categories", value: cats},
                                 {name: "Attack Per Turn", value: apt},
                                 {name: "Best Linking Partners", value: blp},
@@ -162,6 +168,7 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
+.addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;

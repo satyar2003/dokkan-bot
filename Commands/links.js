@@ -1,3 +1,5 @@
+const {Discord} = require('discord.js');
+
 module.exports = {
     name: 'links',
     execute(message, args) {
@@ -13,11 +15,11 @@ module.exports = {
         const name2 = args[1].toLowerCase();
         const command2 = commands.get(name2) || commands.find(c2 => c2.aliases && c2.aliases.includes(name2));
 
-        if (name === name2)
+        /*if (name === name2)
         {
             message.channel.send(`${message.author} you must input two different characters`)
             return;
-        }
+        }*/
         
         if (command.status === 'incomplete' && command2.status === 'incomplete')
         {
@@ -92,8 +94,10 @@ module.exports = {
         }
         else
         {
-            var shared = "";
+            var shared = [];
             var num = 0;
+            var sharedLinks1 = "";
+            var sharedLinks2 = "";
 
             for (var k = 0; k < command.link.length; k++)
             {
@@ -101,18 +105,39 @@ module.exports = {
                 {
                     if (command.link[k] == command2.link[l])
                     {
-                        shared += command.link[k] + "\n";
+                        shared.push(command.link[k]);
                         num++;
                     }
                 }
             }
 
+            if (num >= 4)
+            {
+                for (var i = 0; i < Math.ceil(shared.length/2); i++)
+                {
+                    sharedLinks1 += shared[i] + "\n";
+                }
+
+                for (var i = Math.ceil(shared.length/2); i < shared.length; i++)
+                {
+                    sharedLinks2 += shared[i] + "\n";
+                }
+            }
+            else
+            {
+                for (var i = 0; i < shared.length; i++)
+                {
+                    sharedLinks1 += shared[i] + "\n";
+                }
+            }
+
             if (num != 0)
             {
-                if (num != 1)
+                if (num >= 4)
                 {
                     message.channel.send({embed: {
                         color: 0,
+                        title: num + " Shared Links",
                         author:
                         {
                             name: message.author.username,
@@ -120,17 +145,32 @@ module.exports = {
                         },
                         fields: [
                             {
-                                name: num + " Shared Links",
-                                value: shared
+                                name: "Links",
+                                value: sharedLinks1
+                            },
+                            {
+                                name: "Links cont.",
+                                value: sharedLinks2
                             }
                         ],
                         timestamp: new Date()
                     }});
                 }
+                else if (num > 1 && num < 4)
+                {
+                    const sharedLinks = new Discord.MessageEmbed()
+                        .setColor(0)
+                        .setTitle(num + " Shared Links")
+                        .setAuthor(message.author.username, message.author.displayAvatarURL({format: "png", dynamic: "true"}))
+                        .addField("Links", sharedLinks1)
+                        .setTimestamp()
+                    message.channel.send(sharedLinks);
+                }
                 else
                 {
                     message.channel.send({embed: {
                         color: 0,
+                        title: num + " Shared Links",
                         author:
                         {
                             name: message.author.username,
@@ -138,8 +178,8 @@ module.exports = {
                         },
                         fields: [
                             {
-                                name: num + " Shared Link",
-                                value: shared
+                                name: "Links",
+                                value: sharedLinks1
                             }
                         ],
                         timestamp: new Date()

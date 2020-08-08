@@ -3,13 +3,13 @@ module.exports = {
     description: 'PHY LR Krillin',
     categories: ['[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
                  '[Earthlings](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings)'],
-    link: ['[Z Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Z_Fighters) (ATK +15%)',
-           '[Turtle School](https://dbz-dokkanbattle.fandom.com/wiki/Turtle_School) (ATK +500, DEF +500)',
-           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage) (Ki +1)',
+    link: ['[Z Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Z_Fighters)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Turtle School](https://dbz-dokkanbattle.fandom.com/wiki/Turtle_School)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +20%',
+           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and ATK +10%',
            '[High Compatability](https://dbz-dokkanbattle.fandom.com/wiki/High_Compatibility) (Ki +1)',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support) (ATK +10%, attacked enemy\'s DEF -15%)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)',
-           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power) (ATK +5000 when Super Attack is launched)'],
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched'],
     status: 'complete',
     plural: 'false',
     aliases: ['Krillin'],
@@ -30,7 +30,12 @@ module.exports = {
         var passive = "Courage in Adversity: Ki +3 and DEF +30000; ATK +20000 when performing a Super Attack, plus an additional ATK +20000 if it is an Ultra Super Attack; plus an additional Ki +3 when facing only 1 enemy; ATK +10000 at start of turn per existing enemy when facing 2 or more enemies (count starts from the 2nd enemy), and launches an additional Super Attack when facing 6 or more enemies";
         var stats = "HP: 19,130 (55%)/22,530 (100%)\nATK: 15,940 (55%)/18,940 (100%)\nDEF: 11,010 (55%)/13,610 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -109,6 +114,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -262,6 +271,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

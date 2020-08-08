@@ -9,13 +9,13 @@ module.exports = {
                  '[Target: Goku](https://dbz-dokkanbattle.fandom.com/wiki/Target:_Goku)',
                  '[Exploding Rage](https://dbz-dokkanbattle.fandom.com/wiki/Exploding_Rage)',
                  '[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)'],
-    link: ['[Hardened Grudge](https://dbz-dokkanbattle.fandom.com/wiki/Hardened_Grudge) (Ki +1)',
-           '[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race) (ATK +700)',
-           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan) (ATK +10%)',
-           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage) (Ki +1)',
-           '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker) (ATK +20% when HP is 50% or below)',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle) (Ki +2)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    link: ['[Hardened Grudge](https://dbz-dokkanbattle.fandom.com/wiki/Hardened_Grudge)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK +10%',
+           '[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
+           '[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Berserker](https://dbz-dokkanbattle.fandom.com/wiki/Berserker)\n ­ ­ ­ ­ Level 1: ATK +20% when HP is 50% or below\n ­ ­ ­ ­ Level 10: ATK +30% when HP is 50% or below',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',
     plural: 'false',
     aliases: ['lssbroly2', 'Legendary Super Saiyan Broly'],
@@ -37,7 +37,12 @@ module.exports = {
         var passive = "No Mercy: ATK +7000 & attack with an additional Super ATK when Ki is 8 or more";
         var stats = "HP: 12,350 (55%)/15,750 (100%)\nATK: 11,500 (55%)/14,500 (100%)\nDEF: 5,325 (55%)/7,925 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -91,6 +96,7 @@ module.exports = {
                                 {name: "Passive Skill", value: passive},
                                 {name: "Stats", value: stats},
                                 {name: "Links", value: links},
+                                {name: "Links cont.", value: links},
                                 {name: "Categories", value: cats},
                                 {name: "Attack Per Turn", value: apt},
                                 {name: "Best Linking Partners", value: blp},
@@ -163,6 +169,7 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
+.addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;

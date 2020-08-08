@@ -5,12 +5,12 @@ module.exports = {
                  '[Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/Ginyu_Force)',
                  '[Dragon Ball Seekers](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Seekers)',
                  '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
-    link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force) (ATK +25%)',
-           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose) (Ki +2)',
-           '[Speedy Retribution](https://dbz-dokkanbattle.fandom.com/wiki/Speedy_Retribution) (ATK +300)',
-           '[Tag Team of Terror](https://dbz-dokkanbattle.fandom.com/wiki/Tag_Team_of_Terror) (ATK +500)',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force)\n ­ ­ ­ ­ Level 1: ATK +25%\n ­ ­ ­ ­ Level 10: ATK +25% and damage received -5%',
+           '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK +7%',
+           '[Speedy Retribution](https://dbz-dokkanbattle.fandom.com/wiki/Speedy_Retribution)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15% and chance of evading +5%',
+           '[Tag Team of Terror](https://dbz-dokkanbattle.fandom.com/wiki/Tag_Team_of_Terror)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Burter'],
@@ -31,7 +31,12 @@ module.exports = {
         var passive = "Blue Blur: ATK +10% per Ki Sphere obtained; high chance[2] to evade enemy's attack (including Super Attack) as the 1st attacker in a turn";
         var stats = "HP: 8,443 (55%)/10,843 (100%)\nATK: 8,213 (55%)/10,613 (100%)\nDEF: 4,336 (55%)/6,736 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -110,6 +115,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -267,6 +276,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

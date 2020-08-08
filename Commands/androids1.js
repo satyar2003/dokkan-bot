@@ -8,13 +8,13 @@ module.exports = {
                  '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
                  '[Androids/Cell Saga](https://dbz-dokkanbattle.fandom.com/wiki/Androids-Cell_Saga)',
                  '[Target: Goku](https://dbz-dokkanbattle.fandom.com/wiki/Target:_Goku)'],
-    link: ['[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy) (Ki +2)',
-           '[Android Assault](https://dbz-dokkanbattle.fandom.com/wiki/Android_Assault) (DEF +1000)',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support) (ATK +10%, attacked enemy\'s DEF -15%)',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
-           '[Soul vs Soul](https://dbz-dokkanbattle.fandom.com/wiki/Soul_vs_Soul) (Weakens Regeneration and Ki +1)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)',
-           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power) (ATK +5000 when Super Attack is launched)'],
+    link: ['[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5% and chance to perform a critical hit +5%',
+           '[Android Assault](https://dbz-dokkanbattle.fandom.com/wiki/Android_Assault)\n ­ ­ ­ ­ Level 1: DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +20%',
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Soul vs Soul](https://dbz-dokkanbattle.fandom.com/wiki/Soul_vs_Soul)\n ­ ­ ­ ­ Level 1: Weakens "Regeneration" and Ki +1\n ­ ­ ­ ­ Level 10: Weakens "Regeneration" and Ki +1, ATK & DEF +5%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched'],
     status: 'complete',
     plural: 'true',
     aliases: ['Androids #17 & #18/Android #16'],
@@ -33,7 +33,12 @@ module.exports = {
         var stats = "HP: 23,363 (55%)/2,6763 (100%)\nATK: 17,190 (55%)/20,190 (100%)\nDEF: 9,956 (55%)/12,566 (100%)";
         const {link} = require('./androids1.js')
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -81,6 +86,7 @@ module.exports = {
                             {name: "Active Skill", value: active},
                             {name: "Stats", value: stats},
                             {name: "Links", value: links},
+                            {name: "Links cont.", value: links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -168,6 +174,8 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
+.addField("Links cont.", links2)
+                        .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;

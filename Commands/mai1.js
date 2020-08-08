@@ -6,12 +6,12 @@ module.exports = {
                  '[Time Travelers](https://dbz-dokkanbattle.fandom.com/wiki/Time_Travelers)',
                  '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
                  '[Earthlings](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings)'],
-    link: ['[Battlefield Diva](https://dbz-dokkanbattle.fandom.com/wiki/Battlefield_Diva) (Ki +2)',
-           '[Brainiacs](https://dbz-dokkanbattle.fandom.com/wiki/Brainiacs) (ATK & DEF +10%)',
-           '[Cold Judgement](https://dbz-dokkanbattle.fandom.com/wiki/Cold_Judgment) (DEF +20%)',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support) (ATK +10%, attacked enemy\'s DEF -15%)',
-           '[Dismal Future](https://dbz-dokkanbattle.fandom.com/wiki/Dismal_Future) (Ki +1)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[Battlefield Diva](https://dbz-dokkanbattle.fandom.com/wiki/Battlefield_Diva)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and chance of evading +5%',
+           '[Brainiacs](https://dbz-dokkanbattle.fandom.com/wiki/Brainiacs)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: ATK & DEF +15%',
+           '[Cold Judgment](https://dbz-dokkanbattle.fandom.com/wiki/Cold_Judgment)\n ­ ­ ­ ­ Level 1: DEF +20%\n ­ ­ ­ ­ Level 10: DEF +25%',
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Dismal Future](https://dbz-dokkanbattle.fandom.com/wiki/Dismal_Future)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and chance to perform a critical hit +5%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Mai (Future)'],
@@ -32,7 +32,12 @@ module.exports = {
         var passive = "Growing Resistance: All allies' Ki +3; <:agl:729467484289105930> Type ATK & DEF +20%; \"[Peppy Gals](https://dbz-dokkanbattle.fandom.com/wiki/Peppy_Gals)\" Category allies' chance of performing a critical hit +10%";
         var stats = "HP: 8,840 (55%)/11,440 (100%)\nATK: 9,183 (55%)/12,183 (100%)\nDEF: 5,851 (55%)/9,251 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -111,6 +116,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -264,6 +273,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

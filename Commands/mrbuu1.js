@@ -8,13 +8,13 @@ module.exports = {
                  '[Artificial Life Forms](https://dbz-dokkanbattle.fandom.com/wiki/Artificial_Life_Forms)',
                  '[Worthy Rivals](https://dbz-dokkanbattle.fandom.com/wiki/Worthy_Rivals)',
                  '[Majin Power](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Power)'],
-    link: ['[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents) (ATK +10%)',
-           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival) (Ki +2)',
-           '[Master of Magic](https://dbz-dokkanbattle.fandom.com/wiki/Master_of_Magic) (ATK +15%)',
-           '[Majin](https://dbz-dokkanbattle.fandom.com/wiki/Majin) (ATK & DEF +10%)',
-           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration) (Recover 3% HP)',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed) (Ki +2)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recover 5% HP when HP is 50% or below',
+           '[Master of Magic](https://dbz-dokkanbattle.fandom.com/wiki/Master_of_Magic)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -10%',
+           '[Majin](https://dbz-dokkanbattle.fandom.com/wiki/Majin)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +15%',
+           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration)\n ­ ­ ­ ­ Level 1: Recover 3% HP\n ­ ­ ­ ­ Level 10: Ki +2 and recover 3% HP and DEF +10%',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Mr. Buu'],
@@ -35,7 +35,12 @@ module.exports = {
         var passive = "Plethora of Changes: ATK & DEF +80%; changes <:int:729468835819946026> Ki Spheres and Ki Spheres of another Type to <:rbw:729467948690964480> Ki Spheres; ATK & DEF +20% and recovers 15000 HP per <:rbw:729467948690964480> Ki Sphere obtained";
         var stats = "HP: 11,477 (55%)/13,037 (100%)\nATK: 8,623 (55%)/10,663 (100%)\nDEF: 6,168 (55%)/7,968 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -114,6 +119,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -267,6 +276,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

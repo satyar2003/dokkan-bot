@@ -5,13 +5,13 @@ module.exports = {
                  '[Time Travelers](https://dbz-dokkanbattle.fandom.com/wiki/Time_Travelers)',
                  '[Vegeta\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Vegeta%27s_Family)',
                  '[Dragon Ball Heroes](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Heroes)'],
-    link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter) (ATK +10%, Enemy DEF -10%)',
-           '[Hero](https://dbz-dokkanbattle.fandom.com/wiki/Hero) (DEF +20%)',
-           '[Hero of Justice](https://dbz-dokkanbattle.fandom.com/wiki/Hero_of_Justice) (ATK +25%)',
-           '[Patrol](https://dbz-dokkanbattle.fandom.com/wiki/Patrol) (Ki +2)',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support) (ATK +10%, attacked enemy\'s DEF -15%)',
-           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect) (ATK +500)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -10%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -15%',
+           '[Hero](https://dbz-dokkanbattle.fandom.com/wiki/Hero)\n ­ ­ ­ ­ Level 1: DEF +20%\n ­ ­ ­ ­ Level 10: DEF +25%',
+           '[Hero of Justice](https://dbz-dokkanbattle.fandom.com/wiki/Hero_of_Justice)\n ­ ­ ­ ­ Level 1: ATK +25%\n ­ ­ ­ ­ Level 10: ATK +25% and chance to perform a critical hit +5%',
+           '[Patrol](https://dbz-dokkanbattle.fandom.com/wiki/Patrol)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +20%',
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Great Saiyaman 3'],
@@ -32,7 +32,12 @@ module.exports = {
         var passive = "[Charisma of a Hero](https://youtu.be/QTt_bI_dDA0?t=33): ATK & DEF +17% and chance of performing a critical hit +3% per \"[Time Travelers](https://dbz-dokkanbattle.fandom.com/wiki/Time_Travelers)\" Category ally on the team; DEF -30% within the same turn after receiving attack; counters with tremendous power[1] upon receiving normal attacks";
         var stats = "HP: 11,886 (55%)/14,486 (100%)\nATK: 10,427 (55%)/13,827 (100%)\nDEF: 7,296 (55%)/10,296 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -111,6 +116,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -264,6 +273,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

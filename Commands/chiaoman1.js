@@ -3,11 +3,11 @@ module.exports = {
     description: 'PHY UR Chiaoman',
     categories: ['[Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion)',
                  '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
-    link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter) (ATK +10%, Enemy DEF -10%)',
-           '[Telekinesis](https://dbz-dokkanbattle.fandom.com/wiki/Telekinesis) (Enemy DEF -10%)',
-           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage) (Ki +1)',
-           '[Telepathy](https://dbz-dokkanbattle.fandom.com/wiki/Telepathy) (Ki +1)',
-           '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter) (Ki +2)'],
+    link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -10%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -15%',
+           '[Flee](https://dbz-dokkanbattle.fandom.com/wiki/Flee)\n ­ ­ ­ ­ Level 1: Enemy DEF -10%\n ­ ­ ­ ­ Level 10: Enemy DEF -20%',
+           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and ATK +10%',
+           '[Telepathy](https://dbz-dokkanbattle.fandom.com/wiki/Telepathy)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and chance to perform a critical hit +5%',
+           '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['god', 'Chiaoman'],
@@ -28,7 +28,12 @@ module.exports = {
         var passive = "Power of Courage: Ki +8 and ATK +3000 when HP is 50% or below (once only)";
         var stats = "HP: 10,927 (55%)/14,327 (100%)\nATK: 9,253 (55%)/12,253 (100%)\nDEF: 6,757 (55%)/9,357 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -107,6 +112,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -256,6 +265,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

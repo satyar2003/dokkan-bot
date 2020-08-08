@@ -6,13 +6,13 @@ module.exports = {
                  '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
                  '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
                  '[Earthlings](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings)'],
-    link: ['[Crane School](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings) (ATK +500)',
-           '[Supreme Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Warrior) (Ki +1)',
-           '[Coward](https://dbz-dokkanbattle.fandom.com/wiki/Coward) (Ki +1)',
-           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival) (Ki +2)',
-           '[Dodon Ray](https://dbz-dokkanbattle.fandom.com/wiki/Dodon_Ray) (ATK +2000 when Super Attack is launched)',
-           '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown) (ATk +10%)',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit) (Ki +2)'],
+    link: ['[Crane School](https://dbz-dokkanbattle.fandom.com/wiki/Crane_School)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Supreme Warrior](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Warrior)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 & ATK +10%',
+           '[Coward](https://dbz-dokkanbattle.fandom.com/wiki/Coward)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and chance to perform a critical hit +5%',
+           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recover 5% HP when HP is 50% or below',
+           '[Dodon Ray](https://dbz-dokkanbattle.fandom.com/wiki/Dodon_Ray)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched',
+           '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Cyborg Tao'],
@@ -33,7 +33,12 @@ module.exports = {
         var passive = "Precise Measurement: ATK & DEF +120% and attack guaranteed to hit when performing a Super Attack; ATK & DEF +20% with each attack received (up to 80%)";
         var stats = "HP: 8,240 (55%)/9,800 (100%)\nATK: 9,392 (55%)/11,432 (100%)\nDEF: 5,565 (55%)/7,365 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -112,6 +117,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
@@ -265,6 +274,10 @@ module.exports = {
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         }
                     ],
                     timestamp: new Date()

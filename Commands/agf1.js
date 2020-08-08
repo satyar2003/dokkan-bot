@@ -10,13 +10,13 @@ module.exports = {
                  '[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost)',
                  '[Wicked Bloodline](https://dbz-dokkanbattle.fandom.com/wiki/Wicked_Bloodline)',
                  '[Otherworld Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Otherworld_Warriors)'],
-    link: ['[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies) (ATK +10%)',
-           '[Universe\'s Most Malevolent](https://dbz-dokkanbattle.fandom.com/wiki/Universe%27s_Most_Malevolent) (ATK +15%)',
-           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival) (Ki +2)',
-           '[Strongest Clan in Space](https://dbz-dokkanbattle.fandom.com/wiki/Strongest_Clan_in_Space) (Ki +2)',
-           '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown) (ATK +10%)',
-           '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power) (Ki +3)',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle) (ATK +15%)'],
+    link: ['[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Universe\'s Most Malevolent](https://dbz-dokkanbattle.fandom.com/wiki/Universe%27s_Most_Malevolent)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
+           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recover 5% HP when HP is 50% or below',
+           '[Strongest Clan in Space](https://dbz-dokkanbattle.fandom.com/wiki/Strongest_Clan_in_Space)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and enemy DEF -10%',
+           '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF +7%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',
     plural: 'false',
     aliases: ['Golden Frieza (Angel)'],
@@ -38,7 +38,12 @@ module.exports = {
         var passive = "Proof of True Evil: ATK +150% and DEF +50%; Super Class allies' and enemies' ATK -15%";
         var stats = "HP: 13,020 (55%)/16,020 (100%)\nATK: 12,208 (55%)/15,208 (100%)\nDEF: 8,605 (55%)/11,605 (100%)";
         var links = "";
-            for (var i = 0; i < link.length; i++)
+            for (var i = 0; i < Math.ceil(link.length/2); i++)
+            {
+                links += link[i] + "\n";
+            }
+        var links2 = "";
+            for (var i = Math.ceil(link.length/2); i < link.length; i++)
             {
                 links += link[i] + "\n";
             }
@@ -47,7 +52,7 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 3,055,893 (unsupported)/3,552,170 (supported)\nDefense: 76,593 (unsupported)/90,515 (supported) \nLinking Partner: [AGL UR Golden Frieza](https://dbz-dokkanbattle.fandom.com/wiki/Proof_of_Resurrection_Golden_Frieza) \nTeam: [Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)/[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost) \nBuild: 6 Additional/15 Critical";
+        var apt = "APT: 3,492,449 (unsupported)/4,090,357 (supported)\nDefense: 80,422 (unsupported)/96,221 (supported) \nLinking Partner: [AGL UR Golden Frieza](https://dbz-dokkanbattle.fandom.com/wiki/Proof_of_Resurrection_Golden_Frieza) \nTeam: [Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)/[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost) \nBuild: 6 Additional/15 Critical";
         var blp = "[AGL SSR Frieza (Final Form) (Angel)](https://dbz-dokkanbattle.fandom.com/wiki/Shady_Business_Frieza_(Final_Form)_(Angel)) - 6 links shared\n[AGL UR Golden Frieza](https://dbz-dokkanbattle.fandom.com/wiki/Proof_of_Resurrection_Golden_Frieza) - 5 links shared\n[INT UR Golden Frieza](https://dbz-dokkanbattle.fandom.com/wiki/Golden_Malice_Golden_Frieza) - 5 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► [STR SSR Golden Frieza (Angel)](https://dbz-dokkanbattle.fandom.com/wiki/The_10th_Warrior_from_Universe_7_Golden_Frieza_(Angel)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
         var footnotes = "[1]: Lowers enemy's DEF by 50% for 3 turns";
@@ -99,6 +104,7 @@ module.exports = {
                             {name: "Passive Skill", value: passive},
                             {name: "Stats", value: stats},
                             {name: "Links", value: links},
+                            {name: "Links cont.", value: links2},
                             {name: "Categories", value: cats},
                             {name: "Attack Per Turn", value: apt},
                             {name: "Best Linking Partners", value: blp},
@@ -171,6 +177,8 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
+.addField("Links cont.", links2)
+                        .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
