@@ -177,7 +177,6 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
-.addField("Links cont.", links2)
                         .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
