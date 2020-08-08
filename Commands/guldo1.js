@@ -8,7 +8,7 @@ module.exports = {
                  '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
     link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force)\n ­ ­ ­ ­ Level 1: ATK +25%\n ­ ­ ­ ­ Level 10: ATK +25% and damage received -5%',
            '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK +7%',
-           '[Flee](https://dbz-dokkanbattle.fandom.com/wiki/Flee)\n ­ ­ ­ ­ Level 1: Enemy DEF -10%\n ­ ­ ­ ­ Level 10: Enemy DEF -20%',
+           '[Flee](https://dbz-dokkanbattle.fandom.com/wiki/Flee)\n ­ ­ ­ ­ Level 1: Ki +1 when HP is 30% or below\n ­ ­ ­ ­ Level 10: Ki +2 and chance of evading +10% when HP is 50% or less',
            '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
            '[Brainiacs](https://dbz-dokkanbattle.fandom.com/wiki/Brainiacs)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: ATK & DEF +15%',
            '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],

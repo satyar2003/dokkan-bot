@@ -12,7 +12,7 @@ module.exports = {
                  '[Target: Goku](https://dbz-dokkanbattle.fandom.com/wiki/Target:_Goku)',
                  '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)'],
     link: ['[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recover 5% HP when HP is 50% or below',
-           '[Messenger from the Future](https://dbz-dokkanbattle.fandom.com/wiki/Messenger_from)the_Future)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
+           '[Messenger from the Future](https://dbz-dokkanbattle.fandom.com/wiki/Messenger_from_the_Future)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
            '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses)\n ­ ­ ­ ­ Level 1: ATK & DEF +25% when HP is 80% or below\n ­ ­ ­ ­ Level 10: ATK & DEF +25%',
            '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha)\n ­ ­ ­ ­ Level 1: ATK +5% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +10% when Super Attack is launched',
            '[Ultimate Lifeform](https://dbz-dokkanbattle.fandom.com/wiki/Ultimate_Lifeform)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +10% and recover 3% HP',
