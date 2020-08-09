@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 module.exports = {
     name: "test",
     execute(message, args){
-        const reader = require('g-sheets-api')
+        const reader = require('../g-sheets-api')
         const readerOptions = {
         sheetId: "167S0pcL_MObdrHi2MWgf_CW1geR6dWOWISb3iKH9kU8",
         returnAllResults: false,
