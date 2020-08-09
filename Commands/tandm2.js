@@ -112,16 +112,16 @@ module.exports = {
                             value: passive
                         },
                         {
-                            name: "Active Skill",
-                            value: active
-                        },
-                        {
                             name: "Stats",
                             value: stats
                         },
                         {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
