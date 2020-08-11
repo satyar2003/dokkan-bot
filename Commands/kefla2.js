@@ -23,9 +23,9 @@ module.exports = {
     aliases: ['ssjkefla1', 'sskefla1', 'Super Saiyan Kefla'],
     execute(message, args) {
         var color = 8990259;
-        var name = "Limit-Breaking Heights\nSuper Saiyan Kefla";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Limit-Breaking_Heights_Kefla#Super%20Saiyan%20Kefla";
-        var desc = "Super STR UR [JPN]";
+        var name = "Transcendent Heights\nSuper Saiyan Kefla";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Transcendent_Height_Kefla#Super%20Saiyan%20Kefla";
+        var desc = "Super STR UR ";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/716130726130745374/card_4019750_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720681005144604732/giGm6Yr1xglmYwTnrHG9X8BW3t39AE6J7gAAAAASUVORK5CYII.png";
         var leader = `"[Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6)" Category Ki +3, HP, ATK, DEF +170%; or "[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)" Category Ki +3 and HP, ATK & DEF +150%`;
@@ -50,7 +50,7 @@ module.exports = {
                 cats += categories[i] + "\n";
             }
         var apt = "APT: 4,862,147 (unsupported)/6,429,153 (supported)\nDefense: 117,728 \nLinking Partners: [AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale)/[STR UR Super Saiyan Cabba](https://dbz-dokkanbattle.fandom.com/wiki/Warrior_Race%27s_Resolve_Super_Saiyan_Cabba) \nTeam: [Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6) \nBuild: 6 Additional/20 Critical";
-        var blp = "[PHY UR Super Saiyan 2 Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Dreadful_Super_Fusion_Super_Saiyan_2_Kefla) - 6 links shared\n[AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale) - 5 links shared\n[STR UR Super Saiyan Cabba](https://dbz-dokkanbattle.fandom.com/wiki/Warrior_Race%27s_Resolve_Super_Saiyan_Cabba) - 2 links shared";
+        var blp = "[STR UR Super Saiyan 2 Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Transcendent_Height_Kefla#Super%20Saiyan%202%20Kefla) - 7 links shared\n[STR UR Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Transcendent_Height_Kefla#Kefla) - 6 links shared\n[PHY UR Super Saiyan 2 Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Dreadful_Super_Fusion_Super_Saiyan_2_Kefla) - 6 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► Her additional ATK +50% is calculated separately, for a total boost of ATK +275% with 6 or more Ki Spheres obtained\n► She has a 40% uptime in her SSJ form\n► She has a 20% uptime in her SSJ2 form";
         var footnotes = "[1]: Raises ATK by 30% for 99 turns\n[2]: Lowers enemy's DEF by 50% for 3 turns\n[3]: 50% chance to evade enemy's attack";
         var transform = "Transforms upon entering next attacking turn when HP is 60% or more";
