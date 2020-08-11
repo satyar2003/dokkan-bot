@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "Links are being updated currently. More units will come soon. Thank you for being patient.",
+                    name: "PHY LR Broly & Cheelai & Lemo",
                     value:  "** **"
                 }
             ],
