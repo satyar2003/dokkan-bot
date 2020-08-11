@@ -5,15 +5,15 @@ module.exports = {
     description: 'A search function for units',
     execute(message, args) {
         var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        var charSearch = args[0].toLowerCase()
+        var charSearch = args[0]
         var length = args.length
-        switch (true)
+        switch (charSearch)
         {
-            case length == 0:
+            case undefined:
                 message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
                 break;
 
-            case charSearch == "black":
+            case "black":
                 const black = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -37,7 +37,7 @@ module.exports = {
                 message.channel.send(black)
                 break;
 
-            case charSearch == "buu":
+            case "buu":
                 const buu = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -54,7 +54,7 @@ module.exports = {
                 message.channel.send(buu)
                 break;
 
-            case charSearch == "cell":
+            case "cell":
                 const cell = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -74,7 +74,7 @@ module.exports = {
                 message.channel.send(cell)
                 break;
 
-            case charSearch == "cooler":
+            case "cooler":
                 const cooler = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -90,7 +90,7 @@ module.exports = {
                 message.channel.send(cooler)
                 break;
 
-            case charSearch == "gogeta":
+            case "gogeta":
                 const gogeta = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -108,7 +108,7 @@ module.exports = {
                 message.channel.send(gogeta)
                 break;
 
-            case charSearch == "gohan":
+            case "gohan":
                 const gohan = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -129,7 +129,7 @@ module.exports = {
                 message.channel.send(gohan)
                 break;
 
-            case charSearch == "goku":
+            case "goku":
                 const goku = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -189,7 +189,7 @@ module.exports = {
                 message.channel.send(goku)
                 break;
 
-            case charSearch == "goten":
+            case "goten":
                 const goten = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -201,7 +201,7 @@ module.exports = {
                 message.channel.send(goten)
                 break;
 
-            case charSearch == "vegeta":
+            case "vegeta":
                 const vegeta = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -231,7 +231,7 @@ module.exports = {
                 message.channel.send(vegeta)
                 break;
 
-            case charSearch == "raditz":
+            case "raditz":
                 const raditz = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -244,8 +244,20 @@ module.exports = {
                 message.channel.send(raditz)
                 break;
 
-            case charSearch == "vegito":
-            case charSearch == "bejito":
+            case "vados":
+                const vados = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/742562165860335687/latest.png?width=1088&height=613")
+                    .addFields(
+                        {name: "Vados", value: "**vados1**: INT UR Vados"}
+                    )
+                    .setTimestamp()
+                message.channel.send(vados)
+                break;
+
+            case "vegito":
+            case "bejito":
                 const vegito = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
