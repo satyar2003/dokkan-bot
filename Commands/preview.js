@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "PHY LR Broly & Cheelai & Lemo",
+                    name: "More units wil be coming soon.",
                     value:  "** **"
                 }
             ],
