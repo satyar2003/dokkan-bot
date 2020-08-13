@@ -116,6 +116,10 @@ module.exports = {
                             value: passive
                         },
                         {
+                            name: "Active Skill",
+                            value: active
+                        },
+                        {
                             name: "Stats",
                             value: stats
                         },
