@@ -30,7 +30,7 @@ module.exports = {
         var character = "https://media.discordapp.net/attachments/712036120191434793/720680606664491062/latest.png?width=459&height=612";
         var leader = `"[Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6)" Category Ki +3, HP, ATK, DEF +170%; or "[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)" Category Ki +3 and HP, ATK & DEF +150%`;
         var superatk = "[Gigantic Crash](https://youtu.be/A5oEMgE1jqk?t=12): Raises ATK[1], causes immense damage to enemy and lowers DEF[2]";
-        var passive = "What a Nice Feeling!: DEF +100%; ATK +100% when performing a Super Attack; plus an additional ATK +50% and high chance[3] of evading enemy's attack (including Super Attack) with 6 or more Ki Spheres obtained; Transforms when conditions are met";
+        var passive = "This Feels Great!: DEF +100%; ATK +100% when performing a Super Attack; plus an additional ATK +50% and high chance[3] of evading enemy's attack (including Super Attack) with 6 or more Ki Spheres obtained; Transforms when conditions are met";
         var stats = "HP: 13,045 (55%)/16,045 (100%)\nATK: 13,736 (55%)/17,136 (100%)\nDEF: 8,933 (55%)/11,533 (100%)";
         const {link} = require('./kefla1.js')
         var links = "";

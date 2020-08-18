@@ -30,7 +30,8 @@ module.exports = {
         var character = "https://media.discordapp.net/attachments/712036120191434793/720681005144604732/giGm6Yr1xglmYwTnrHG9X8BW3t39AE6J7gAAAAASUVORK5CYII.png";
         var leader = `"[Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6)" Category Ki +3, HP, ATK, DEF +170%; or "[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)" Category Ki +3 and HP, ATK & DEF +150%`;
         var superatk = "[Gigantic Canonball](https://youtu.be/A5oEMgE1jqk?t=31): Raises ATK[1], causes immense damage to enemy and greatly lowers DEF[2]";
-        var passive = "Let's Go at Full Throttle!: DEF +150%; ATK +150% when performing a Super Attack; plus an additional ATK +50% and high chance[3] of evading enemy's attack (including Super Attack) with 6 or more Ki Spheres obtained; Transforms when conditions are met";
+        var passive = "I Will Crank It Up!: DEF +150%; ATK +150% when performing a Super Attack; plus an additional ATK +50% and high chance[3] of evading enemy's attack (including Super Attack) with 6 or more Ki Spheres obtained; Transforms when conditions are met";
+        //var transform = "Transforms when HP is 60% or more starting from next attacking turn"
         var stats = "HP: 13,045 (55%)/16,045 (100%)\nATK: 13,736 (55%)/17,136 (100%)\nDEF: 8,933 (55%)/11,533 (100%)";
         const {link} = require('./kefla2.js')
         var links = "";
@@ -107,12 +108,12 @@ module.exports = {
                             value: stats
                         },
                         {
-                            name: "Links cont.",
-                            value: links2
-                        },
-                        {
                             name: "Links",
                             value: links
+                        },
+                        {
+                            name: "Links cont.",
+                            value: links2
                         },
                         {
                             name: "Categories",
