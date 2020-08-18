@@ -865,6 +865,10 @@ module.exports = {
                                 "**lssjbroly3**: STR LR Legendary Super Saiyan Broly\n" +
                                 "**lssjbroly2**: PHY UR Legendary Super Saiyan Broly without EZA\n" +
                                 "**lssjbroly2z**: PHY UR Legendary Super Saiyan Broly with EZA"
+                    },
+                    {
+                        name: "Broly & Cheelai & Lemo",
+                        value: "**brolytrio1**: PHY LR Broly & Cheelai & Lemo"
                     }
                 ],
                 timestamp: new Date()
