@@ -3,9 +3,20 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'a171',
     description: 'PHY UR Android #17 from the Tournament of Power',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Androids](https://dbz-dokkanbattle.fandom.com/wiki/Androids)',
+                 '[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)',
+                 '[Representatives of Universe 7](https://dbz-dokkanbattle.fandom.com/wiki/Representatives_of_Universe_7)',
+                 '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
+                 '[Worthy Rivals](https://dbz-dokkanbattle.fandom.com/wiki/Worthy_Rivals)',
+                 '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
+    link: ['[Android Assault](https://dbz-dokkanbattle.fandom.com/wiki/Android_Assault)\n ­ ­ ­ ­ Level 1: DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +20%',
+           '[Twin Terrors](https://dbz-dokkanbattle.fandom.com/wiki/Twin_Terrors)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK, DEF & chance of evading +5%',
+           '[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5% and chance to perform a critical hit +5%',
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF +7%',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
+    status: 'complete',
     plural: 'false',
     aliases: ['mvp17', 'Android #17'],
     execute(message, args) {
@@ -16,15 +27,15 @@ module.exports = {
         const {plural} = require('./a171.js')
         const {aliases} = require('./a171.js')
         var color = 7164715;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Last-Ditch Battle\nAndroid #17";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Last-Ditch_Battle_Android_17";
+        var desc = "Super PHY";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/745697816223154316/card_1014910_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/745697836682707045/340.png";
+        var leader = "\"[Androids](https://dbz-dokkanbattle.fandom.com/wiki/Androids)\" Category Ki +3, HP & ATK +170% and DEF +130%; or [<:sphy:729475848196980736>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type Ki +3 and HP, ATK & DEF +90%";
+        var superatk = "[Grand Explosion](https://dbz-dokkanbattle.fandom.com/wiki/File:PHY_TUR_Android_17_(Super)_Super_Attack): Causes immense damage to enemy and lowers ATK & DEF[1]";
+        var passive = "Cutthroat Survival Strategy: ATK +120% when performing a Super Attack; all allies' Ki +3 and DEF +60%; reduces damage received by 40% when HP is 77% or below";
+        var stats = "HP: 12,110 (55%)/15,510 (100%)\nATK: 12,832 (55%)/15,832 (100%)\nDEF: 8,280 (55%)/10,880 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -40,10 +51,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 2,881,874 (unsupported)/4,668,635 (supported)\nDefense: 85,996 (unsupported)/97,820 (supported) \nLinking Partner: [Androids #17 & 18/Android #16](https://dbz-dokkanbattle.fandom.com/wiki/The_Androids%27_Journey_Androids_17_%26_18/Android_16#Androids%20#17%20&%20#18) \nTeam: [Androids](https://dbz-dokkanbattle.fandom.com/wiki/Androids) \nBuild: 11 Additional/15 Critical";
+        var blp = "[PHY LR Androids #17 & 16/Android #16](https://dbz-dokkanbattle.fandom.com/wiki/The_Androids%27_Journey_Androids_17_%26_18/Android_16#Androids%20#17%20&%20#18) - 5 links shared\n[TEQ LR Goku & Frieza (Final Form) (Angel)](https://dbz-dokkanbattle.fandom.com/wiki/Miraculous_Outcome_Goku_%26_Frieza_(Final_Form)_(Angel)) - 4 links shared\n[PHY LR Android #16](https://dbz-dokkanbattle.fandom.com/wiki/The_Androids%27_Journey_Androids_17_%26_18/Android_16#Android%20#16) - 4 links shared";
+        var deets = "► 12 Ki Multiplier is 150%\n► [INT SSR Android #17](https://dbz-dokkanbattle.fandom.com/wiki/Warrior%27s_Duty_Android_17) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var footnotes = "[1]: Lowers enemy's ATK & DEF by 20% for 3 turns";
 
         if (status === 'incomplete')
         {
@@ -122,6 +133,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
+                        .setFooter(footnotes)
                     message.channel.send(superAttack)
                     break;
 

@@ -102,45 +102,45 @@ module.exports = {
                     },
                     fields: [
                         {
-                            name: "Leader Skill",
-                            value: leader
-                        },
-                        {
-                            name: "Super Attack",
-                            value: superatk
-                        },
-                        {
-                            name: "Passive Skill",
-                            value: passive
-                        },
-                        {
-                            name: "Transformation Condition",
-                            value: transform
-                        },
-                        {
-                            name: "Stats",
-                            value: stats
-                        },
-                        {
-                            name: "Links",
-                            value: links
-                        },
-                        {
-                            name: "Categories",
-                            value: cats
-                        },
-                        {
-                            name: "Attack Per Turn",
-                            value: apt
-                        },
-                        {
-                            name: "Best Linking Partners",
-                            value: blp
-                        },
-                        {
-                            name: "Details",
-                            value: deets
-                        }
+                        name: "Leader Skill",
+                        value: leader
+                    },
+                    {
+                        name: "Super Attack",
+                        value: superatk
+                    },
+                    {
+                        name: "Passive Skill",
+                        value: passive
+                    },
+                    {
+                        name: "Stats",
+                        value: stats
+                    },
+                    {
+                        name: "Links",
+                        value: links
+                    },
+                    {
+                        name: "Links cont.",
+                        value: links2
+                    },
+                    {
+                        name: "Categories",
+                        value: cats
+                    },
+                    {
+                        name: "Attack Per Turn",
+                        value: apt
+                    },
+                    {
+                        name: "Best Linking Partners",
+                        value: blp
+                    },
+                    {
+                        name: "Details",
+                        value: deets
+                    }
                     ],
                     image:
                     {
