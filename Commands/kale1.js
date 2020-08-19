@@ -24,7 +24,7 @@ module.exports = {
         const {aliases} = require('./kale1.js')
         var color = 8990259;
         var name = "Major Breakthrough\nKale";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Major_Breakthrough_Kale";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Impressive_Progress_Kale";
         var desc = "Super STR UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/720324947658014780/card_1019720_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720679671892803654/Gd5gfCE5CAAAAAElFTkSuQmCC.png";
@@ -47,8 +47,8 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 4,195,002 (unsupported)/4,717,900 (supported)\nDefense: 194,445 (unsupported)/218,750 (supported) \nLinking Partner: [TEQ UR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Shining_Possibility_Caulifla) \nTeam: [Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6) \nBuild: 6 Additional/20 Critical";
-        var blp = "[TEQ UR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Shining_Possibility_Caulifla) - 6 links shared\n[INT SSR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Awesome_Adaptability_Caulifla) - 5 links shared\n[AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale) - 4 links shared";
+        var apt = "APT: 4,195,002 (unsupported)/4,717,900 (supported)\nDefense: 194,445 (unsupported)/218,750 (supported) \nLinking Partner: [TEQ UR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Radiant_Potential_Caulifla) \nTeam: [Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6) \nBuild: 6 Additional/20 Critical";
+        var blp = "[TEQ UR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Radiant_Potential_Caulifla) - 6 links shared\n[INT SSR Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Awesome_Adaptability_Caulifla) - 5 links shared\n[AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale) - 4 links shared";
         var deets = "► 12 Ki Multiplier is 140%\n► Allies with both of the required Categories, including herself, will give her a total of ATK & DEF +20%\n► She will launch 2 additional Super Attacks when facing both required Categories at once\n► [INT SR Kale](https://dbz-dokkanbattle.fandom.com/wiki/Conflicted_Female_Saiyan_Kale) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
         var footnotes = "[1]: Raises ATK & DEF by 20% for 99 turns\n[2]: Lowers enemy's DEF by 40% for 3 turns";
         if (status === 'incomplete')
