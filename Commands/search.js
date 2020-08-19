@@ -18,6 +18,7 @@ module.exports = {
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
                     .setTitle("Android #17 Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/745527578172850226/Android_17.png")
                     .addFields(
                         {name: "Android #17", value: "**a171**: PHY UR Android #17 from the Tournament of Power"}
                     )
