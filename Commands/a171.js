@@ -11,7 +11,7 @@ module.exports = {
                  '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
     link: ['[Android Assault](https://dbz-dokkanbattle.fandom.com/wiki/Android_Assault)\n ­ ­ ­ ­ Level 1: DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +20%',
            '[Twin Terrors](https://dbz-dokkanbattle.fandom.com/wiki/Twin_Terrors)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK, DEF & chance of evading +5%',
-           '[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5% and chance to perform a critical hit +5%',
+           '[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5% and chance to perform a critical hit +5%',
            '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
            '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
            '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF +7%',
