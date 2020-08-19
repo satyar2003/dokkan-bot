@@ -13,6 +13,18 @@ module.exports = {
                 message.channel.send(`${message.author}` + " please specify what you would like to search up or use \`d!help\` for more information.\nEx 1. \`d!search goku\` will show you every Goku character in the bot's database.\nEx 2. \`d!search ssjgoku\` will show all characters that have \`ssjgoku\` in their command.")
                 break;
 
+            case "a17":
+                const a17 = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Android #17 Commands")
+                    .addFields(
+                        {name: "Android #17", value: "**a171**: PHY UR Android #17 from the Tournament of Power"}
+                    )
+                    .setTimestamp()
+                message.channel.send(a17)
+                break;
+
             case "black":
                 const black = new Discord.MessageEmbed()
                     .setColor(0)

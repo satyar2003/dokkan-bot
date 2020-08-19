@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "More units wil be coming soon.",
+                    name: "PHY UR Android #17",
                     value:  "** **"
                 }
             ],
