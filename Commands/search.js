@@ -103,6 +103,19 @@ module.exports = {
                 message.channel.send(cooler)
                 break;
 
+            case "fgohan":
+                const fgohan = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Gohan (Future) Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/745838708410023966/450.png")
+                    .addFields(
+                        {name: "Super Saiyan Gohan (Future)", value: "**fgohan1**: PHY UR Super Saiyan Gohan (Future)"}
+                    )
+                    .setTimestamp()
+                message.channel.send(fgohan)
+                break;
+
             case "gogeta":
                 const gogeta = new Discord.MessageEmbed()
                     .setColor(0)
@@ -136,7 +149,8 @@ module.exports = {
                         {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                                         "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
                                                         "**ugohan2**: STR UR Ultimate Gohan\n" +
-                                                        "**ugohan1z**: PHY UR Ultimate Gohan with EZA"}
+                                                        "**ugohan1z**: PHY UR Ultimate Gohan with EZA"},
+                        {name: "Super Saiyan Gohan (Future)", value: "**fgohan1**: PHY UR Super Saiyan Gohan (Future)"}
                     )
                     .setTimestamp()
                 message.channel.send(gohan)

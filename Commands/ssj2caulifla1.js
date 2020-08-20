@@ -3,9 +3,21 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'ssj2caulifla1',
     description: 'STR UR Super Saiyan 2 Caulifla',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)',
+                 '[Peppy Gals](https://dbz-dokkanbattle.fandom.com/wiki/Peppy_Gals)',
+                 '[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
+                 '[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
+                 '[Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6)',
+                 '[Super Saiyan 2](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan_2)',
+                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)'],
+    link: ['[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Battlefield Diva](https://dbz-dokkanbattle.fandom.com/wiki/Battlefield_Diva)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and chance of evading +5%',
+           '[Prodigies](https://dbz-dokkanbattle.fandom.com/wiki/Prodigies)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
+           '[Warriors of Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Warriors_of_Universe_6)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +6%',
+           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF +7%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
+    status: 'complete',
     plural: 'false',
     aliases: ['ss2caulifla1', 'Super Saiyan 2 Caulifla'],
     execute(message, args) {
@@ -16,15 +28,15 @@ module.exports = {
         const {plural} = require('./ssj2caulifla1.js')
         const {aliases} = require('./ssj2caulifla1.js')
         var color = 8990259;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Power for Securing Victory\nSuper Saiyan 2 Caulifla";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Power_for_Securing_Victory_Super_Saiyan_2_Caulifla";
+        var desc = "Super STR UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/745834540064571432/card_1020390_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/745834558808916089/340.png";
+        var leader = "[<:str:729468929293942894>](https://dbz-dokkanbattle.fandom.com/wiki/Category:STR) Type Ki +3 and HP, ATK & DEF +50%";
+        var superatk = "Energy Blast: Causes supreme damage to enemy and raises DEF by 30% for 1 turn";
+        var passive = "Super Aggressive: ATK & DEF +20% (up to 80%) and chance of evading enemy's attack (including Super Attack) +15% (up to 60%) per \"[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)\" Category ally on the team; ATK +50% when there is an ally whose name includes \"[Kale](https://dbz-dokkanbattle.fandom.com/wiki/Kale_(disambiguation))\" on the team, and launches an additional attack that has a medium chance[1] of becoming a Super Attack if that ally is attacking in the same turn";
+        var stats = "HP: 10,022 (55%)/11,822 (100%)\nATK: 8,444 (55%)/10,484 (100%)\nDEF: 5,990 (55%)/7,550 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -40,10 +52,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 2,367,121 (unsupported)/3,018,938 (supported)\nDefense: 106,263 (unsupported)/143,652 (supported) \nLinking Partner: [INT UR Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/First_Step_as_a_Warrior_Super_Saiyan_2_Kale) \nTeam: [Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6) \nBuild: 6 Additional/20 Critical";
+        var blp = "[INT UR Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/First_Step_as_a_Warrior_Super_Saiyan_2_Kale) - 6 links shared\n[AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale) - 5 links shared\n[PHY UR Super Saiyan 2 Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Dreadful_Super_Fusion_Super_Saiyan_2_Kefla) - 5 links shared";
+        var deets = "► 12 Ki Multiplier is 140%";
+        var footnotes = "[1]: 25% chance for additional attack to become a Super Attack";
 
         if (status === 'incomplete')
         {
@@ -135,6 +147,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Passive Skill", passive)
                         .setTimestamp()
+                        .setFooter(footnotes)
                     message.channel.send(passiveSkill)
                     break;
 

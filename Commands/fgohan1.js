@@ -1,42 +1,30 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'ssj2kale1',
-    description: 'INT UR Super Saiyan 2 Kale',
-    categories: ['[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)',
-                 '[Peppy Gals](https://dbz-dokkanbattle.fandom.com/wiki/Peppy_Gals)',
-                 '[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
-                 '[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
-                 '[Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6)',
-                 '[Super Saiyan 2](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan_2)',
-                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)'],
-    link: ['[Super Saiyan](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyan)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
-           '[Battlefield Diva](https://dbz-dokkanbattle.fandom.com/wiki/Battlefield_Diva)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and chance of evading +5%',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
-           '[Warriors of Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Warriors_of_Universe_6)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +6%',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
-           '[Tournament of Power](https://dbz-dokkanbattle.fandom.com/wiki/Tournament_of_Power)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK & DEF +7%',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
-    status: 'complete',
+    name: 'fgohan1',
+    description: 'PHY UR Super Saiyan Gohan (Future)',
+    categories: ['', ''],
+    link: ['', ''],
+    status: 'incomplete',
     plural: 'false',
-    aliases: ['ss2kale1', 'Super Saiyan 2 Kale'],
+    aliases: ['mgohan1', 'Super Saiyan Gohan (Future)'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        const {link} = require('./ssj2kale1.js')
-        const {categories} = require('./ssj2kale1.js')
-        const {status} = require('./ssj2kale1.js')
-        const {plural} = require('./ssj2kale1.js')
-        const {aliases} = require('./ssj2kale1.js')
-        var color = 7028604;
-        var name = "First Step as a Warrior\nSuper Saiyan 2 Kale";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/First_Step_as_a_Warrior_Super_Saiyan_2_Kale";
-        var desc = "Super INT UR";
-        var circle = "https://media.discordapp.net/attachments/712036120191434793/745832214977052752/card_1020400_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/745832238624800778/latest.png?width=459&height=612";
-        var leader = "[<:int:729468835819946026>](https://dbz-dokkanbattle.fandom.com/wiki/Category:INT) Type Ki +3 and HP, ATK & DEF +50%";
-        var superatk = "Resist Blast: Causes supreme damage to enemy and lowers DEF[1]";
-        var passive = "Caulifla's Trust: \"[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)\" Category allies' Ki +2 and ATK & DEF +30%; DEF +50% when there is an ally whose name includes \"[Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Caulifla_(disambiguation))\" on the team, and all allies' Ki +1 and ATK & DEF +10% if that ally is attacking in the same turn";
-        var stats = "HP: 10,366 (55%)/12,166 (100%)\nATK: 8,101 (55%)/9,901 (100%)\nDEF: 6,248 (55%)/8,048 (100%)";
+        const {link} = require('./fgohan1.js')
+        const {categories} = require('./fgohan1.js')
+        const {status} = require('./fgohan1.js')
+        const {plural} = require('./fgohan1.js')
+        const {aliases} = require('./fgohan1.js')
+        var color = 7164715;
+        var name = "";
+        var url = "";
+        var desc = "";
+        var circle = "";
+        var character = "";
+        var leader = "";
+        var superatk = "";
+        var passive = "";
+        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -52,10 +40,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 959,189 (unsupported)/1,119,054 (supported)\nDefense: 93,039 (unsupported)/104,465 (supported) \nLinking Partner: [STR UR Super Saiyan 2 Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Power_for_Securing_Victory_Super_Saiyan_2_Caulifla) \nTeam: [Universe 6](https://dbz-dokkanbattle.fandom.com/wiki/Universe_6) \nBuild: 6 Additional/15 Critical";
-        var blp = "[AGL UR Super Saiyan 2 Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Boundless_Potential_Super_Saiyan_2_Caulifla) - 6 links shared\n[STR UR Super Saiyan 2 Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Power_for_Securing_Victory_Super_Saiyan_2_Caulifla) - 6 links shared\n[AGL LR Super Saiyan 2 Caulifla & Super Saiyan 2 Kale](https://dbz-dokkanbattle.fandom.com/wiki/Two_Makes_the_Strongest_of_All_Universes_Super_Saiyan_2_Caulifla_%26_Super_Saiyan_2_Kale) - 5 links shared";
-        var deets = "► 12 Ki Multiplier is 145%";
-        var footnotes = "[1]: Lowers enemy's DEF by 40% for 3 turns";
+        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
+        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
+        var deets = "-";
+        var footnotes = "[1]: ";
 
         if (status === 'incomplete')
         {
@@ -134,7 +122,6 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
-                        .setFooter(footnotes)
                     message.channel.send(superAttack)
                     break;
 
