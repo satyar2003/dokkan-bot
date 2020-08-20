@@ -17,7 +17,7 @@ module.exports = {
             fields: [
                 {
                     name: "** **",
-                    value: `Click [here](https://docs.google.com/spreadsheets/d/1VroaJ81QrzoazKHchgh_5HJaI-EEZwZL4mE5pMSgqzo/edit?usp=sharing) for a list of all the units currently in the bot's database, and search for the one you want. You can use ctrl+f to quickly search for the name of a specific character.\n*New additions are being made to the bot at least once every two days, so if you don't see a character you want please be patient. If you have any questions or would like to see a character added to the bot, you can DM on Discord (Nobody#0244) or Reddit (u/nobody2169).*\nThank you for all the support.`
+                    value: `Click [here](https://docs.google.com/spreadsheets/d/1qrwEwbD_awrFoNtFbZyome8Y17z8goj-RqaPSNhPdWQ/edit?usp=sharing) for a list of all the units currently in the bot's database, and search for the one you want. You can use ctrl+f to quickly search for the name of a specific character.\n*New additions are being made to the bot at least once every two days, so if you don't see a character you want please be patient. If you have any questions or would like to see a character added to the bot, you can DM on Discord (Nobody#0244) or Reddit (u/nobody2169).*\nThank you for all the support.`
                 },
                 {
                     name: "Miscellaneous",

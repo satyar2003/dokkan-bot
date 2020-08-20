@@ -982,6 +982,10 @@ module.exports = {
                         value: "**kale1**: STR UR Kale"
                     },
                     {
+                        name: "Super Saiyan 2 Kale",
+                        value: "**ssj2kale1**: INT UR Super Saiyan 2 Kale"
+                    },
+                    {
                         name: "Kale (Berserk)",
                         value: "**bkale1z**: PHY UR Kale (Berserk) with EZA"
                     },
@@ -1011,6 +1015,10 @@ module.exports = {
                     {
                         name: "Caulifla",
                         value: "**caulifla1**: TEQ UR Caulifla"
+                    },
+                    {
+                        name: "Super Saiyan 2 Caulifla",
+                        value: "**ssj2caulifla1**: STR UR Super Saiyan 2 Caulifla"
                     },
                     {
                         name: "Super Saiyan 2 Caulifla & Super Saiyan 2 Kale",
