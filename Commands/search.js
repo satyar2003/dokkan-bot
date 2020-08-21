@@ -2386,6 +2386,10 @@ module.exports = {
                         value: "**ssjbardock1**: AGL UR Super Saiyan Bardock after transformation"
                     },
                     {
+                        name: "Super Saiyan 3 Bardock",
+                        value: "**ssj3bardock1**: INT UR Super Saiyan 3 Bardock"
+                    },
+                    {
                         name: "Bardock & Gine",
                         value: "**bandg1**: STR UR Bardock & Gine"
                     }

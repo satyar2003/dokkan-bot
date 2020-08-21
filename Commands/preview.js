@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "PHY UR Super Saiyan Gohan (Future)",
+                    name: "INT UR Super Saiyan 3 Bardock",
                     value:  "** **"
                 }
             ],
