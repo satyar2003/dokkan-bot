@@ -54,7 +54,7 @@ module.exports = {
             }
         var apt = "APT: 2,884,192 (unsupported)/3,569,187 (supported)\nDefense: 73,064 (unsupported)/104,615 (supported) \nLinking Partner: [INT UR Gohan (Future)](https://dbz-dokkanbattle.fandom.com/wiki/Heroic_Warrior_Gohan_(Future)) \nTeam: [Bond of Master and Disciple](https://dbz-dokkanbattle.fandom.com/wiki/Bond_of_Master_and_Disciple) \nBuild: 11 Additional/15 Critical";
         var blp = "[AGL UR Super Saiyan Goku](https://dbz-dokkanbattle.fandom.com/wiki/Boiling_Power_Super_Saiyan_Goku) - 6 links shared\n[AGL UR Super Saiyan 2 Goku](https://dbz-dokkanbattle.fandom.com/wiki/Boiling_Power_Super_Saiyan_Goku#Super%20Saiyan%202) - 6 links shared\n[INT UR Super Saiyan Gohan (Future)](https://dbz-dokkanbattle.fandom.com/wiki/Heroic_Warrior_Gohan_(Future)#Super%20Saiyan%20Gohan%20(Future)) - 6 links shared";
-        var deets = "► 12 Ki Multiplier is 150%\n► [PHY SSR Super Saiyan Gohan (Future](https://dbz-dokkanbattle.fandom.com/wiki/Valiant_Resistance_Super_Saiyan_Gohan_(Future)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var deets = "► 12 Ki Multiplier is 150%\n► [PHY SSR Super Saiyan Gohan (Future)](https://dbz-dokkanbattle.fandom.com/wiki/Valiant_Resistance_Super_Saiyan_Gohan_(Future)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
         var footnotes = "[1]: Raises SA Multiplier and DEF by 30% for 1 turn";
 
         if (status === 'incomplete')
