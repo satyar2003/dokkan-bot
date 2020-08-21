@@ -17,7 +17,7 @@ module.exports = {
            '[Dismal Future](https://dbz-dokkanbattle.fandom.com/wiki/Dismal_Future)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and chance to perform a critical hit +5%',
            '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
-    status: 'incomplete',
+    status: 'complete',
     plural: 'false',
     aliases: ['mgohan1', 'Super Saiyan Gohan (Future)'],
     execute(message, args) {
