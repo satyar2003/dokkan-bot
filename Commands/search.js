@@ -59,7 +59,8 @@ module.exports = {
                     .addFields(
                         {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
                                                                     "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
-                        {name: "Buu (Kid)", value: "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
+                        {name: "Buu (Kid)", value: "**kbuu2**: INT UR Buu (Kid)\n" +
+                                                   "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
                                                    "**kbuu1z**: PHY UR Buu (Kid) with EZA"},
                         {name: "Mr. Buu", value: "**mrbuu1**: TEQ UR Mr. Buu"}
                     )
