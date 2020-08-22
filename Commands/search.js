@@ -1999,7 +1999,8 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
+                        value:  "**kbuu2**: INT UR Buu (Kid)\n"+
+                                "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
                                 "**kbuu1z**: PHY UR Buu (Kid) with EZA"
                     }
                 ]
