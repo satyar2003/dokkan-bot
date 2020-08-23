@@ -149,6 +149,7 @@ module.exports = {
                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
                         {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                                         "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
+                                                        "**ugohan4**: INT UR F2P Ultimate Gohan\n" +
                                                         "**ugohan2**: STR UR Ultimate Gohan\n" +
                                                         "**ugohan1z**: PHY UR Ultimate Gohan with EZA"},
                         {name: "Super Saiyan Gohan (Future)", value: "**fgohan1**: PHY UR Super Saiyan Gohan (Future)"}
@@ -176,6 +177,7 @@ module.exports = {
                                               "**goku4**: PHY UR Goku from *The Tree of Might*\n" +
                                               "**goku5**: PHY UR Feet Kamehameha Goku"},
                         {name: "Goku (Dokkan Butoden)", value: "**dbgoku1**: PHY UR Goku (Dokkan Butoden)"},
+                        {name: "Goku (Angel)", value: "**angelgoku1**: PHY UR Goku (Angel)"},
                         {name: "Goku (Kaioken)", value: "**kkgoku3**: AGL UR Goku (Kaioken)\n" +
                                                         "**kkgoku4**: TEQ UR Goku (Kaioken)\n" +
                                                         "**kkgoku1**: STR UR Goku (Kaioken) from *Lord Slug*\n" +
@@ -223,7 +225,8 @@ module.exports = {
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714337816452137040/GotenNV.png?width=843&height=612")
                     .addFields(
-                        {name: "Super Saiyan Goten", value: "**fkgoten1z**: STR UR Family Kamehameha Goten with EZA"}
+                        {name: "Goten (Kid)", value: "**goten1**: STR UR Goten (Kid)"},
+                        {name: "Super Saiyan Goten (Kid)", value: "**fkgoten1z**: STR UR Family Kamehameha Goten with EZA"}
                     )
                     .setTimestamp()
                 message.channel.send(goten)
@@ -1811,6 +1814,7 @@ module.exports = {
                         name: "** **",
                         value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                 "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
+                                "**ugohan4**: INT UR F2P Ultimate Gohan\n"+
                                 "**ugohan2**: STR UR Ultimate Gohan\n" +
                                 "**ugohan1z**: PHY UR Ultimate Gohan with EZA"
                     }
