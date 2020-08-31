@@ -14,7 +14,7 @@ module.exports = {
            '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK 7%',
            '[Limit-Breaking Form](https://dbz-dokkanbattle.fandom.com/wiki/Limit-Breaking_Form)\n ­ ­ ­ ­ Level 1: ATK +5% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +10% when Super Attack is launched',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
-           '[Supreme Power](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Power)\n ­ ­ ­ ­ Level 1: Activate "Penetration" and ATK & DEF +5%\n ­ ­ ­ ­ Level 10: Activate "Penetration" and ATK & DEF +10%'],
+           '[Supreme Power](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Power)\n ­ ­ ­ ­ Level 1: ATK & DEF +5% and activates Penetration\n ­ ­ ­ ­ Level 10: ATK & DEF +10% and activates Penetration'],
     status: 'complete',
     plural: 'false',
     aliases: ['ss3goku1z', 'Super Saiyan 3 Goku Z'],

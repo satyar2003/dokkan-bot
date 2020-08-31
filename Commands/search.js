@@ -6,6 +6,10 @@ module.exports = {
     execute(message, args) {
         var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         var charSearch = args[0]
+        if(charSearch != undefined)
+        {
+            charSearch = charSearch.toUpperCase()
+        }
         var length = args.length
         switch (charSearch)
         {
@@ -57,6 +61,7 @@ module.exports = {
                     .setTitle("Buu Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339616618184744/majin_buu.jpg")
                     .addFields(
+                        {name: "Buu (Super)", value: "**superbuu1**: PHY UR Buu (Super)"},
                         {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
                                                                     "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
                         {name: "Buu (Kid)", value: "**kbuu2**: INT UR Buu (Kid)\n" +
@@ -145,6 +150,7 @@ module.exports = {
                         {name: "Super Saiyan Gohan (Youth)", value: "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)"},
                         {name: "Super Saiyan 2 Gohan (Youth)", value: "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
                                                                       "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"},
+                        {name: "Gohan (Teen)", value: "**teengohan1**: PHY UR Gohan (Teen)"},
                         {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA\n" +
                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
                         {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
@@ -273,6 +279,27 @@ module.exports = {
                     )
                     .setTimestamp()
                 message.channel.send(raditz)
+                break;
+
+            case "superbuu":
+            case "sbuu":
+                const superbuu = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/749501550572994590/latest.png?width=354&height=612")
+                    .addField("Searching...", "**superbuu1**: PHY UR Buu (Super)")
+                message.channel.send(superbuu)
+                break;
+
+            case "teengohan":
+            case "tgohan":
+                const teengohan = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/749500938850402314/latest.png?width=245&height=613")
+                    .addField("Searching...", "**teengohan1**: PHY UR Gohan (Teen)")
+                    .setTimestamp()
+                message.channel.send(teengohan)
                 break;
 
             case "vados":
