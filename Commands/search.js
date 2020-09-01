@@ -6,10 +6,6 @@ module.exports = {
     execute(message, args) {
         var pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
         var charSearch = args[0]
-        if(charSearch != undefined)
-        {
-            charSearch = charSearch.toUpperCase()
-        }
         var length = args.length
         switch (charSearch)
         {
