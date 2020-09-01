@@ -58,6 +58,7 @@ module.exports = {
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339616618184744/majin_buu.jpg")
                     .addFields(
                         {name: "Buu (Super)", value: "**superbuu1**: PHY UR Buu (Super)"},
+                        {name: "Majin Buu (Piccolo)", value: "**buucolo1**: AGL UR Majin Buu (Piccolo)"},
                         {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
                                                                     "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
                         {name: "Buu (Kid)", value: "**kbuu2**: INT UR Buu (Kid)\n" +
@@ -296,6 +297,17 @@ module.exports = {
                     .addField("Searching...", "**teengohan1**: PHY UR Gohan (Teen)")
                     .setTimestamp()
                 message.channel.send(teengohan)
+                break;
+
+            case "tien":
+                const tien = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/750227775461261364/340.png")
+                    .addFields(
+                        {name: "Tien", value: "**tien1**: PHY UR Tien"}
+                        )
+                message.channel.send(tien)
                 break;
 
             case "vados":

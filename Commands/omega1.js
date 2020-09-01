@@ -9,7 +9,7 @@ module.exports = {
            '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses)\n ­ ­ ­ ­ Level 1: ATK & DEF +25% when HP is 80% or below\n ­ ­ ­ ­ Level 10: ATK & DEF +25%',
            '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
            '[GT](https://dbz-dokkanbattle.fandom.com/wiki/GT)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +10%',
-           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and enemy DEF -10%',
+           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and all enemies\' DEF -10%',
            '[Shadow Dragons](https://dbz-dokkanbattle.fandom.com/wiki/Shadow_Dragons)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK & DEF +20%',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',

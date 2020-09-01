@@ -1,39 +1,41 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'omega2z',
-    description: 'STR UR Omega Shenron with EZA',
-    categories: ['[Shadow Dragon Saga](https://dbz-dokkanbattle.fandom.com/wiki/Shadow_Dragon_Saga)',
-                 '[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)',
-                 '[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)',
-                 '[Power Absorption](https://dbz-dokkanbattle.fandom.com/wiki/Power_Absorption)'],
-    link: ['[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
-           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and all enemies\' DEF -10%',
-           '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses)\n ­ ­ ­ ­ Level 1: ATK & DEF +25% when HP is 80% or below\n ­ ­ ­ ­ Level 10: ATK & DEF +25%',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
-           '[GT](https://dbz-dokkanbattle.fandom.com/wiki/GT)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +10%',
-           '[Shadow Dragons](https://dbz-dokkanbattle.fandom.com/wiki/Shadow_Dragons)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK & DEF +20%',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
+    name: 'teengohan1',
+    description: 'PHY UR Gohan (Teen)',
+    categories: ['[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)',
+                 '[Resurrected Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Resurrected_Warriors)',
+                 '[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
+                 '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
+                 '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
+                 '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
+    link: ['[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20%',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[Cold Judgment](https://dbz-dokkanbattle.fandom.com/wiki/Cold_Judgment)\n ­ ­ ­ ­ Level 1: DEF +20%\n ­ ­ ­ ­ Level 10: DEF +25%',
+           '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recovers 5% HP when HP is 50% or less',
+           '[Power Bestowed by God](https://dbz-dokkanbattle.fandom.com/wiki/Power_Bestowed_by_God)\n ­ ­ ­ ­ Level 1: ATK +5% when performing a Super Atttack\n ­ ­ ­ ­ Level 10: ATK +10% when performing a Super Attack',
+           '[Brainiacs](https://dbz-dokkanbattle.fandom.com/wiki/Brainiacs)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: ATK & DEF +15%',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
     plural: 'false',
-    aliases: ['Omega Shenron'],
+    aliases: ['tgohan1', 'Gohan (Teen)'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        const {link} = require('./omega2z.js')
-        const {categories} = require('./omega2z.js')
-        const {status} = require('./omega2z.js')
-        const {plural} = require('./omega2z.js')
-        const {aliases} = require('./omega2z.js')
-        var color = 8990259;
-        var name = "Hopeless Minus Energy\nOmega Shenron Z";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Hopeless_Minus_Energy_Omega_Shenron#Extreme%20Z-Awakened";
-        var desc = "Extreme STR UR";
-        var circle = "https://media.discordapp.net/attachments/712036120191434793/737766687155421305/card_1008710_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/737766707552190544/340.png";
-        var leader = "[<:str:729468929293942894>](https://dbz-dokkanbattle.fandom.com/wiki/Category:STR) Type Ki +4, HP, ATK and DEF +100%";
-        var superatk = "[Minus Energy Power Ball](https://dbz-dokkanbattle.fandom.com/wiki/File:Dokkan_Battle_Omega_Shenron_Super_Attack_(Minus_Energy_Power_Ball)): Causes immense damage to enemy and massively lowers DEF[2]";
-        var passive = "Evil Domination: All enemies' ATK -40%; ATK & DEF +80%; \"[Full Power](https://dbz-dokkanbattle.fandom.com/wiki/Full_Power)\" Category allies' Ki +2 and ATK +40%";
-        var stats = "HP: 14,548 (55%)/17,548 (100%)\nATK: 13,643 (55%)/17,043 (100%)\nDEF: 11,310 (55%)/13,910 (100%)";
+        const {link} = require('./teengohan1.js')
+        const {categories} = require('./teengohan1.js')
+        const {status} = require('./teengohan1.js')
+        const {plural} = require('./teengohan1.js')
+        const {aliases} = require('./teengohan1.js')
+        var color = 7164715;
+        var name = "Power of the Legendary Sword\nGohan (Teen)";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Power_of_the_Legendary_Sword_Gohan_(Teen)";
+        var desc = "Super PHY UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/749875387600863342/card_1015260_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/749875674055180328/ARSdM49PmPHNAAAAAElFTkSuQmCC.png";
+        var leader = "[<:sphy:729475848196980736>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type Ki +4 and HP, ATK & DEF +120%";
+        var superatk = "[Z-Sword Slash](https://youtu.be/MphVEwatII0?t=21): Raises ATK[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
+        var passive = "Enlightenment on Sacred Ground: [<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Type Ki +3 plus an additional ATK & DEF +50% for [<:sphy:729475848196980736>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type; randomly changes Ki Spheres of a certain Type ([<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) excluded) to [<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Ki Spheres; ATK & DEF +20% per Ki Sphere obtained";
+        var stats = "HP: 13,100 (55%)/16,500 (100%)\nATK: 11,170 (55%)/14,170 (100%)\nDEF: 7,238 (55%)/9,838 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -49,10 +51,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 3,183,804 (unsupported)/3,521,480 (supported)\nDefense: 90,136 (unsupported)/90,136 (supported) \nLinking Partner: [PHY UR Syn Shenron](https://dbz-dokkanbattle.fandom.com/wiki/Agent_of_Destruction_Syn_Shenron) \nTeam: [Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)/[Extreme AGL](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_AGL) \nBuild: 6 Additional/20 Critical";
-        var blp = "[PHY UR Syn Shenron](https://dbz-dokkanbattle.fandom.com/wiki/Agent_of_Destruction_Syn_Shenron) - 6 links shared\n[INT UR Super Janemba](https://dbz-dokkanbattle.fandom.com/wiki/Netherworld_Demon_Super_Janemba) - 5 links shared\n[STR UR Super Janemba](https://dbz-dokkanbattle.fandom.com/wiki/Evil_Incursion_Super_Janemba) - 5 links shared";
-        var deets = "► 12 Ki Multiplier is 150%\n► SA Level can go up to 15, but only through Extreme Z-Awakening with special medals from the **[Extreme Z-Battle](https://dbz-dokkanbattle.fandom.com/wiki/Extreme_Z-Battle:_Hopeless_Minus_Energy_Omega_Shenron)** event";
-        var footnotes = "[1]: Lowers enemy's DEF by 80% for 3 turns";
+        var apt = "APT: 2,531,017 (unsupported)/2,757,001 (supported)\nDefense: 138,834 (unsupported)/144,619 (supported) \nLinking Partner: [INT UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Ultimate_Power-Up_Ultimate_Gohan) \nTeam: [Siblings' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)/[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family) \nBuild: 11 Additional/15 Critical";
+        var blp = "[INT UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Ultimate_Power-Up_Ultimate_Gohan) - 4 links shared\n[TEQ UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/A_New_Destination_Ultimate_Gohan) - 3 links shared\n[PHY UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hero%27s_Return_Ultimate_Gohan) - 3 links shared";
+        var deets = "► 12 Ki Multiplier is 145%\n► [INT SSR Gohan (Teen)](https://dbz-dokkanbattle.fandom.com/wiki/First_Day_of_High_School_Gohan_(Teen)) & [STR R Gohan (Teen)](https://dbz-dokkanbattle.fandom.com/wiki/A_New_Start_Gohan_(Teen)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var footnotes = "[1]: Raises ATK by 30% for 99 turns\n[2]: 30% chance to stun the enemy for 2 turns";
 
         if (status === 'incomplete')
         {
@@ -63,6 +65,7 @@ module.exports = {
                     .setColor(color)
                     .setAuthor(message.author.username, pfp)
                     .setTitle(`${person} is coming soon.`)
+		    .setTimestamp()
                 message.channel.send(preview)
             }
             else
@@ -71,16 +74,17 @@ module.exports = {
                     .setColor(color)
                     .setAuthor(message.author.username, pfp)
                     .setTitle(`${person} are coming soon.`)
+		    .setTimestamp()
                 message.channel.send(preview)
             }
         }
         else
         {
-            var length = args.length;
             var sub = args[0];
-            switch (true)
+
+            switch (sub)
             {
-                case length == 0:
+                case undefined:
                     const fullCard = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -94,7 +98,7 @@ module.exports = {
                                 {name: "Passive Skill", value: passive},
                                 {name: "Stats", value: stats},
                                 {name: "Links", value: links},
-                                {name: "Links cont.", value: links},
+                                {name: "Links cont.", value: links2},
                                 {name: "Categories", value: cats},
                                 {name: "Attack Per Turn", value: apt},
                                 {name: "Best Linking Partners", value: blp},
@@ -106,7 +110,7 @@ module.exports = {
                         message.channel.send(fullCard)
                         break;
                     
-                case sub === "leader":
+                case "leader":
 		            const leaderSkill = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -119,7 +123,7 @@ module.exports = {
                     message.channel.send(leaderSkill)
                     break;
 
-                case sub === "super":
+                case "super":
 		            const superAttack = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -133,7 +137,7 @@ module.exports = {
                     message.channel.send(superAttack)
                     break;
 
-                case sub === "passive":
+                case "passive":
                     const passiveSkill = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -146,7 +150,7 @@ module.exports = {
                     message.channel.send(passiveSkill)
                     break;
 
-                case sub === "stats":
+                case "stats":
                     const unitStats = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -159,7 +163,7 @@ module.exports = {
                     message.channel.send(unitStats)
                     break;
 
-                case sub === "links":
+                case "links":
                     const linkSkill = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -168,12 +172,12 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Links", links)
-.addField("Links cont.", links2)
+                        .addField("Links cont.", links2)
                         .setTimestamp()
                     message.channel.send(linkSkill)
                     break;
 
-                case sub === "categories":
+                case "categories":
                     const category = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -186,7 +190,7 @@ module.exports = {
                     message.channel.send(category)
                     break;
 
-                case sub === "apt":
+                case "apt":
                     const attackPerTurn = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -199,7 +203,7 @@ module.exports = {
                     message.channel.send(attackPerTurn)
                     break;
 
-                case sub === "partners":
+                case "partners":
                     const bestLinkingPartners = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -207,12 +211,12 @@ module.exports = {
 			            .setAuthor(message.author.username, pfp)
                         .setDescription(desc)
                         .setThumbnail(circle)
-                        .addField("Best Linking Parnters", blp)
+                        .addField("Best Linking Partners", blp)
                         .setTimestamp()
                     message.channel.send(bestLinkingPartners)
                     break;
 
-                case sub === "details":
+                case "details":
                     const unitDetails = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)
@@ -225,7 +229,7 @@ module.exports = {
                     message.channel.send(unitDetails)
                     break;
 
-                case sub === "art":
+                case "art":
                     const cardArt = new Discord.MessageEmbed()
                         .setColor(color)
                         .setTitle(name)

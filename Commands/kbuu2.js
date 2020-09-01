@@ -12,7 +12,7 @@ module.exports = {
            '[Brutal Beatdown](https://dbz-dokkanbattle.fandom.com/wiki/Brutal_Beatdown)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
            '[More than Meets the Eye](https://dbz-dokkanbattle.fandom.com/wiki/More_Than_Meets_the_Eye)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK & DEF +10%',
            '[Big Bad Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Big_Bad_Bosses)\n ­ ­ ­ ­ Level 1: ATK & DEF +25% when HP is 80% or below\n ­ ­ ­ ­ Level 10: ATK & DEF +25%',
-           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration)\n ­ ­ ­ ­ Level 1: Recover 3% HP\n ­ ­ ­ ­ Level 10: Ki +2 and recover 3% HP and DEF +10%',
+           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration)\n ­ ­ ­ ­ Level 1: Recovers 3% HP\n ­ ­ ­ ­ Level 10: Ki +2 and recovers 3% HP and DEF +10%',
            '[The Wall Standing Tall](https://dbz-dokkanbattle.fandom.com/wiki/The_Wall_Standing_Tall)\n ­ ­ ­ ­ Level 1: Foils enemy\'s True Power and boosts ATK by 15%\n ­ ­ ­ ­ Level 10: Foils enemy\'s True Power and boosts ATK by 20%',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
     status: 'complete',

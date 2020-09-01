@@ -8,7 +8,7 @@ module.exports = {
                  '[Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)',
                  '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
     link: ['[The Ginyu Force](https://dbz-dokkanbattle.fandom.com/wiki/The_Ginyu_Force)\n ­ ­ ­ ­ Level 1: ATK +25%\n ­ ­ ­ ­ Level 10: ATK +25% and damage received -5%',
-           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and enemy DEF -10%',
+           '[Fear and Faith](https://dbz-dokkanbattle.fandom.com/wiki/Fear_and_Faith)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and all enemies\' DEF -10%',
            '[Respect](https://dbz-dokkanbattle.fandom.com/wiki/Respect)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
            '[Loyalty](https://dbz-dokkanbattle.fandom.com/wiki/Loyalty)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and damage received -5%',
            '[Signature Pose](https://dbz-dokkanbattle.fandom.com/wiki/Signature_Pose)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +3 and ATK +7%',

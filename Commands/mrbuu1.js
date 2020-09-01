@@ -13,7 +13,7 @@ module.exports = {
            '[Revival](https://dbz-dokkanbattle.fandom.com/wiki/Revival)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2; ATK & DEF +5% and recover 5% HP when HP is 50% or below',
            '[Master of Magic](https://dbz-dokkanbattle.fandom.com/wiki/Master_of_Magic)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -10%',
            '[Majin](https://dbz-dokkanbattle.fandom.com/wiki/Majin)\n ­ ­ ­ ­ Level 1: ATK & DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +15%',
-           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration)\n ­ ­ ­ ­ Level 1: Recover 3% HP\n ­ ­ ­ ­ Level 10: Ki +2 and recover 3% HP and DEF +10%',
+           '[Infinite Regeneration](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Regeneration)\n ­ ­ ­ ­ Level 1: Recovers 3% HP\n ­ ­ ­ ­ Level 10: Ki +2 and recovers 3% HP and DEF +10%',
            '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
            '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',
