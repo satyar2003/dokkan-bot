@@ -3,9 +3,21 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'ugohan4',
     description: 'INT UR F2P Ultimate Gohan',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)',
+                 '[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
+                 '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
+                 '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
+                 '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
+                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)',
+                 '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
+    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
+           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
+           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20%',
+           '[Shocking SPeed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Power Bestowed by God](https://dbz-dokkanbattle.fandom.com/wiki/Power_Bestowed_by_God)\n ­ ­ ­ ­ Level 1: ATK +5% when performing a Super Attack\n ­ ­ ­ ­ Level 10: ATK +10% when performing a Super Attack',
+           '[Supreme Power](https://dbz-dokkanbattle.fandom.com/wiki/Supreme_Power)\n ­ ­ ­ ­ Level 1: ATK & DEF +5% and activates Penetration\n ­ ­ ­ ­ Level 10: ATK & DEF +10% and activates Penetration',
+           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
+    status: 'complete',
     plural: 'false',
     aliases: ['Ultimate Gohan'],
     execute(message, args) {
@@ -16,15 +28,15 @@ module.exports = {
         const {plural} = require('./ugohan4.js')
         const {aliases} = require('./ugohan4.js')
         var color = 7028604;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Ultimate Power-Up\nUltimate Gohan";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Ultimate_Power-Up_Ultimate_Gohan";
+        var desc = "Super INT UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/748034877257023588/card_1019880_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/748034893283328011/340.png";
+        var leader = "\"[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)\" Category Ki +3 and HP, ATK & DEF +50%";
+        var superatk = "[Burst Rush](https://youtu.be/MphVEwatII0?t=50): Raises ATK[1] and causes supreme damage to enemy";
+        var passive = "Father's Gi: ATK & DEF +58%; plus an additional ATK & DEF +58% and high chance[2] of launching an additional Super Attack when there is another \"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category ally attacking in the same turn; \"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category allies' Ki +1 and ATK & DEF +10%";
+        var stats = "HP: 7,323 (55%)/9,123 (100%)\nATK: 8,936 (55%)/10,736 (100%)\nDEF: 5,524 (55%)/7,324 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -40,10 +52,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 1,578,497 (unsupported)/1,962,645 (supported)\nDefense: 92,693 (unsupported)/109,782 (supported) \nLinking Partner: [STR UR Goten (Kid)](https://dbz-dokkanbattle.fandom.com/wiki/From_Father_to_Son_Goten_(Kid)) \nTeam: [Siblings' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)/[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family) \nBuild: 6 Additional/15 Critical";
+        var blp = "[INT SSR Gohan (Teen)](https://dbz-dokkanbattle.fandom.com/wiki/Training_at_the_Sanctuary_Gohan_(Teen)) - 5 links shared\n[STR UR Goten (Kid)](https://dbz-dokkanbattle.fandom.com/wiki/From_Father_to_Son_Goten_(Kid)) - 5 links shared\n[PHY UR Goku (Angel)](https://dbz-dokkanbattle.fandom.com/wiki/Passing_the_Mantle_Goku_(Angel)) - 5 links shared";
+        var deets = "► 12 Ki Multiplier is 140%\n► [AGL SR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Renewed_Determination_Ultimate_Gohan) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var footnotes = "[1]: Raises ATK by 30% for 99 turns\n[2]: 50% chance to launch an additional Super Attack";
 
         if (status === 'incomplete')
         {
@@ -122,6 +134,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
+                        .setFooter("[1]: Raises ATK by 30% for 99 turns")
                     message.channel.send(superAttack)
                     break;
 
@@ -135,6 +148,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Passive Skill", passive)
                         .setTimestamp()
+                        .setFooter("[2]: 50% chance to launch an additional Super Attack")
                     message.channel.send(passiveSkill)
                     break;
 
