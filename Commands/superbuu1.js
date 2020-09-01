@@ -52,7 +52,7 @@ module.exports = {
             }
         var apt = "APT: 3,118,056 (unsupported)/3,570,175 (supported)\nDefense: 163,445 (unsupported)/179,362 (supported) \nLinking Partner: [STR UR Majin Buu (Pure Evil)](https://dbz-dokkanbattle.fandom.com/wiki/Silent_Executioner_Majin_Buu_(Pure_Evil)) \nTeam: [Terrifying Conquerors](https://dbz-dokkanbattle.fandom.com/wiki/Terrifying_Conquerors)/[Transformation Boost](https://dbz-dokkanbattle.fandom.com/wiki/Transformation_Boost) \nBuild: 11 Additional/15 Critical";
         var blp = "[STR UR Majin Buu (Pure Evil)](https://dbz-dokkanbattle.fandom.com/wiki/Silent_Executioner_Majin_Buu_(Pure_Evil)) - 5 links shared\n[PHY LR Majin Buu (Gotenks)](https://dbz-dokkanbattle.fandom.com/wiki/Invincible_Absorption_Majin_Buu_(Gotenks)) - 4 links shared\n[PHY UR Majin Buu (Good)](https://dbz-dokkanbattle.fandom.com/wiki/Majin_on_the_Loose_Majin_Buu_(Good)) - 4 links shared";
-        var deets = "► 12 Ki Multiplier is 145%\n► \n[TEQ SSR Buu (Super)](https://dbz-dokkanbattle.fandom.com/wiki/Murderous_Designs_Buu_(Super)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
+        var deets = "► 12 Ki Multiplier is 145%\n► [TEQ SSR Buu (Super)](https://dbz-dokkanbattle.fandom.com/wiki/Murderous_Designs_Buu_(Super)) can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack";
         var footnotes = "";
 
         if (status === 'incomplete')
