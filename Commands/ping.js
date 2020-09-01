@@ -18,7 +18,7 @@ module.exports = {
                 message.channel.send(original)
                 break;
 
-            case "401156002860498946":
+            case "508172020085817365":
                 const steven = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -27,7 +27,7 @@ module.exports = {
                 message.channel.send(steven)
                 break;
 
-            case "280578071055302657":
+            case "745453698167341256":
                 const andrew = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
