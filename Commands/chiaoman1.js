@@ -5,7 +5,7 @@ module.exports = {
                  '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)'],
     link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -10%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -15%',
            '[Flee](https://dbz-dokkanbattle.fandom.com/wiki/Flee)\n ­ ­ ­ ­ Level 1: Ki +1 when HP is 30% or below\n ­ ­ ­ ­ Level 10: Ki +2 and chance of evading +10% when HP is 50% or less',
-           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and ATK +10%',
+           '[Courage](https://dbz-dokkanbattle.fandom.com/wiki/Courage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK +10%',
            '[Telepathy](https://dbz-dokkanbattle.fandom.com/wiki/Telepathy)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +1 and chance to perform a critical hit +5%',
            '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
     status: 'complete',

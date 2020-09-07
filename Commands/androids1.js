@@ -10,7 +10,7 @@ module.exports = {
                  '[Target: Goku](https://dbz-dokkanbattle.fandom.com/wiki/Target:_Goku)'],
     link: ['[Infinite Energy](https://dbz-dokkanbattle.fandom.com/wiki/Infinite_Energy)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5% and chance to perform a critical hit +5%',
            '[Android Assault](https://dbz-dokkanbattle.fandom.com/wiki/Android_Assault)\n ­ ­ ­ ­ Level 1: DEF +10%\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +20%',
-           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and enemy DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and enemy DEF -20%',
+           '[Solid Support](https://dbz-dokkanbattle.fandom.com/wiki/Solid_Support)\n ­ ­ ­ ­ Level 1: ATK +10% and all enemies\' DEF -15%\n ­ ­ ­ ­ Level 10: ATK +15% and all enemies\' DEF -20%',
            '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
            '[Soul vs Soul](https://dbz-dokkanbattle.fandom.com/wiki/Soul_vs_Soul)\n ­ ­ ­ ­ Level 1: Weakens "Regeneration" and Ki +1\n ­ ­ ­ ­ Level 10: Weakens "Regeneration" and Ki +1, ATK & DEF +5%',
            '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',

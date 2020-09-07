@@ -58,6 +58,7 @@ module.exports = {
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339616618184744/majin_buu.jpg")
                     .addFields(
                         {name: "Buu (Super)", value: "**superbuu1**: PHY UR Buu (Super)"},
+                        {name: "Majin Buu (Gotenks)", value: "**buutenks1**: PHY LR Majin Buu (Gotenks)"},
                         {name: "Majin Buu (Piccolo)", value: "**buucolo1**: AGL UR Majin Buu (Piccolo)"},
                         {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
                                                                     "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
@@ -213,6 +214,7 @@ module.exports = {
                                                                       "**uigoku1**: STR LR Goku (Ultra Instinct -Sign-)"},
                         {name: "Goku (Ultra Instinct)", value: "**muigoku1**: INT UR Goku (Ultra Instinct)"},
                         {name: "Super Saiyan 4 Goku", value: "**ssj4goku1**: AGL LR Super Saiyan 4 Goku"},
+                        {name: "Goku & Vegeta (Angel)", value: "**gokveg3**: STR LR Goku & Vegeta (Angel)"},
                         {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
                         {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
                         {name: "Goku & Frieza (Final Form) (Angel)", value: "**gofrieza1**: TEQ LR Goku & Frieza (Final Form) (Angel)"},
@@ -256,6 +258,7 @@ module.exports = {
                         {name: "Super Saiyan 4 Vegeta", value: "**ssj4vegeta1**: STR LR Super Saiyan 4 Vegeta"},
                         {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA\n" +
                                                                      "**vandr1z**: AGL UR Vegeta (Kid) & Raditz (Kid) with EZA"},
+                        {name: "Goku & Vegeta (Angel)", value: "**gokveg3**: STR LR Goku & Vegeta (Angel)"},
                         {name: "Super Saiyan Goku & Super Saiyan Vegeta", value: "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta"},
                         {name: "Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)", value: "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"},
                         {name: "Super Saiyan 2 Vegeta & Bulma", value: "**ssj2vegeta1**: STR UR Super Saiyan 2 Vegeta & Bulma"},
@@ -790,7 +793,8 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta\n" +
-                                "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)"
+                                "**gokveg3**: STR LR Goku & Vegeta (Angel)" +
+                                "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)" 
                     }
                 ],
                 timestamp: new Date()
