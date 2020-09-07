@@ -793,7 +793,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**gokveg2**: INT LR Super Saiyan Goku & Super Saiyan Vegeta\n" +
-                                "**gokveg3**: STR LR Goku & Vegeta (Angel)" +
+                                "**gokveg3**: STR LR Goku & Vegeta (Angel)\n" +
                                 "**gokveg1**: PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)" 
                     }
                 ],
