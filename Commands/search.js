@@ -61,7 +61,8 @@ module.exports = {
                         {name: "Majin Buu (Gotenks)", value: "**buutenks1**: PHY LR Majin Buu (Gotenks)"},
                         {name: "Majin Buu (Piccolo)", value: "**buucolo1**: AGL UR Majin Buu (Piccolo)"},
                         {name: "Majin Buu (Ultimate Gohan)", value: "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
-                                                                    "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"},
+                                                                    "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA\n" +
+                                                                    "**buuhan2**: PHY LR Majin Buu (Ultimate Gohan)"},
                         {name: "Buu (Kid)", value: "**kbuu2**: INT UR Buu (Kid)\n" +
                                                    "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
                                                    "**kbuu1z**: PHY UR Buu (Kid) with EZA"},
@@ -333,9 +334,10 @@ module.exports = {
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339669621342240/vegito.png?width=438&height=613")
                     .addFields(
                         {name: "Vegito", value: "**vegito1**: TEQ LR Vegito"},
-                        {name: "Super Vegito", value: "**sv1**: AGL UR Super Vegito without EZA\n" +
+                        {name: "Super Vegito", value: "**sv1**: AGL UR Super Vegito without EZA\n" + 
                                                       "**sv1z**: AGL UR Super Vegito with EZA\n" +
                                                       "**sv3**: INT LR Super Vegito\n" +
+                                                      "**sv4**: STR LR Super Vegito\n" +
                                                       "**sv2**: PHY UR Super Vegito"},
                         {name: "Super Saiyan God SS Vegito", value: "**vb2**: TEQ UR Super Saiyan God SS Vegito\n" +
                                                                     "**vb3**: TEQ LR Super Saiyan God SS Vegito\n" +
@@ -1829,6 +1831,7 @@ module.exports = {
                         value:  "**sv1**: AGL UR Super Vegito without EZA\n" + 
                                 "**sv1z**: AGL UR Super Vegito with EZA\n" +
                                 "**sv3**: INT LR Super Vegito\n" +
+                                "**sv4**: STR LR Super Vegito\n" +
                                 "**sv2**: PHY UR Super Vegito"
                     }
                 ]
@@ -1972,7 +1975,8 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**buuhan1**: INT UR Majin Buu (Ultimate Gohan) without EZA\n" +
-                                "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA"
+                                "**buuhan1z**: INT UR Majin Buu (Ultimate Gohan) with EZA\n" +
+                                "**buuhan2**: PHY LR Majin Buu (Ultimate Gohan)"
                     }
                 ]
             }});

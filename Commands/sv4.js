@@ -1,44 +1,30 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'gokveg3',
-    description: 'STR LR Goku & Vegeta (Angel)',
-    categories: ['[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
-                 '[Potara](https://dbz-dokkanbattle.fandom.com/wiki/Potara)',
-                 '[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)',
-                 '[Joined Forces](https://dbz-dokkanbattle.fandom.com/wiki/Joined_Forces)',
-                 '[Super Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyans)',
-                 '[Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/Kamehameha_(Category))',
-                 '[Final Trump Card](https://dbz-dokkanbattle.fandom.com/wiki/Final_Trump_Card)',
-                 '[Battle of Wits](https://dbz-dokkanbattle.fandom.com/wiki/Battle_of_Wits)'],
-    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
-           '[Experienced Fighters](https://dbz-dokkanbattle.fandom.com/wiki/Experienced_Fighters)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
-           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
-           '[Prepared for Battle](https://dbz-dokkanbattle.fandom.com/wiki/Prepared_for_Battle)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
-           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%',
-           '[Legendary Power](https://dbz-dokkanbattle.fandom.com/wiki/Legendary_Power)\n ­ ­ ­ ­ Level 1: ATK +10% when Super Attack is launched\n ­ ­ ­ ­ Level 10: ATK +15% when Super Attack is launched'],
-    status: 'complete',
-    plural: 'true',
-    aliases: ['Goku & Vegeta (Angel)'],
+    name: 'sv4',
+    description: 'STR LR Super Vegito',
+    categories: ['', ''],
+    link: ['', ''],
+    status: 'incomplete',
+    plural: 'false',
+    aliases: ['Super Vegito'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        const {link} = require('./gokveg3.js')
-        const {categories} = require('./gokveg3.js')
-        const {status} = require('./gokveg3.js')
-        const {plural} = require('./gokveg3.js')
-        const {aliases} = require('./gokveg3.js')
+        const {link} = require('./sv4.js')
+        const {categories} = require('./sv4.js')
+        const {status} = require('./sv4.js')
+        const {plural} = require('./sv4.js')
+        const {aliases} = require('./sv4.js')
         var color = 8990259;
-        var name = "Fused Hope\nGoku & Vegeta (Angel)";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Fused_Hope_Goku_%26_Vegeta_(Angel)";
-        var desc = "Super STR LR";
-        var circle = "https://media.discordapp.net/attachments/712036120191434793/754213213016555520/card_1020460_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/754213445255037029/7fLyMsrFnsDQygAAAAAElFTkSuQmCC.png";
-        var leader = "\"[Battle of Wits](https://dbz-dokkanbattle.fandom.com/wiki/Battle_of_Wits)\" or \"[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)\" Category Ki +3, HP +130% and ATK & DEF +170%";
-        var superatk = "[Cooperation Between Rivals](https://youtu.be/cZcywo_hetE?t=20) (12-17 Ki): Raises ATK & DEF for 1 turn[1] and causes colossal damage to enemy\n[Vegeta's Pride and Goku's Rage](https://youtu.be/cZcywo_hetE?t=39) (18+ Ki): Raises ATK & DEF for 1 turn[1] and causes mega-colossal damage to enemy";
-        var passive = "A Common Goal: ATK & DEF +120%; reduces damage received by 30%; plus an additional Ki +1 per Type Ki Sphere obtained; medium chance[2] of launching an additional Super Attack";
-        var active = "[Special Fusion](https://youtu.be/cZcywo_hetE?t=63): Performs Potara Fusion; can be activated when HP is 77% or less starting from the 4th turn from the start of battle (once only)"
-        var stats = "HP: 22,300 (55%)/25,300 (100%)\nATK: 18,250 (55%)/21,650 (100%)\nDEF: 9,000 (55%)/11,600 (100%)";
+        var name = "";
+        var url = "";
+        var desc = "";
+        var circle = "";
+        var character = "";
+        var leader = "";
+        var superatk = "";
+        var passive = "";
+        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -54,10 +40,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 8,026,740 (unsupported)/9,486,160 (supported)\nDefense: 164,704 (unsupported)/194,651 (supported) \nLinking Partner: [AGL LR Super Saiyan Goku](https://dbz-dokkanbattle.fandom.com/wiki/Miracle-Making_Super_Saiyan_Super_Saiyan_Goku) \nTeam: [Super Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Super_Saiyans) \nBuild: 6 Additional/20 Critical";
-        var blp = "[AGL LR Super Saiyan Goku](https://dbz-dokkanbattle.fandom.com/wiki/Miracle-Making_Super_Saiyan_Super_Saiyan_Goku) - 5 links shared\n[INT LR Super Saiyan Goku & Super Saiyan Vegeta](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Super_Power_Super_Saiyan_Goku_%26_Super_Saiyan_Vegeta) - 5 links shared\n[PHY LR Super Saiyan Goku (Angel) & Super Saiyan Vegeta (Angel)](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighting_Force_Super_Saiyan_Goku_(Angel)_%26_Super_Saiyan_Vegeta_(Angel)) - 4 links shared";
-        var deets = "► 12 Ki Multiplier is 150%; 24 Ki Multiplier is 200%\n ­ ­ ­ ­ ­▫ Full [12-24 Ki Multipliers](https://dbz-dokkanbattle.fandom.com/wiki/Ki_Multipliers) table\n► SA Lv.20 raises [SA Multiplier](https://dbz-dokkanbattle.fandom.com/wiki/Super_Attack_Multipliers) by an additional 30%";
-        var footnotes = "[1]: Raises SA Multiplier and DEF by 30% for 1 turn\n[2]: 25% chance to launch an additional Super Attack";
+        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
+        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
+        var deets = "-";
+        var footnotes = "[1]: ";
 
         if (status === 'incomplete')
         {
@@ -136,7 +122,6 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
                         .setTimestamp()
-                        .setFooter("[1]: Raises SA Multiplier and DEF by 30% for 1 turn")
                     message.channel.send(superAttack)
                     break;
 
@@ -150,21 +135,7 @@ module.exports = {
                         .setThumbnail(circle)
                         .addField("Passive Skill", passive)
                         .setTimestamp()
-                        .setFooter("[2]: 25% chance to launch an additional Super Attack")
                     message.channel.send(passiveSkill)
-                    break;
-
-                case "active":
-                    const activeSkill = new Discord.MessageEmbed()
-                        .setColor(color)
-                        .setTitle(name)
-                        .setURL(url)
-                        .setAuthor(message.author.username, pfp)
-                        .setDescription(desc)
-                        .setThumbnail(circle)
-                        .addField("Active Skill", active)
-                        .setTimestamp()
-                    message.channel.send(activeSkill)
                     break;
 
                 case "stats":

@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "STR LR Goku & Vegeta (Angel)\nPHY LR Majin Buu (Gotenks)",
+                    name: "STR LR Super Vegito\nPHY LR Majin Buu (Ultimate Gohan)",
                     value:  "** **"
                 }
             ],
