@@ -203,7 +203,7 @@ module.exports = {
                         {name: "Super Saiyan 2 Goku (Angel)", value: "**ssj2goku1z**: AGL UR Super Saiyan 2 Goku (Angel) with EZA"},
                         {name: "Super Saiyan 3 Goku", value: "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
                                                              "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
-                                                             "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n without EZA" +
+                                                             "**ssj3goku4**: INT UR Super Saiyan 3 Goku without EZA\n" +
                                                              "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
                                                              "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku\n"},
                         {name: "Super Saiyan God Goku", value: "**ssggoku2**: TEQ UR Super Saiyan God Goku\n" +
@@ -1765,7 +1765,7 @@ module.exports = {
                         name: "** **",
                         value:  "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
                                 "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
-                                "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n without EZA" +
+                                "**ssj3goku4**: INT UR Super Saiyan 3 Goku without EZA\n" +
                                 "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
                                 "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku"
                     }
