@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'hercule1',
-    description: 'AGL UR Hercule/Majin Buu (Good) with EZA',
+    description: 'AGL UR Hercule/Majin Buu (Good) without EZA',
     categories: ['', ''],
     link: ['', ''],
     status: 'incomplete',

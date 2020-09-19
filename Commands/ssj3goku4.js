@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'ssj3goku4',
-    description: 'INT UR Super Saiyan 3 Goku with EZA',
+    description: 'INT UR Super Saiyan 3 Goku without EZA',
     categories: ['', ''],
     link: ['', ''],
     status: 'incomplete',

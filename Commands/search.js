@@ -67,7 +67,7 @@ module.exports = {
                                                    "**kbuu1**: PHY UR Buu (Kid) without EZA\n" +
                                                    "**kbuu1z**: PHY UR Buu (Kid) with EZA"},
                         {name: "Mr. Buu", value: "**mrbuu1**: TEQ UR Mr. Buu"},
-                        {name: "Hercule/Majin Buu (Good)", value: "**hercule1**: AGL UR Hercule/Majin Buu (Good) with EZA"}
+                        {name: "Hercule/Majin Buu (Good)", value: "**hercule1**: AGL UR Hercule/Majin Buu (Good) without EZA"}
                     )
                     .setTimestamp()
                 message.channel.send(buu)
@@ -203,7 +203,7 @@ module.exports = {
                         {name: "Super Saiyan 2 Goku (Angel)", value: "**ssj2goku1z**: AGL UR Super Saiyan 2 Goku (Angel) with EZA"},
                         {name: "Super Saiyan 3 Goku", value: "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
                                                              "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
-                                                             "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n with EZA" +
+                                                             "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n without EZA" +
                                                              "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
                                                              "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku\n"},
                         {name: "Super Saiyan God Goku", value: "**ssggoku2**: TEQ UR Super Saiyan God Goku\n" +
@@ -246,7 +246,7 @@ module.exports = {
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/756745681368252466/maxresdefault.png?width=1089&height=612")
                     .addFields(
-                        {name: "Hercule/Majin Buu (Good)", value: "**hercule1**: AGL UR Hercule/Majin Buu (Good) with EZA"}
+                        {name: "Hercule/Majin Buu (Good)", value: "**hercule1**: AGL UR Hercule/Majin Buu (Good) without EZA"}
                     )
                 message.channel.send(hercule)
                 break;
@@ -1765,7 +1765,7 @@ module.exports = {
                         name: "** **",
                         value:  "**ssj3goku3**: AGL UR Super Saiyan 3 Goku without EZA\n" +
                                 "**ssj3goku3z**: AGL UR Super Saiyan 3 Goku with EZA\n" +
-                                "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n with EZA" +
+                                "**ssj3goku4**: INT UR Super Saiyan 3 Goku\n without EZA" +
                                 "**ssj3goku1z**: STR UR Super Saiyan 3 Goku with EZA\n" +
                                 "**ssj3goku2**: TEQ LR Super Saiyan 3 Goku"
                     }
