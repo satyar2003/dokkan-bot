@@ -261,6 +261,7 @@ module.exports = {
                         {name: "Vegeta", value: "**nandv2**: AGL LR Vegeta after exchange"},
                         {name: "Super Saiyan Vegeta", value: "**ssjvegeta1**: INT LR Prime Battle Super Saiyan Vegeta"},
                         {name: "Super Saiyan 2 Vegeta", value: "**ssj2vegeta2**: TEQ UR Super Saiyan 2 Vegeta before transformation"},
+                        {name: "Super Saiyan 2 Vegeta (Angel)", value: "**ssj2vegeta3: PHY LR Super Saiyan 2 Vegeta (Angel)"},
                         {name: "Majin Vegeta", value: "**mvegeta2**: AGL LR Majin Vegeta\n" +
                                                       "**mvegeta1**: TEQ UR Majin Vegeta after transformation"},
                         {name: "Super Saiyan 3 Vegeta", value: "**ssj3vegeta2**: STR UR Super Saiyan 3 Vegeta without EZA\n" +
