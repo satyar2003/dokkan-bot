@@ -25,7 +25,7 @@ module.exports = {
                 },
                 {
                     name: "Sub-commands",
-                    value: "These are key words that you can add after you type a command to see specific parts of a unit's kit. \n**Sub-command list**:\n**leader**: Leader Skill\n**super**: Super Attack\n**passive**: Passive Skill\n**active**: Active Skill\n**stats**: Stats\n**links**: Links\n**categories**: Categories\n**apt**: Attack Per Turn\n**partners**: Best Linking Partners\n**details**: Details\n**art**: Character's art\n**transform**: Transformation conditions (does not apply to giant units or exchange units)\n**exchange**: Exchange conditions\nEx. `d!androids1 leader` shows you PHY LR Androids #17 & #18/Android #16's Leader Skill."
+                    value: "These are key words that you can add after you type a command to see specific parts of a unit's kit. \n**Sub-command list**:\n**leader**: Leader Skill\n**super**: Super Attack\n**unit**: Unit Super Attack\n**passive**: Passive Skill\n**active**: Active Skill\n**stats**: Stats\n**links**: Links\n**categories**: Categories\n**apt**: Attack Per Turn\n**partners**: Best Linking Partners\n**details**: Details\n**art**: Character's art\n**transform**: Transformation conditions (does not apply to giant units or exchange units)\n**exchange**: Exchange conditions\nEx. `d!androids1 leader` shows you PHY LR Androids #17 & #18/Android #16's Leader Skill."
                 },
                 {
                     name: "Notes",

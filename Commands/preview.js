@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "PHY LR Super Saiyan 2 Vegeta (Angel)",
+                    name: "PHY UR Uuub (Youth)",
                     value:  "** **"
                 }
             ],
