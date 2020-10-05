@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'Uub (Youth)',
+    name: 'uub1z',
     description: 'PHY UR Uub (Youth) with EZA',
     categories: ['', ''],
     link: ['', ''],

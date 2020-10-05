@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'hercule1',
+    name: 'ssj2vegeta3',
     description: 'PHY LR Super Saiyan 2 Vegeta (Angel)',
     categories: ['[Resurrected Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Resurrected_Warriors)',
                  '[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
