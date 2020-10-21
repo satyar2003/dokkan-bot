@@ -17,7 +17,7 @@ module.exports = {
             fields: [
                 {
                     name: "** **",
-                    value: `*New additions are being made to the bot at least once every two days, so if you don't see a character you want please be patient. If you have any questions or would like to see a character added to the bot, you can DM on Discord (Nobody#0244) or Reddit (u/nobody2169).*\nThank you for all the support.`
+                    value: `*New additions are being made to the bot at least once every week, so if you don't see a character you want please be patient. If you have any questions or would like to see a character added to the bot, you can DM on Discord (Nobody#0244) or Reddit (u/nobody2169).*\nThank you for all the support.`
                 },
                 {
                     name: "Miscellaneous",
