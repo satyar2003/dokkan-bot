@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Super TEQ UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/731213145384681532/card_1016460_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/731213256475148348/340.png";
-        var leader = "\"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category Ki +3 and HP, ATK & DEF +120%; or <:teq:729467504593862728> Type Ki +3 and HP, ATK & DEF +90%";
+        var leader = "\"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category Ki +3 and HP, ATK & DEF +120%; or TEQ Type Ki +3 and HP, ATK & DEF +90%";
         var superatk = "[4x Kaioken Kamehameha](https://www.youtube.com/watch?v=MTuNAUXLAoQ): Raises ATK & DEF[1] and causes supreme damage to enemy";
         var passive = "All-Out Effort: Ki +1 at start of each turn and DEF +60% when there is a \"[Vegeta's Family](https://dbz-dokkanbattle.fandom.com/wiki/Vegeta%27s_Family)\" Category enemy; ATK & DEF +90% when performing a Super Attack; Ki +6 and ATK +60% when HP is 60% or less";
         var stats = "HP: 8,697 (55%)/11,297 (100%)\nATK: 11,051 (55%)/14,451 (100%)\nDEF: 6,873 (55%)/9,873 (100%)";

@@ -29,9 +29,9 @@ module.exports = {
         var desc = "Super AGL UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/721142313547464745/card_1015890_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/721142257989714020/latest.png?width=459&height=612";
-        var leader = "\"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category Ki +3 and HP, ATK & DEF +130%; or <:agl:729467484289105930> Type Ki +3 and HP, ATK & DEF +100%";
+        var leader = "\"[Goku's Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)\" Category Ki +3 and HP, ATK & DEF +130%; or AGL Type Ki +3 and HP, ATK & DEF +100%";
         var superatk = "Meteor Blast: Greatly raises ATK & DEF for 1 turn[1] and causes supreme damage to enemy";
-        var passive = "Changes <:str:729468929293942894> Ki Spheres to <:agl:729467484289105930> Ki Spheres; ATK +20%, DEF +10% and recovers 10000 HP per Ki Sphere obtained; plus an additional ATK & DEF +5% per Ki Sphere obtained when there is a \"[Vegeta's Family](https://dbz-dokkanbattle.fandom.com/wiki/Vegeta%27s_Family)\" Category enemy";
+        var passive = "Changes STR Ki Spheres to AGL Ki Spheres; ATK +20%, DEF +10% and recovers 10000 HP per Ki Sphere obtained; plus an additional ATK & DEF +5% per Ki Sphere obtained when there is a \"[Vegeta's Family](https://dbz-dokkanbattle.fandom.com/wiki/Vegeta%27s_Family)\" Category enemy";
         var stats = "HP: 14,018 (55%)/16,618 (100%)\nATK: 13,782 (55%)/16,782 (100%)\nDEF: 7,889 (55%)/11,289 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)

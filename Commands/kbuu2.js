@@ -31,7 +31,7 @@ module.exports = {
         var desc = "Extreme INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/746929328947855411/card_1009640_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/746929321079341066/latest.png?width=459&height=612";
-        var leader = "[<:eint:729475498270523472>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_INT) Type Ki +3 and HP, ATK & DEF +120%; [<:sint:729475830794682449>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_INT) Type Ki +1 and HP, ATK & DEF +50%";
+        var leader = "[Extreme INT](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_INT) Type Ki +3 and HP, ATK & DEF +120%; [Super INT](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_INT) Type Ki +1 and HP, ATK & DEF +50%";
         var superatk = "[Super Vanishing Ball](https://dbz-dokkanbattle.fandom.com/wiki/File:(Super_Attack)_Buu_(Kid)_-_The_Unsurpassable_Majin): Causes immense damage to enemy and recovers 12% HP";
         var passive = "Single-Mindedness: ATK +100%; plu ATK +70% when HP is 30% or above";
         var stats = "HP: 13,875 (55%)/16,875 (100%)\nATK: 12,800 (55%)/15,800 (100%)\nDEF: 6,688 (55%)/9,688 (100%)";

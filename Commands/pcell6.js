@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Extreme PHY LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/724688140882935968/card_1014940_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/724688322563145778/gMUxExjq4WWgAAAABJRU5ErkJggg.png";
-        var leader = "<:ephy:729475525155749949> Type Ki +4 and HP, ATK & DEF +100%; <:sphy:729475848196980736> Type Ki +2 and HP, ATK & DEF +70%";
+        var leader = "Extreme PHY Type Ki +4 and HP, ATK & DEF +100%; Super PHY Type Ki +2 and HP, ATK & DEF +70%";
         var superatk = "[Energy Field](https://youtu.be/GCZ_cKSO5U4?t=31) (12-17 Ki): Causes colossal damage to all enemies and recovers 10% HP\n[Violence Disaster](https://youtu.be/GCZ_cKSO5U4?t=11) (18+ Ki): Raises ATK for 1 turn[1] and causes mega-colossal damage to enemy";
         var passive = "Perfect Form of Nightmare: ATK & DEF +90% at start of turn; plus an additional Ki +1 & ATK +10% per existing enemy";
         var stats = "HP: 19,963 (55%)/23,363 (100%)\nATK: 17,955 (55%)/20,955 (100%)\nDEF: 10,700 (55%)/13,300 (100%)";

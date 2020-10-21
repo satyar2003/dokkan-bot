@@ -25,7 +25,7 @@ module.exports = {
         var desc = "Super PHY UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/717435541871657553/card_1018100_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720708814785216562/340.png";
-        var leader = "<:phy:729467520272039988> Type ATK +33% per <:phy:729467520272039988> Ki Sphere obtained";
+        var leader = "PHY Type ATK +33% per PHY Ki Sphere obtained";
         var superatk = "[Flash Blade](https://www.youtube.com/watch?v=uHOoqSpxFGI): Massively raises ATK for 1 turn[1] and causes supreme damage to enemy while sacrificing 5% HP";
         var passive = "Prompt Action: ATK & DEF +100%; plus an additional ATK +100% but DEF -50% when performing a Super Attack; chance of performing a critical hit +7% with each attack received (up to 35%)";
         var stats = "HP: 10,859 (55%)/14,259 (100%)\nATK: 11,084 (55%)/14,084 (100%)\nDEF: 6,988 (55%)/9,588 (100%)";

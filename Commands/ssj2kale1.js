@@ -33,7 +33,7 @@ module.exports = {
         var desc = "Super INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/745832214977052752/card_1020400_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/745832238624800778/latest.png?width=459&height=612";
-        var leader = "[<:int:729468835819946026>](https://dbz-dokkanbattle.fandom.com/wiki/Category:INT) Type Ki +3 and HP, ATK & DEF +50%";
+        var leader = "[INT](https://dbz-dokkanbattle.fandom.com/wiki/Category:INT) Type Ki +3 and HP, ATK & DEF +50%";
         var superatk = "Resist Blast: Causes supreme damage to enemy and lowers DEF[1]";
         var passive = "Caulifla's Trust: \"[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)\" Category allies' Ki +2 and ATK & DEF +30%; DEF +50% when there is an ally whose name includes \"[Caulifla](https://dbz-dokkanbattle.fandom.com/wiki/Caulifla_(disambiguation))\" on the team, and all allies' Ki +1 and ATK & DEF +10% if that ally is attacking in the same turn";
         var stats = "HP: 10,366 (55%)/12,166 (100%)\nATK: 8,101 (55%)/9,901 (100%)\nDEF: 6,248 (55%)/8,048 (100%)";

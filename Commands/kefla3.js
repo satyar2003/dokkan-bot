@@ -53,7 +53,7 @@ module.exports = {
         var blp = "[STR UR Super Saiyan Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Transcendent_Height_Kefla#Super%20Saiyan%20Kefla) - 7 links shared\n[STR UR Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Transcendent_Height_Kefla#Kefla) - 6 links shared\n[PHY UR Super Saiyan 2 Kefla](https://dbz-dokkanbattle.fandom.com/wiki/Dreadful_Super_Fusion_Super_Saiyan_2_Kefla) - 6 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► She has a 40% uptime in her SSJ form\n► She has a 20% uptime in her SSJ2 form";
         var footnotes = "[1]: Raises ATK by 30% for 99 turns\n[2]: Lowers enemy's DEF by 80% for 3 turns\n[3]: 50% chance to evade enemy's attack";
-        var active = "[Let's Wreck Some Faces](https://youtu.be/A5oEMgE1jqk?t=57): Changes <:phy:729467520272039988> Ki Spheres to <:str:729468929293942894> Ki Spheres and attacks effective against all Types for 1 turn; can be activated when there is a \"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" or \"[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)\" Category enemy (once only)";
+        var active = "[Let's Wreck Some Faces](https://youtu.be/A5oEMgE1jqk?t=57): Changes PHY Ki Spheres to STR Ki Spheres and attacks effective against all Types for 1 turn; can be activated when there is a \"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" or \"[Universe Survival Saga](https://dbz-dokkanbattle.fandom.com/wiki/Universe_Survival_Saga)\" Category enemy (once only)";
         const {status} = require('./kefla3.js')
         if (status === 'incomplete')
         {

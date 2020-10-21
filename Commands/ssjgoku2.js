@@ -28,7 +28,7 @@ module.exports = {
         var desc = "Super INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/725042000277143762/card_1019260_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/725042050361327737/340.png";
-        var leader = "\"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)\" Category Ki +3 and HP, ATK & DEF +40%; or <:teq:729467504593862728> & <:int:729468835819946026> Type Ki +2 and HP, ATK & DEF +30%";
+        var leader = "\"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)\" Category Ki +3 and HP, ATK & DEF +40%; or TEQ & INT Type Ki +2 and HP, ATK & DEF +30%";
         var superatk = "[Instant Kamehameha](https://youtu.be/4tfR2wjkzY8?t=18): Causes supreme damage with a medium chance of stunning the enemy[1]";
         var passive = "Divine Experience: Recovers 10% HP and ATK & DEF +59% at start of turn; plus an additional ATK +59% with 5 or more Ki Spheres obtained; plus an additional ATK & DEF +59% when there is a \"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)\" Category enemy";
         var stats = "HP: 10,538 (55%)/12,338 (100%)\nATK: 8,135 (55%)/9,935 (100%)\nDEF: 6,119 (55%)/7,919 (100%)";

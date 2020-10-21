@@ -27,7 +27,7 @@ module.exports = {
         var desc = "Super STR UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/732355132804694116/card_1019040_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/732355233266663496/340.png";
-        var leader = "\"[Movie Heroes](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Heroes)\" Category Ki +3 and HP, ATK & DEF +120%; or <:str:729468929293942894> Type Ki +3 and HP, ATK & DEF +70%";
+        var leader = "\"[Movie Heroes](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Heroes)\" Category Ki +3 and HP, ATK & DEF +120%; or STR Type Ki +3 and HP, ATK & DEF +70%";
         var superatk = "[Final Spirit Cannon](https://youtu.be/J0SLez9Lt6A?t=195): Greatly raises ATK & DEF for 1 turn[1] and causes supreme damage to enemy";
         var passive = "Parents' Love: ATK & DEF +100%; Ki +3 plus an additional ATK & DEF +100% when there is an ally whose name includes \"[Goku](https://dbz-dokkanbattle.fandom.com/wiki/Goku_(disambiguation))\" (Captain Ginyu, Jr., etc. excluded) on the team; plus an additional ATK +100% when there is a \"[Movie Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Bosses)\" Category enemy; plus an additional Ki +3, ATK +100% and performs a critical hit when facing an enemy whose name includes \"[Frieza](https://dbz-dokkanbattle.fandom.com/wiki/Frieza_(disambiguation))\" (Frieza Soldier excluded)";
         var active = "[Gine's Encouragement](https://youtu.be/J0SLez9Lt6A?t=192): Removes all allies' status effects and raises all allies' ATK by 22% for 2 turns; can be activated when HP is 80% or less, starting from the 4th turn from the start of battle (once only)"

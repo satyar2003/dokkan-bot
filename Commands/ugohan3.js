@@ -31,7 +31,7 @@ module.exports = {
         var desc = "Super INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/736438776141709342/card_1006700_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/736438753631010816/latest.png?width=459&height=612";
-        var leader = "<:int:729468835819946026> Type Ki +3, ATK +3000";
+        var leader = "INT Type Ki +3, ATK +3000";
         var superatk = "Burst Rush: Greatly raises ATK[1] and causes supreme damage to enemy";
         var passive = "Victor's Fortitude: Ki +5, ATK +10000 when Ki is 7 or more";
         var stats = "HP: 12,106 (55%)/16,306 (100%)\nATK: 11,278 (55%)/15,478 (100%)\nDEF: 7,508 (55%)/11,708 (100%)";

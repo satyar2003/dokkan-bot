@@ -31,7 +31,7 @@ module.exports = {
         var desc = "Super PHY UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/731217189561958410/card_1014370_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/731217271019798588/340.png";
-        var leader = "<:sphy:729475848196980736> Type Ki +2 and HP, ATK & DEF +90%";
+        var leader = "Super PHY Type Ki +2 and HP, ATK & DEF +90%";
         var superatk = "[20x Kaioken Kamehameha](https://youtu.be/0-lxUgxmvN0?t=18): Greatly raises ATK for 1 turn[1] and causes supreme damage to enemy";
         var passive = "Double-Edged Sword: ATK & DEF +80%; plus an additional ATK +20% with each attack received (up to 120%)";
         var stats = "HP: 9,513 (55%)/12,913 (100%)\nATK: 10,948 (55%)/13,948 (100%)\nDEF: 6,331 (55%)/8,931 (100%)";

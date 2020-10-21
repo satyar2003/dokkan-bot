@@ -30,7 +30,7 @@ module.exports = {
         var desc = "Super STR UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/722866604605440171/card_1016050_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/722866738408063156/340.png";
-        var leader = "<:sstr:729475907768811591> Type Ki +3 and HP, ATK & DEF +100%";
+        var leader = "Super STR Type Ki +3 and HP, ATK & DEF +100%";
         var superatk = "[Big Bang Attack](https://youtu.be/eb0tcw5-6NY?t=36): Greatly raises ATK[1] and causes supreme damage to enemy";
         var passive = "Divine Pressure: Ki +3 and ATK & DEF +100%; high chance[2] of guarding all attacks; high chance[3] of stunning the attacked enemy when there is a \"[Movie Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Bosses)\" Category enemy";
         var stats = "HP: 9,421 (55%)/12,421 (100%)\nATK: 10,614 (55%)/14,014 (100%)\nDEF: 6,794 (55%)/9,394 (100%)";

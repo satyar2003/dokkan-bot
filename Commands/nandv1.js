@@ -26,7 +26,7 @@ module.exports = {
         var desc = "Extreme AGL LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/725418887406944367/card_1019400_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/725419084262408192/z8fIGngb0dswAAAABJRU5ErkJggg.png";
-        var leader = "\"[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)\" Category Ki +4 and HP, ATK & DEF +130%; or <:eagl:729475466641276989> Type Ki +4 and HP, ATK & DEF +100%";
+        var leader = "\"[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)\" Category Ki +4 and HP, ATK & DEF +130%; or Extreme AGL Type Ki +4 and HP, ATK & DEF +100%";
         var superatk = "[Giant Storm](https://youtu.be/oLH1n012aZM) (12-17 Ki): Raises ATK & DEF for 1 turn[1] and causes colossal damage to all enemies\n[Bomber DX](https://youtu.be/oLH1n012aZM?t=26) (18+ Ki): Greatly raises ATK & DEF for 1 turn[2], causes mega-colossal damage to enemy and greatly lowers DEF[3]";
         var passive = "Elite Warrior of Nobility: ATK & DEF +78%; Ki +5 when HP is 78% or more; plus an additional ATK +78% within the same turn after evading an attack (including Super Attack); plus an additional ATK & DEF +7800 at start of turn per existing enemy; Exchanges with Vegeta when conditions are met";
         var active = "[Watch Out, Nappa!](https://youtu.be/oLH1n012aZM?t=14): ATK -50% and evades enemy's attack (including Super Attack) for 1 turn; can be activated starting from the 3rd turn from the start of battle (once only)";

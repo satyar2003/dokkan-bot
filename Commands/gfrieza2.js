@@ -32,7 +32,7 @@ module.exports = {
         var desc = "Extreme AGL UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/714923810662514740/card_1008740_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720677960817836032/latest.png?width=461&height=612";
-        var leader = "<:agl:729467484289105930> Type ATK +33% per AGL Ki Sphere obtained";
+        var leader = "AGL Type ATK +33% per AGL Ki Sphere obtained";
         var superatk = "Golden Death Ball: Causes supreme damage to enemy";
         var passive = "Rampant Malice: Reduces damage received by 90% when HP is 50% or above";
         var stats = "HP: 10,837 (55%)/13,437 (100%)\nATK: 10,279 (55%)/13,279 (100%)\nDEF: 6,393 (55%)/9,793 (100%)";

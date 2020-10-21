@@ -30,7 +30,7 @@ module.exports = {
         var desc = "Super PHY LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/724333260099944639/card_4012930_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/724333489889214534/wM0By9LAsnH8QAAAABJRU5ErkJggg.png";
-        var leader = "\"[Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion)\" Category Ki +3, HP & ATK +170% and DEF +130%; or <:phy:729467520272039988> Type Ki +3 and HP, ATK & DEF +90%";
+        var leader = "\"[Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion)\" Category Ki +3, HP & ATK +170% and DEF +130%; or PHY Type Ki +3 and HP, ATK & DEF +90%";
         var superatk = "[Big Bang Kamehameha](https://youtu.be/CDAWoa5Cj3M?t=59) (12-17 Ki): Causes colossal damage to enemy\n[Soul Punished](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_The_Fusion_of_Two_Powers_-_Super_Gogeta_Fusion_(Ultra_Super_Attack)) (18+ Ki): Causes mega-colossal damage to enemy and lowers ATK & DEF[1]";
         var passive = "Fusion of Miraculous Revival: Fully recovers HP (once only); attacks effective against all Types; ATK & DEF +150% at start of turn; Ki +3 in addition per <:rbw:729467948690964480> Ki Sphere obtained";
         var stats = "HP: 18,263 (55%)/21,663 (100%)\nATK: 17,700 (55%)/20,700 (100%)\nDEF: 11,869 (55%)/14,469 (100%)";

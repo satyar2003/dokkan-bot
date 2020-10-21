@@ -27,7 +27,7 @@ module.exports = {
         var desc = "Super TEQ UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/722583339009048646/card_1016030_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/722583446064726016/340.png";
-        var leader = "<:steq:729475811966713918> Type Ki +3 and HP, ATK & DEF +100%";
+        var leader = "Super TEQ Type Ki +3 and HP, ATK & DEF +100%";
         var superatk = "[God Bind](https://www.youtube.com/watch?v=OgGeS420oUs): Causes supreme damage to enemy and seals Super Attack";
         var passive = "Godly Fighting Style: Ki +3 and ATK & DEF +100%; randomly changes Ki Spheres of a certain Type to <:rbw:729467948690964480> Ki Spheres; ATK +7% in addition per <:rbw:729467948690964480> Ki Sphere obtained; damage received -77% when there is a \"[Movie Bosses](https://dbz-dokkanbattle.fandom.com/wiki/Movie_Bosses)\" Category enemy";
         var stats = "HP: 9,328 (55%)/11,928 (100%)\nATK: 10,688 (55%)/14,088 (100%)\nDEF: 6,748 (55%)/9,748 (100%)";

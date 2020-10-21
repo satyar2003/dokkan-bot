@@ -33,7 +33,7 @@ module.exports = {
         var desc = "Extreme INT LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/738619880911142932/card_1018880_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/738620302325579831/F2fJE8CQ5SonAAAAAElFTkSuQmCC.png";
-        var leader = "\"[Future Saga](https://dbz-dokkanbattle.fandom.com/wiki/Future_Saga)\" Category Ki +4 and HP, ATK & DEF +130%; or [<:eint:729475498270523472>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_INT) Type Ki +4 and HP, ATK & DEF +100%";
+        var leader = "\"[Future Saga](https://dbz-dokkanbattle.fandom.com/wiki/Future_Saga)\" Category Ki +4 and HP, ATK & DEF +130%; or [Extreme INT](https://dbz-dokkanbattle.fandom.com/wiki/Category:Extreme_INT) Type Ki +4 and HP, ATK & DEF +100%";
         var superatk = "[Binding Black Kamehameha](https://www.youtube.com/watch?v=oU9cASm4smE) (12-17 Ki): Greatly raises DEF for 1 turn[1] and causes colossal damage to enemy\n[Holy Light Grenade](https://youtu.be/oU9cASm4smE?t=12) (18+ Ki): Greatly raises DEF for 1 turn[1] and causes mega-colossal damage to enemy";
         var passive = "Test of Rage: ATK & DEF +66%; plus an additional ATK +6% each time Ki rises by 1 (up to 120%); Ki +2 with each final blow delivered (up to +6); recovers 6% HP at end of turn in which attack was received";
         var active = "[Rage](https://youtu.be/oU9cASm4smE?t=30): Rages; can be activated when HP is 66% or less, starting from the 6th turn from the start of battle (once only)"

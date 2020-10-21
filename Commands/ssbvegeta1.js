@@ -25,9 +25,9 @@ module.exports = {
         var desc = "Super TEQ UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/713638928665804810/card_1018790_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720704602529333248/MwMIMLMzAwgz8bzPwN5deRqlQT19nAAAAAElFTkSuQmCC.png";
-        var leader = `"[Worthy Rivals](https://dbz-dokkanbattle.fandom.com/wiki/Worthy_Rivals)" Category Ki +3 and HP, ATK & DEF +120%; or <:teq:729467504593862728> Type Ki +3 and HP, ATK & DEF +90%`;
+        var leader = `"[Worthy Rivals](https://dbz-dokkanbattle.fandom.com/wiki/Worthy_Rivals)" Category Ki +3 and HP, ATK & DEF +120%; or TEQ Type Ki +3 and HP, ATK & DEF +90%`;
         var superatk = "[God Final Flash](https://youtu.be/5DERlxK6R5k?t=73): Raises ATK & DEF[1] and causes supreme damage to enemy";
-        var passive = "Experience from Real Fights: ATK & DEF +20% per Ki Sphere obtained plus an additional ATK & DEF +10% if it is a <:teq:729467504593862728> Ki Sphere; randomly changes Ki Spheres of a certain Type (<:teq:729467504593862728> excluded) to <:teq:729467504593862728> Ki Spheres";
+        var passive = "Experience from Real Fights: ATK & DEF +20% per Ki Sphere obtained plus an additional ATK & DEF +10% if it is a TEQ Ki Sphere; randomly changes Ki Spheres of a certain Type (TEQ excluded) to TEQ Ki Spheres";
         var stats = "HP: 12,159 (55%)/14,759 (100%)\nATK 10,298 (55%)/13,698 (100%)\nDEF 7,433 (55%)/10,433 (100%)";
         const {link} = require('./ssbvegeta1.js')
         var links = "";

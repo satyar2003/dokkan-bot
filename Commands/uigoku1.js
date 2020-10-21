@@ -24,7 +24,7 @@ module.exports = {
         var desc = "Super STR LR";
         var circle = "https://media.discordapp.net/attachments/705478347274059956/713172121530138644/card_1019820_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720709209574080522/DwjvLAqVZsmAAAAAElFTkSuQmCC.png";
-        var leader = `"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)"  Category Ki +4 and HP, ATK & DEF +130% or <:sstr:729475907768811591> Type Ki +4 and HP, ATK & DEF +100%`;
+        var leader = `"[Realm of Gods](https://dbz-dokkanbattle.fandom.com/wiki/Realm_of_Gods)"  Category Ki +4 and HP, ATK & DEF +130% or Super STR Type Ki +4 and HP, ATK & DEF +100%`;
         var superatk = "[Instinctive Punch](https://www.youtube.com/watch?v=L78L5TQ_4YI) (12-17 Ki): Disables enemy's guard and causes colossal damage to enemy\n[Kamehameha](https://youtu.be/L78L5TQ_4YI?t=17) (18+ Ki): Disables enemy's guard and causes mega-colossal damage to enemy";
         var passive = "Turn in Tides of Battle: ATK & DEF +77%; great chance[1] of evading enemy's attack (including Super Attack) for 7 turns from start of turn, and high chance[2] of evading enemy's attack (including Super Attack) starting from the 8th turn; plus an additional Ki +1 (up to +7) and ATK & DEF +11% (up to 77%) with each attack evaded (including Super Attack)";
         var stats = "HP: 17,838 (55%)/20,838 (100%)\nATK: 19,400 (55%)/22,800 (100%)\nDEF: 9,956 (55%)/12,556 (100%)";

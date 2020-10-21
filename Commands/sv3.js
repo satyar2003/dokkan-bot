@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Super INT LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/723039935761874965/card_4012900_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/723040229992169532/p3m45sVq86sRDtuHoFPAc1FcERgW5eoV0YWfyP8PCjTeeqHtAwEAAAAASUVORK5CYII.png";
-        var leader = "\"[Potara](https://dbz-dokkanbattle.fandom.com/wiki/Potara)\" Category Ki +3, HP & ATK +170% and DEF +130%; or <:int:729468835819946026> Category Ki +3, HP & ATK +170% and DEF +130%";
+        var leader = "\"[Potara](https://dbz-dokkanbattle.fandom.com/wiki/Potara)\" Category Ki +3, HP & ATK +170% and DEF +130%; or INT Category Ki +3, HP & ATK +170% and DEF +130%";
         var superatk = "[Big Bang Attack](https://youtu.be/vcWeMnEhLuQ?t=166) (12-17 Ki): Causes colossal damage to enemy\n[Final Kamehameha](https://dbz-dokkanbattle.fandom.com/wiki/File:DBZ_Dokkan_Battle_The_Fusion_of_Super_Powers_-_Super_Vegito_Fusion_(Ultra_Super_Attack)) (18+ Ki): Causes mega-colossal damage to enemy and raises allies’ ATK by 30% for 1 turn";
         var passive = "Potara Miracle: Fully recovers HP (once only); counters with tremendous power[1] upon receiving normal attacks; ATK & DEF +150% at start of turn; Ki +3 in addition per <:rbw:729467948690964480> Ki Sphere obtained";
         var stats = "HP: 21,663 (55%)/24,663 (100%)\nATK: 15,490 (55%)/18,490 (100%)\nDEF: 12,931 (55%)/15,931 (100%)";

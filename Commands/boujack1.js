@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Extreme INT LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/718162137934987324/card_1012160_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720530298068009000/AZUnMVftTBrfAAAAAElFTkSuQmCC.png";
-        var leader = "<:eint:729475498270523472> Type Ki +4 and HP, ATK & DEF +100%; <:sint:729475830794682449> Type Ki +2 and HP, ATK & DEF +70%";
+        var leader = "Extreme INT Type Ki +4 and HP, ATK & DEF +100%; Super INT Type Ki +2 and HP, ATK & DEF +70%";
         var superatk = "[Galactic Buster](https://youtu.be/WPhHIAE0V9M?t=33) (12-17 Ki): Causes colossal damage to enemy and greatly lowers DEF[1]\n[Galactic Suppresion](https://dbz-dokkanbattle.fandom.com/wiki/File:(Super_Attack)_NEW_LR!!) (18+ Ki): Causes mega-colossal damage to enemy and raises Extreme Class allies' ATK by 40% for 1 turn";
         var passive = "A Galaxy in Shadow: ATK & DEF +80%; plus additional ATK boost by up to 70% (the more HP remaining, the greater the ATK boost) and additional DEF boost by up to 70% (the less HP remaining, the greater the DEF boost)";
         var stats = "HP: 19,750 (55%)/22,750 (100%)\nATK: 16,765 (55%)/19,765 (100%)\nDEF: 12,294 (55%)/15,294 (100%)";

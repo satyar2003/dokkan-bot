@@ -26,7 +26,7 @@ module.exports = {
         var desc = "Extreme AGL LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/725422697517154424/card_4019410_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/725422908310028359/A6Xk9cx0LR4NAAAAAElFTkSuQmCC.png";
-        var leader = "\"[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)\" Category Ki +4 and HP, ATK & DEF +130%; or <:eagl:729475466641276989> Type Ki +4 and HP, ATK & DEF +100%";
+        var leader = "\"[Inhuman Deeds](https://dbz-dokkanbattle.fandom.com/wiki/Inhuman_Deeds)\" Category Ki +4 and HP, ATK & DEF +130%; or Extreme AGL Type Ki +4 and HP, ATK & DEF +100%";
         var superatk = "[Slash Swing](https://youtu.be/oLH1n012aZM?t=64) (12-17 Ki): Raises ATK & DEF for 1 turn[1], causes colossal damage to enemy and lowers ATK[2]\n[Galick Gun](https://youtu.be/oLH1n012aZM?t=78) (18+ Ki): Greatly raises ATK & DEF for 1 turn[3], causes mega-colossal damage to enemy and massively lowers DEF[4]";
         var passive = "The Prince Cometh: Recovers 50% HP (once only); Ki +3 and ATK & DEF +100%; plus an additional Ki +3 and ATK & DEF +18% when facing only 1 enemy; plus an additional Ki +3 and ATK & DEF +18% when attacking [Super Class](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_Class) enemies; attacks effective against all Types when Ki is 24";
         var stats = "HP: 22,513 (55%)/25,113 (100%)\nATK: 17,360 (55%)/20,360 (100%)\nDEF: 10,169 (55%)/13,569 (100%)";

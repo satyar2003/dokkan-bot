@@ -306,6 +306,17 @@ module.exports = {
                 message.channel.send(superbuu)
                 break;
 
+            case "tarble":
+                const tarble = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/768261641799860294/450.png")
+                    .addFields(
+                        {name: "Tarble", value: "**tarble1**: AGL UR Table"}
+                    )
+                message.channel.send(tarble)
+                break;
+
             case "teengohan":
             case "tgohan":
                 const teengohan = new Discord.MessageEmbed()

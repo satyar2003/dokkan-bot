@@ -28,7 +28,7 @@ module.exports = {
         var desc = "Extreme TEQ UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/730221460756365352/card_1017800_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/730221741036798064/H0iQEMHp8nSUQssyHX8P5zzYwJrIfDAAAAAElFTkSuQmCC.png";
-        var leader = "<:teq:729467504593862728> Type Ki +2 and HP, ATK & DEF +70%";
+        var leader = "TEQ Type Ki +2 and HP, ATK & DEF +70%";
         var superatk = "[Super Dodon Ray](https://youtu.be/nml4O3frvG0?t=33): Raises ATK for 1 turn[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
         var passive = "Precise Measurement: ATK & DEF +120% and attack guaranteed to hit when performing a Super Attack; ATK & DEF +20% with each attack received (up to 80%)";
         var stats = "HP: 8,240 (55%)/9,800 (100%)\nATK: 9,392 (55%)/11,432 (100%)\nDEF: 5,565 (55%)/7,365 (100%)";

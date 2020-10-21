@@ -24,9 +24,9 @@ module.exports = {
         var desc = "Super PHY UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/713973381267062794/card_1018740_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720704171350687885/M6tDd9NxFVAAAAAElFTkSuQmCC.png";
-        var leader = `"[Bond of Master and Disciple](https://dbz-dokkanbattle.fandom.com/wiki/Bond_of_Master_and_Disciple)" Category Ki +3 and HP, ATK & DEF +120%; or <:phy:729467520272039988> Type Ki +3 and HP, ATK & DEF +90%`;
+        var leader = `"[Bond of Master and Disciple](https://dbz-dokkanbattle.fandom.com/wiki/Bond_of_Master_and_Disciple)" Category Ki +3 and HP, ATK & DEF +120%; or PHY Type Ki +3 and HP, ATK & DEF +90%`;
         var superatk = "[God Kamehameha](https://youtu.be/5DERlxK6R5k?t=56): Raises ATK & DEF[1] and causes supreme damage to enemy";
-        var passive = "Steady and Calm Ki: ATK & DEF +20% per Ki Sphere obtained plus an additional ATK & DEF +10% if it is a <:phy:729467520272039988> Ki Sphere; randomly changes Ki Spheres of a certain Type (<:phy:729467520272039988> excluded) to <:phy:729467520272039988> Ki Spheres";
+        var passive = "Steady and Calm Ki: ATK & DEF +20% per Ki Sphere obtained plus an additional ATK & DEF +10% if it is a PHY Ki Sphere; randomly changes Ki Spheres of a certain Type (PHY excluded) to PHY Ki Spheres";
         var stats = "HP: 12,366 (55%)/15,766 (100%)\nATK: 10,877 (55%)/13,877 (100%)\nDEF: 6,606 (55%)/9,206 (100%)";
         const {link} = require('./ssbgoku1.js')
         var links = "";

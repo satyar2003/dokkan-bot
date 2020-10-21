@@ -29,7 +29,7 @@ module.exports = {
         var desc = "Extreme STR UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/718995643372273734/card_1014390_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720533959368376372/kMP0dBXLQAAAABJRU5ErkJggg.png";
-        var leader = "<:estr:729475511100768298> Type Ki +2 and HP, ATK & DEF +90%";
+        var leader = "Extreme STR Type Ki +2 and HP, ATK & DEF +90%";
         var superatk = "[It Hurts!!!](https://youtu.be/0-lxUgxmvN0?t=57): Greatly raises ATK for 1 turn[1] and causes supreme damage to enemy";
         var passive = "Irrational Fury: ATK & DEF +80%; plus an additional ATK +100% within the same turn after receiving attack";
         var stats = "HP: 10,069 (55%)/13,069 (100%)\nATK: 10,874 (55%)/14,274 (100%)\nDEF: 6,146 (55%)/8,746 (100%)";

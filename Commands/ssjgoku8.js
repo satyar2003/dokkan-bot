@@ -27,9 +27,9 @@ module.exports = {
         var desc = "Super INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/733549975841013850/card_1010720_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/733550061195100180/latest.png?width=459&height=612";
-        var leader = "<:int:729468835819946026> Type Ki +2 and HP & DEF +70%";
+        var leader = "INT Type Ki +2 and HP & DEF +70%";
         var superatk = "Instant Transmission Kamehameha: Causes supreme damage with a rare chance to stun the enemy[1]";
-        var passive = "Principles of Knowledge: Change <:agl:729467484289105930> Ki to <:int:729468835819946026> Ki; ATK +40%";
+        var passive = "Principles of Knowledge: Change AGL Ki to INT Ki; ATK +40%";
         var stats = "HP: 10,929 (55%)/13,929 (100%)\nATK: 10,021 (55%)/13,021 (100%)\nDEF: 6,669 (55%)/9,669 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)

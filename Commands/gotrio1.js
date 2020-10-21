@@ -25,7 +25,7 @@ module.exports = {
         var desc = "Super INT LR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/722534277744689283/card_1016370_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/722534526726832138/SytvLPA4xGAAAAABJRU5ErkJggg.png";
-        var leader = "\"[Dragon Ball Seekers](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Seekers)\" Category Ki +4 and HP, ATK & DEF +170%; or <:sint:729475830794682449> Type Ki +4 and HP, ATK & DEF +100%";
+        var leader = "\"[Dragon Ball Seekers](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Seekers)\" Category Ki +4 and HP, ATK & DEF +170%; or Super INT Type Ki +4 and HP, ATK & DEF +100%";
         var superatk = "[Triple Ki Wave](https://youtu.be/ESp4BJIyzWA?t=187) (12-17 Ki): Causes colossal damage to enemy and raises DEF by 33% for 1 turn\n[Galaxy Tri-Attack](https://youtu.be/ESp4BJIyzWA?t=199) (18+ Ki): Causes mega-colossal damage to enemy and raises DEF by 33% for 3 turns";
         var passive = "Love, Courage and Pride: ATK & DEF +77% when performing a Super Attack, plus an additional ATK +77% if it is an Ultra Super Attack; Ki +1 per \"[Dragon Ball Seekers](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Seekers)\" Category ally on the team";
         var stats = "HP: 18,475 (55%)/21,475 (100%)\nATK: 18,465 (55%)/21,465 (100%)\nDEF: 10,806 (55%)/13,806 (100%)";

@@ -28,7 +28,7 @@ module.exports = {
         var desc = "Super TEQ UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/719655985287004190/card_1005300_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/720528827570323486/im2.png";
-        var leader = "<:teq:729467504593862728> Type ATK +80%";
+        var leader = "TEQ Type ATK +80%";
         var superatk = "God of Destruction's Edict: Causes supreme damage to enemy and lowers DEF[1]";
         var passive = "Quivering Anger: ATK +60% at turn start, Rage only once when HP =<30%";
         var stats = "HP: 11,572 (55%)/15,162 (100%)\nATK: 11,750 (55%)/16,510 (100%)\nDEF: 6,585 (55%)/10,785 (100%)";

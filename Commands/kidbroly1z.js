@@ -28,7 +28,7 @@ module.exports = {
         var desc = "Extreme INT UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/738583571266142248/card_1018930_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/738583598277329012/latest.png?width=459&height=612";
-        var leader = "\"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" Category Ki +3 and HP, ATK & DEF +77%; or <:int:729468835819946026> Type Ki +3 and HP, ATK & DEF +50%";
+        var leader = "\"[Pure Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Pure_Saiyans)\" Category Ki +3 and HP, ATK & DEF +77%; or INT Type Ki +3 and HP, ATK & DEF +50%";
         var superatk = "[Wild Bite](https://youtu.be/XNVBRWWxlPY?t=81): Raises ATK & DEF[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
         var passive = "Attack-Evasion Training: ATK & DEF +70% and disables enemy's guard; medium chance[3] of evading enemy's attack (including Super Attack); deliver the final blow to recover 20% HP at the end of turn";
         var stats = "HP: 9,461 (55%)/11,861 (100%)\nATK: 10,928 (55%)/13,328 (100%)\nDEF: 5,300 (55%)/7,700 (100%)";

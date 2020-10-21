@@ -32,9 +32,9 @@ module.exports = {
         var desc = "Super PHY UR";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/749875387600863342/card_1015260_circle.png";
         var character = "https://media.discordapp.net/attachments/712036120191434793/749875674055180328/ARSdM49PmPHNAAAAAElFTkSuQmCC.png";
-        var leader = "[<:sphy:729475848196980736>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type Ki +4 and HP, ATK & DEF +120%";
+        var leader = "[Super PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type Ki +4 and HP, ATK & DEF +120%";
         var superatk = "[Z-Sword Slash](https://youtu.be/MphVEwatII0?t=21): Raises ATK[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
-        var passive = "Enlightenment on Sacred Ground: [<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Type Ki +3 plus an additional ATK & DEF +50% for [<:sphy:729475848196980736>](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type; randomly changes Ki Spheres of a certain Type ([<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) excluded) to [<:phy:729467520272039988>](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Ki Spheres; ATK & DEF +20% per Ki Sphere obtained";
+        var passive = "Enlightenment on Sacred Ground: [PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Type Ki +3 plus an additional ATK & DEF +50% for [Super PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:Super_PHY) Type; randomly changes Ki Spheres of a certain Type ([PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) excluded) to [PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Ki Spheres; ATK & DEF +20% per Ki Sphere obtained";
         var stats = "HP: 13,100 (55%)/16,500 (100%)\nATK: 11,170 (55%)/14,170 (100%)\nDEF: 7,238 (55%)/9,838 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
