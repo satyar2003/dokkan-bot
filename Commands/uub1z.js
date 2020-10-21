@@ -31,7 +31,7 @@ module.exports = {
         var url = "https://dbz-dokkanbattle.fandom.com/wiki/Astonishing_Reincarnation_Uub_(Youth)#Extreme%20Z-Awakened";
         var desc = "Super PHY";
         var circle = "https://media.discordapp.net/attachments/712036120191434793/767991291304738826/card_1020810_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/767991317414019072/card_1020810_character.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/768263164269297754/latest.png?width=502&height=670";
         var leader = "\"[Earthlings](https://dbz-dokkanbattle.fandom.com/wiki/Earthlings)\" Category Ki +3 and HP, ATK & DEF +77%; or [PHY](https://dbz-dokkanbattle.fandom.com/wiki/Category:PHY) Type Ki +3 and HP, ATK & DEF +50%";
         var superatk = "[Ki Blast Cannon](https://youtu.be/MjNtb0fnofc?t=20): Raises ATK[1] and causes supreme damage with a medium chance of stunning the enemy[2]";
         var passive = "Strength When It Counts: Ki +1 and ATK & DEF +30% at start of each turn (Ki up to +4 and ATK & DEF up to +120%); plus an additional ATK +100% within the same turn after receiving attack; guards all attacks when there is a \"[World Tournament](https://dbz-dokkanbattle.fandom.com/wiki/World_Tournament)\" Category enemy or an enemy whose name includes \"[Goku](https://dbz-dokkanbattle.fandom.com/wiki/Goku_(disambiguation))\" (Youth, Captain Ginyu, Jr., etc. excluded)";
