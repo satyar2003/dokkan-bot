@@ -303,6 +303,7 @@ module.exports = {
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/749501550572994590/latest.png?width=354&height=612")
                     .addField("Searching...", "**superbuu1**: PHY UR Buu (Super)")
+                    .setTimestamp()
                 message.channel.send(superbuu)
                 break;
 
@@ -314,6 +315,7 @@ module.exports = {
                     .addFields(
                         {name: "Tarble", value: "**tarble1**: AGL UR Table"}
                     )
+                    .setTimestamp()
                 message.channel.send(tarble)
                 break;
 
@@ -347,6 +349,7 @@ module.exports = {
                     .addFields(
                         {name: "Uub (Youth)", value: "**uub1z**: PHY UR Uub (Youth) with EZA"}
                     )
+                    .setTimestamp()
                 message.channel.send(uub)
                 break;
 
