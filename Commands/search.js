@@ -886,6 +886,10 @@ module.exports = {
                 },
                 fields: [
                     {
+                        name: "Gotenks",
+                        value: "**gotenks1**: F2P INT UR Gotenks"
+                    },
+                    {
                         name: "Super Saiyan 3 Gotenks",
                         value:  "**ssj3gotenks1**: TEQ UR Super Saiyan 3 Gotenks without EZA\n" +
                                 "**ssj3gotenks1z**: TEQ UR Super Saiyan 3 Gotenks with EZA"
