@@ -27,6 +27,8 @@ module.exports = {
                 break;
 
             case "black":
+            case "zamasu":
+            case "gb":
                 const black = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
@@ -231,6 +233,7 @@ module.exports = {
                 const goten = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Goten Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714337816452137040/GotenNV.png?width=843&height=612")
                     .addFields(
                         {name: "Goten (Kid)", value: "**goten1**: STR UR Goten (Kid)"},
@@ -244,6 +247,7 @@ module.exports = {
                 const hercule = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Hercule COmmands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/756745681368252466/maxresdefault.png?width=1089&height=612")
                     .addFields(
                         {name: "Hercule/Majin Buu (Good)", value: "**hercule1**: AGL UR Hercule/Majin Buu (Good) without EZA"}
@@ -287,6 +291,7 @@ module.exports = {
                 const raditz = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Raditz Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/737786043419328643/340.png")
                     .addFields(
                         {name: "Vegeta (Kid) & Raditz (Kid)", value: "**vandr1**: AGL UR Vegeta (Kid) & Raditz (Kid) without EZA\n" +
@@ -295,6 +300,18 @@ module.exports = {
                     .setTimestamp()
                 message.channel.send(raditz)
                 break;
+
+            case "sgogeta":
+                const sgogeta = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/718540667726463068/Gogeta_Infobox.png?width=1089&height=612")
+                    .addFields("Searching...", "**sgogeta1**: STR UR Super Gogeta without EZA\n" + 
+                                               "**sgogeta1z**: STR UR Super Gogeta with EZA\n" +
+                                               "**sgogeta2**: PHY LR Super Gogeta")
+                    .setTimestamp()
+                message.channel.send(sgogeta)
+                break; 
 
             case "superbuu":
             case "sbuu":
@@ -311,12 +328,28 @@ module.exports = {
                 const tarble = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Tarble Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/768261641799860294/450.png")
                     .addFields(
                         {name: "Tarble", value: "**tarble1**: AGL UR Table"}
                     )
                     .setTimestamp()
                 message.channel.send(tarble)
+                break;
+
+            case "tao":
+            case "cyborg":
+            case "mercenary":
+                const tao = new Discord.MessageEmbed()
+                    .setColor(0)
+                    .setAuthor(message.author.username, pfp)
+                    .setTitle("Mercenary Tao Commands")
+                    .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/730158067051921431/latest.png?width=411&height=612")
+                    .addFields(
+                        {name: "Cyborg Tao", value: "**tao1**: TEQ UR Cyborg Tao"}
+                    )
+                    .setTimestamp()
+                message.channel.send(tao)
                 break;
 
             case "teengohan":
@@ -334,6 +367,7 @@ module.exports = {
                 const tien = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Tien Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/750227775461261364/340.png")
                     .addFields(
                         {name: "Tien", value: "**tien1**: PHY UR Tien"}
@@ -345,6 +379,7 @@ module.exports = {
                 const uub = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Uub Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/762553993322692628/latest.png")
                     .addFields(
                         {name: "Uub (Youth)", value: "**uub1z**: PHY UR Uub (Youth) with EZA"}
@@ -357,6 +392,7 @@ module.exports = {
                 const vados = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Vados Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/742562165860335687/latest.png?width=1088&height=613")
                     .addFields(
                         {name: "Vados", value: "**vados1**: INT UR Vados"}
@@ -370,6 +406,7 @@ module.exports = {
                 const vegito = new Discord.MessageEmbed()
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
+                    .setTitle("Vegito Commands")
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/714339669621342240/vegito.png?width=438&height=613")
                     .addFields(
                         {name: "Vegito", value: "**vegito1**: TEQ LR Vegito"},
@@ -387,55 +424,7 @@ module.exports = {
                 message.channel.send(vegito)
                 break;
         }
-        if (args[0] === 'sgogeta')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Searching...",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/718540667726463068/Gogeta_Infobox.png?width=1089&height=612"
-                },
-                fields: [
-                    {
-                        name: "** **",
-                        value:  "**sgogeta1**: STR UR Super Gogeta without EZA\n" + 
-                                "**sgogeta1z**: STR UR Super Gogeta with EZA\n" +
-                                "**sgogeta2**: PHY LR Super Gogeta"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'tao')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Mercenary Tao Commands",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/730158067051921431/latest.png?width=411&height=612"
-                },
-                fields: [
-                    {
-                        name: "** **",
-                        value:  "**tao1**: TEQ UR Cyborg Tao"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'impcell')
+        if (args[0] === 'impcell')
         {
             message.channel.send({embed: {
                 color: 0,
@@ -645,54 +634,6 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**ssjgogeta1**: AGL UR Super Saiyan Gogeta"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'zamasu')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Searching...",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/721078571447091230/latest.png?width=544&height=613"
-                },
-                fields: [
-                    {
-                        name: "** **",
-                        value:  "**zamasu1**: AGL UR Zamasu before transformation\n" +
-                                "**rosemasu1**: TEQ LR Goku Black (Super Saiyan Rosé) & Zamasu"
-                    }
-                ],
-                timestamp: new Date()
-            }});
-        }
-        else if (args[0] === 'fzamasu')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Searching...",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/721535975595180063/latest.png?width=509&height=612"
-                },
-                fields: [
-                    {
-                        name: "** **",
-                        value:  "**fzamasu1**: AGL UR Fusion Zamasu after transformation\n" +
-                                "**fzamasu2**: AGL UR Fusion Zamasu (Mutated) after active skill"
                     }
                 ],
                 timestamp: new Date()
@@ -1579,31 +1520,6 @@ module.exports = {
                     {
                         name: "** **",
                         value: "**fskgohan1z**: STR UR Father-Son Kamehameha Gohan with EZA"
-                    }
-                ]
-            }});
-        }
-        else if (args[0] === 'gb')
-        {
-            message.channel.send({embed: {
-                color: 0,
-                author:
-                {
-                    name: message.author.username,
-                    icon_url: message.author.displayAvatarURL({format: "png", dynamic: "true"})
-                },
-                title: "Searching...",
-                thumbnail:
-                {
-                    url: "https://media.discordapp.net/attachments/712036120191434793/714343182879555584/goku_black2.jpg"
-                },
-                fields: [
-                    {
-                        name: "** **",
-                        value:  "**gb2**: INT UR Goku Black\n" + 
-                                "**gb1**: PHY UR Goku Black without EZA\n" +
-                                "**gb1z**: PHY UR Goku Black with EZA\n" +
-                                "**rosemasu1**: TEQ LR Goku Black (Super Saiyan Rosé) & Zamasu"
                     }
                 ]
             }});
