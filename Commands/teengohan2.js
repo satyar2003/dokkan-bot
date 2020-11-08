@@ -1,39 +1,30 @@
 const Discord = require('discord.js')
 
 module.exports = {
-    name: 'gotenks1',
-    description: 'F2P INT UR Gotenks',
-    categories: ['[Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion)',
-                 '[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)',
-                 '[Youth](https://dbz-dokkanbattle.fandom.com/wiki/Youth)',
-                 '[Special Pose](https://dbz-dokkanbattle.fandom.com/wiki/Special_Pose)'],
-    link: ['[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
-           '[The Saiyan Lineage](https://dbz-dokkanbattle.fandom.com/wiki/The_Saiyan_Lineage)\n ­ ­ ­ ­ Level 1: Ki +1\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
-           '[The Innocents](https://dbz-dokkanbattle.fandom.com/wiki/The_Innocents)\n ­ ­ ­ ­ Level 1: ATK +10%\n ­ ­ ­ ­ Level 10: ATK +15%',
-           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
-           '[Fused Fighter](https://dbz-dokkanbattle.fandom.com/wiki/Fused_Fighter)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%',
-           '[Over in a Flash](https://dbz-dokkanbattle.fandom.com/wiki/Over_in_a_Flash)\n ­ ­ ­ ­ Level 1: Ki +3\n ­ ­ ­ ­ Level 10: Ki +3 and ATK 7%',
-           '[Shattering the Limit](https://dbz-dokkanbattle.fandom.com/wiki/Shattering_the_Limit)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and ATK & DEF +5%'],
-    status: 'complete',
+    name: 'teengohan2',
+    description: 'TEQ UR Gohan (Teen) before transformation',
+    categories: ['', ''],
+    link: ['', ''],
+    status: 'incomplete',
     plural: 'false',
-    aliases: ['Gotenks'],
+    aliases: ['tgohan2', 'Gohan (Teen)'],
     execute(message, args) {
 		const pfp = message.author.displayAvatarURL({format: "png", dynamic: "true"})
-        const {link} = require('./gotenks1.js')
-        const {categories} = require('./gotenks1.js')
-        const {status} = require('./gotenks1.js')
-        const {plural} = require('./gotenks1.js')
-        const {aliases} = require('./gotenks1.js')
-        var color = 7028604;
-        var name = "Unstoppable Combo\nGotenks";
-        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Unstoppable_Combo_Gotenks";
-        var desc = "Super INT UR";
-        var circle = "https://media.discordapp.net/attachments/712036120191434793/774852992762773534/card_1019900_circle.png";
-        var character = "https://media.discordapp.net/attachments/712036120191434793/774853247902285824/Ub1WEqXdeNdPWHjgHKzv7kpqC3YyhJetXcPEcqRAZaitNCblwv4BVLOgBsttdoIAAAAASUVORK5CYII.png";
-        var leader = "\"[Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion)\" Category Ki +3 and HP, ATK & DEF +50%";
-        var superatk = "[Wolf Fang Volleyball Fist](https://youtu.be/kQRGIYZFzAA?t=14): Causes supreme damage to enemy and greatly lowers DEF[1]";
-        var passive = "ATK & DEF +90% when performing a Super Attack; launches an additional attack that has a medium chance[2] of becoming a Super Attack when facing only 1 enemy; plus an additional ATK & DEF +40% when attacking if the target enemy is in \"DEF Down\" status";
-        var stats = "HP: 9,335 (55%)/11,135 (100%)\nATK: 9,062 (55%)/10,862 (100%)\nDEF: 5,561 (55%)/7,361 (100%)";
+        const {link} = require('./teengohan2.js')
+        const {categories} = require('./teengohan2.js')
+        const {status} = require('./teengohan2.js')
+        const {plural} = require('./teengohan2.js')
+        const {aliases} = require('./teengohan2.js')
+        var color = 3040566;
+        var name = "";
+        var url = "";
+        var desc = "";
+        var circle = "";
+        var character = "";
+        var leader = "";
+        var superatk = "";
+        var passive = "";
+        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -49,10 +40,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 2,041,343 (unsupported)/2,814,267 (supported)\nDefense: 76,511 (unsupported)/107,116 (supported) \nLinking Partner: [AGL UR Gotenks (Xeno)](https://dbz-dokkanbattle.fandom.com/wiki/Brave_Fusion_Fighter_Gotenks_(Xeno)) \nTeam: [Fusion](https://dbz-dokkanbattle.fandom.com/wiki/Fusion) \nBuild: 6 Additional/15 Critical";
-        var blp = "[STR UR Gogeta](https://dbz-dokkanbattle.fandom.com/wiki/Into_the_Final_Phase_Gogeta) - 6 links shared\n[AGL UR Gotenks (Xeno)](https://dbz-dokkanbattle.fandom.com/wiki/Brave_Fusion_Fighter_Gotenks_(Xeno)) - 5 links shared\n[INT UR Gohan (Kid)](https://dbz-dokkanbattle.fandom.com/wiki/Roar_of_Rage_Gohan_(Kid)) - 4 links shared";
-        var deets = "► 12 Ki Multiplier is 140%\n► Can be [farmed](https://dbz-dokkanbattle.fandom.com/wiki/Leveling_Super_Attack_Guide) to raise Super Attack of other [Gotenks](https://dbz-dokkanbattle.fandom.com/wiki/Gotenks_(disambiguation)#GOTENKS) cards";
-        var footnotes = "[1]: Lowers enemy's DEF by 50% for 3 turns\n[2]: 25% chance for additional attack to become a Super Attack";
+        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
+        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
+        var deets = "-";
+        var footnotes = "[1]: ";
 
         if (status === 'incomplete')
         {
@@ -130,7 +121,6 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
-                        .setFooter("[1]: Lowers enemy's DEF by 50% for 3 turns")
                         .setTimestamp()
                     message.channel.send(superAttack)
                     break;
@@ -144,7 +134,6 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Passive Skill", passive)
-                        .setFooter("[2]: 25% chance for additional attack to become a Super Attack")
                         .setTimestamp()
                     message.channel.send(passiveSkill)
                     break;

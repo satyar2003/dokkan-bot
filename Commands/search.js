@@ -358,7 +358,8 @@ module.exports = {
                     .setColor(0)
                     .setAuthor(message.author.username, pfp)
                     .setThumbnail("https://media.discordapp.net/attachments/712036120191434793/749500938850402314/latest.png?width=245&height=613")
-                    .addField("Searching...", "**teengohan1**: PHY UR Gohan (Teen)")
+                    .addField("Searching...", "**teengohan1**: PHY UR Gohan (Teen)\n" +
+                                              "**teengohan2**: TEQ UR Gohan (Teen) before transformation")
                     .setTimestamp()
                 message.channel.send(teengohan)
                 break;
