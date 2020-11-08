@@ -152,7 +152,8 @@ module.exports = {
                         {name: "Super Saiyan Gohan (Youth)", value: "**ssjgohan1**: AGL LR Super Saiyan Gohan (Youth)"},
                         {name: "Super Saiyan 2 Gohan (Youth)", value: "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
                                                                       "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"},
-                        {name: "Gohan (Teen)", value: "**teengohan1**: PHY UR Gohan (Teen)"},
+                        {name: "Gohan (Teen)", value: "**teengohan1**: PHY UR Gohan (Teen)\n" + 
+                                                      "**teengohan2**: TEQ UR Gohan (Teen)"},
                         {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA\n" +
                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
                         {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
