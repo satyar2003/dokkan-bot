@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "INT UR Gotenks",
+                    name: "TEQ UR Ultimate Gohan",
                     value:  "** **"
                 }
             ],

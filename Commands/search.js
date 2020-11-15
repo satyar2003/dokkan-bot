@@ -153,10 +153,11 @@ module.exports = {
                         {name: "Super Saiyan 2 Gohan (Youth)", value: "**fskgohan1z**: AGL UR Father-Son Kamehameha Gohan with EZA\n" +
                                                                       "**ssj2gohan1**: INT LR Super Saiyan 2 Gohan (Youth)"},
                         {name: "Gohan (Teen)", value: "**teengohan1**: PHY UR Gohan (Teen)\n" + 
-                                                      "**teengohan2**: TEQ UR Gohan (Teen)"},
+                                                      "**teengohan2**: TEQ UR Gohan (Teen) before transformation"},
                         {name: "Super Saiyan Gohan (Teen)", value: "**fkgohan1z**: AGL UR Family Kamehameha Gohan with EZA\n" +
                                                                    "**ssjgohan2**: PHY UR Super Saiyan Gohan (Teen)"},
-                        {name: "Ultimate Gohan", value: "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                        {name: "Ultimate Gohan", value: "**ugohan5**: TEQ UR Ultimate Gohan after transformation\n" +
+                                                        "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                                         "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
                                                         "**ugohan4**: INT UR F2P Ultimate Gohan\n" +
                                                         "**ugohan2**: STR UR Ultimate Gohan\n" +
@@ -1816,7 +1817,8 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
+                        value:  "**ugohan5**: TEQ UR Ultimate Gohan after transformation\n" +
+                                "**ugohan3**: INT UR Ultimate Gohan without EZA\n" +
                                 "**ugohan3z**: INT UR Ultimate Gohan with EZA\n" +
                                 "**ugohan4**: INT UR F2P Ultimate Gohan\n"+
                                 "**ugohan2**: STR UR Ultimate Gohan\n" +
