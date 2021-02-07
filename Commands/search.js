@@ -2034,7 +2034,8 @@ module.exports = {
                 fields: [
                     {
                         name: "** **",
-                        value:  "**krillin1**: PHY LR Krillin"
+                        value:  "**krillin2**: AGL UR Krillin\n" +
+                                "**krillin1**: PHY LR Krillin"
                     }
                 ]
             }});
