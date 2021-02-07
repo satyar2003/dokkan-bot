@@ -3,9 +3,22 @@ const Discord = require('discord.js')
 module.exports = {
     name: 'ugohan5',
     description: 'TEQ UR Ultimate Gohan after transformation',
-    categories: ['', ''],
-    link: ['', ''],
-    status: 'incomplete',
+    categories: ['[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)',
+                 '[Resurrected Warriors](https://dbz-dokkanbattle.fandom.com/wiki/Resurrected_Warriors)',
+                 '[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)',
+                 '[Goku\'s Family](https://dbz-dokkanbattle.fandom.com/wiki/Goku%27s_Family)',
+                 '[Siblings\' Bond](https://dbz-dokkanbattle.fandom.com/wiki/Siblings%27_Bond)',
+                 '[Revenge](https://dbz-dokkanbattle.fandom.com/wiki/Revenge)',
+                 '[Rapid Growth](https://dbz-dokkanbattle.fandom.com/wiki/Rapid_Growth)',
+                 '[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)'],
+    link: ['[Infighter](https://dbz-dokkanbattle.fandom.com/wiki/Infighter)\n ­ ­ ­ ­ Level 1: ATK +10% and all enemies\' DEF -10%\n ­ ­ ­ ­ Level 10: ATK +15% and all enemies\' DEF -15%',
+           '[All in the Family](https://dbz-dokkanbattle.fandom.com/wiki/All_in_the_Family)\n ­ ­ ­ ­ Level 1: DEF +15%\n ­ ­ ­ ­ Level 10: DEF +20%',
+           '[Saiyan Warrior Race](https://dbz-dokkanbattle.fandom.com/wiki/Saiyan_Warrior_Race)\n ­ ­ ­ ­ Level 1: ATK +5%\n ­ ­ ­ ­ Level 10: ATK +10%',
+           '[Cold Judgment](https://dbz-dokkanbattle.fandom.com/wiki/Cold_Judgment)\n ­ ­ ­ ­ Level 1: DEF +20%\n ­ ­ ­ ­ Level 10: DEF +25%',
+           '[Shocking Speed](https://dbz-dokkanbattle.fandom.com/wiki/Shocking_Speed)\n ­ ­ ­ ­ Level 1: Ki +2\n ­ ­ ­ ­ Level 10: Ki +2 and DEF +5%',
+           '[Power Bestowed by God](https://dbz-dokkanbattle.fandom.com/wiki/Power_Bestowed_by_God)\n ­ ­ ­ ­ Level 1: ATK +5% when performing a Super Atttack\n ­ ­ ­ ­ Level 10: ATK +10% when performing a Super Attack',
+           '[Fierce Battle](https://dbz-dokkanbattle.fandom.com/wiki/Fierce_Battle)\n ­ ­ ­ ­ Level 1: ATK +15%\n ­ ­ ­ ­ Level 10: ATK +20%'],
+    status: 'complete',
     plural: 'false',
     aliases: ['Ultimate Gohan'],
     execute(message, args) {
@@ -16,15 +29,15 @@ module.exports = {
         const {plural} = require('./ugohan5.js')
         const {aliases} = require('./ugohan5.js')
         var color = 3040566;
-        var name = "";
-        var url = "";
-        var desc = "";
-        var circle = "";
-        var character = "";
-        var leader = "";
-        var superatk = "";
-        var passive = "";
-        var stats = "HP: (55%)/ (100%)\nATK: (55%)/ (100%)\nDEF: (55%)/ (100%)";
+        var name = "Power Beyond the Extremes\nUltimate Gohan";
+        var url = "https://dbz-dokkanbattle.fandom.com/wiki/Power_Beyond_the_Extremes_Gohan_(Teen)#Ultimate_Gohan";
+        var desc = "Super TEQ UR";
+        var circle = "https://media.discordapp.net/attachments/712036120191434793/807841766443057162/card_4020100_circle.png";
+        var character = "https://media.discordapp.net/attachments/712036120191434793/807842541340721162/B9AhKAe9NzNPAAAAAElFTkSuQmCC.png";
+        var leader = "\"[Saviors](https://dbz-dokkanbattle.fandom.com/wiki/Saviors)\" or \"[Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans)\" Category Ki +3, HP +130% and ATK & DEF +170%";
+        var superatk = "[Burst Rush](https://youtu.be/kQRGIYZFzAA?t=64): Greatly raises ATK for 1 turn[1] and causes immense damage with a medium chance of stunning the enemy[2]";
+        var passive = "Elder Kai\'s Power-Up: Ki +3 and ATK & DEF +158%; guards all attacks; plus an additional ATK +58% for the rest of battle when guard is activated; attacks effective against all Types when facing only 1 enemy, whose HP is 58% or more, or when there is a \"[Majin Buu Saga](https://dbz-dokkanbattle.fandom.com/wiki/Majin_Buu_Saga)\" Category enemy";
+        var stats = "HP: 14,350 (55%)/16,950 (100%)\nATK: 13,968 (55%)/17,368 (100%)\nDEF: 7,990 (55%)/10,990 (100%)";
         var links = "";
             for (var i = 0; i < Math.ceil(link.length/2); i++)
             {
@@ -40,10 +53,10 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: (unsupported)/ (supported)\nDefense: (unsupported)/ (supported) \nLinking Partner: [] \nTeam: [] \nBuild: Additional/ Critical";
-        var blp = "[] - links shared\n[] - links shared\n[] - links shared";
-        var deets = "-";
-        var footnotes = "[1]: ";
+        var apt = "APT: 4,967,453 (unsupported)/5,788,816 (supported)\nDefense: 267,313 (unsupported)/311,589 (supported) \nLinking Partner: [STR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hidden_Power_Unleashed_Ultimate_Gohan) \nTeam: [Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans) \nBuild: 6 Additional/20 Critical";
+        var blp = "[INT UR Gohan (Future)](https://dbz-dokkanbattle.fandom.com/wiki/Heroic_Warrior_Gohan_(Future)) - 4 links shared\n[STR UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hidden_Power_Unleashed_Ultimate_Gohan) - 4 links shared\n[PHY UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hero%27s_Return_Ultimate_Gohan) - 4 links shared";
+        var deets = "► 12 Ki Multiplier is 150%\n► His additional ATK +58% is calculated separately, for a total boost of ATK +307.64% after being attacked";
+        var footnotes = "[1]: Raises SA Multiplier by 50% for 1 turn\n[2]: 30% chance to stun the enemy for 2 turns";
 
         if (status === 'incomplete')
         {
