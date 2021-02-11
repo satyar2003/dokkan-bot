@@ -134,6 +134,7 @@ module.exports = {
                         .setDescription(desc)
                         .setThumbnail(circle)
                         .addField("Super Attack", superatk)
+                        .setFooter(footnotes)
                         .setTimestamp()
                     message.channel.send(superAttack)
                     break;
