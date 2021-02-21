@@ -2397,6 +2397,10 @@ module.exports = {
                                 "**bardock2**: PHY LR Bardock"
                     },
                     {
+                        name: "Bardock (Giant Ape)",
+                        value: "**gabardock1z**: AGL UR Bardock (Giant Ape) with EZA"
+                    },
+                    {
                         name: "Super Saiyan Bardock",
                         value: "**ssjbardock1**: AGL UR Super Saiyan Bardock after transformation"
                     },
