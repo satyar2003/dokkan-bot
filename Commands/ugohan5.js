@@ -53,7 +53,7 @@ module.exports = {
             {
                 cats += categories[i] + "\n";
             }
-        var apt = "APT: 4,967,453 (unsupported)/5,788,816 (supported)\nDefense: 267,313 (unsupported)/311,589 (supported) \nLinking Partner: [STR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hidden_Power_Unleashed_Ultimate_Gohan) \nTeam: [Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans) \nBuild: 6 Additional/20 Critical";
+        var apt = "APT: 4,967,453 (unsupported)/5,788,816 (supported)\nDefense: 267,313 (unsupported)/311,589 (supported) \nLinking Partner: [STR UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hidden_Power_Unleashed_Ultimate_Gohan) \nTeam: [Hybrid Saiyans](https://dbz-dokkanbattle.fandom.com/wiki/Hybrid_Saiyans) \nBuild: 6 Additional/20 Critical";
         var blp = "[INT UR Gohan (Future)](https://dbz-dokkanbattle.fandom.com/wiki/Heroic_Warrior_Gohan_(Future)) - 4 links shared\n[STR UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hidden_Power_Unleashed_Ultimate_Gohan) - 4 links shared\n[PHY UR Ultimate Gohan](https://dbz-dokkanbattle.fandom.com/wiki/Hero%27s_Return_Ultimate_Gohan) - 4 links shared";
         var deets = "► 12 Ki Multiplier is 150%\n► His additional ATK +58% is calculated separately, for a total boost of ATK +307.64% after being attacked";
         var footnotes = "[1]: Raises SA Multiplier by 50% for 1 turn\n[2]: 30% chance to stun the enemy for 2 turns";
