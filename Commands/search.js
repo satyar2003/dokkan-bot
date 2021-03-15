@@ -1134,9 +1134,13 @@ module.exports = {
                 },
                 fields: [
                     {
+                        name: "Nuova Shenron",
+                        value: "**nuova1**: PHY UR Nuova Shenron"
+                    },
+                    {
                         name: "Omega Shenron",
                         value:  "**omega2**: STR UR Omega Shenron without EZA\n" +
-                                "**omega2z**: STR UR Omega Sheronr with EZA\n" +
+                                "**omega2z**: STR UR Omega Shenron with EZA\n" +
                                 "**omega1**: PHY UR Omega Shenron"
                     }
                 ]
