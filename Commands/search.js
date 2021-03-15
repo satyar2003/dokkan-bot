@@ -2039,6 +2039,7 @@ module.exports = {
                     {
                         name: "** **",
                         value:  "**krillin2**: AGL UR Krillin\n" +
+                                "**krillin3z**: STR UR Krillin Z" +
                                 "**krillin1**: PHY LR Krillin"
                     }
                 ]
