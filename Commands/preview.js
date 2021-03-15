@@ -13,7 +13,7 @@ module.exports = {
             fields:
             [
                 {
-                    name: "STR UR Krillin with EZA",
+                    name: "PHY UR Nuova Shenron",
                     value:  "** **"
                 }
             ],
